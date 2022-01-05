@@ -14,8 +14,12 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🔭 I’m currently working on front-end developmet.
+- 🔭 I’m currently working as front-end developer.
 - 🌱 I’m currently learning HTML, CSS, JavaScript, ReactJS and design patterns.
+
+:e-mail: mmrosatab@hotmail.com
+:e-mail: mmrosatab@gmail.com
+:raising_hand: https://www.linkedin.com/in/mmrosatab/
 
 <div style="display: inline_block"><br>
   <img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
