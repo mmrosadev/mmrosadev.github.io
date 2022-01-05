@@ -1,6 +1,6 @@
 ### Hello! Welcome! 👋
 
-[![Linkedin Badge](https://www.linkedin.com/in/mmrosatab/)
+[![Linkedin Badge](https://img.shields.io/badge/-mayaramarques-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mmrosatab/](https://www.linkedin.com/in/mmrosatab/)
 [![Gmail Badge](mailto:mmrosatab@gmail.com)
 [![Hotmail Badge](mailto:mmrosatab@hotmail.com)
 
@@ -27,5 +27,8 @@ Here are some ideas to get you started:
   <img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 </div>
 
-I'm front-end developer. 
+<div>
+    I'm front-end developer. 
+</div>
+
 
