@@ -14,8 +14,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🔭 I’m currently working as front-end developer.
-- 🌱 I’m currently learning HTML, CSS, JavaScript, ReactJS.
+- 🔭 I’m currently working as front-end developer and programing teacher.
+- 🌱 I’m currently learning HTML, CSS, JavaScript, ReactJS e Python.
 - 🌱 I’m currently learning ETL and Data Engineer.
 - :e-mail: mmrosatab@hotmail.com
 - :e-mail: mmrosatab@gmail.com
