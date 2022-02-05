@@ -15,7 +15,8 @@ Here are some ideas to get you started:
 -->
 
 - 🔭 I’m currently working as front-end developer.
-- 🌱 I’m currently learning HTML, CSS, JavaScript, ReactJS and design patterns.
+- 🌱 I’m currently learning HTML, CSS, JavaScript, ReactJS.
+- 🌱 I’m currently learning ETL and Data Engineer.
 - :e-mail: mmrosatab@hotmail.com
 - :e-mail: mmrosatab@gmail.com
 - :raising_hand: https://www.linkedin.com/in/mmrosatab/
