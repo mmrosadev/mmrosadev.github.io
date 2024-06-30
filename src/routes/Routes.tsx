@@ -9,7 +9,7 @@ export function Routes(){
         <BrowserRouter>
             <NavBar/>
             <DomRoutes>
-                <Route path="/" Component={Home}/>
+                <Route path="/mmrosatab" Component={Home}/>
                 {/* <Route path="/portifolio" Component={Contact}/>
                 <Route path="/curriculum" Component={Contact}/>
                 <Route path="/classes" Component={Contact}/>
