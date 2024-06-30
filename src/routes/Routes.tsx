@@ -6,10 +6,10 @@ import { NavBar } from "../components/NavBar"
 
 export function Routes(){
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={window.location.pathname || ''}>
             <NavBar/>
             <DomRoutes>
-                <Route path="/mmrosatab" Component={Home}/>
+                <Route path="/" Component={Home}/>
                 {/* <Route path="/portifolio" Component={Contact}/>
                 <Route path="/curriculum" Component={Contact}/>
                 <Route path="/classes" Component={Contact}/>
