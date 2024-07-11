@@ -1,9 +1,42 @@
-// import { Container, Photo, PhotoContainer, TextContainer } from "./styles"
-import { Container } from "./styles"
+import { useTranslation } from "react-i18next"
+import { 
+    Container,
+    ContentContainer,
+    Photo,
+    PhotoContainer,
+    SubTitle,
+    TextContainer,
+    Title,
+    TitleContainer
+} from "./styles"
 
-export function Banner(){
+interface BannerProps{
+    urlImage: string
+}
+
+export function Banner({ urlImage }:BannerProps){
+    const { t } = useTranslation()
+    
     return (
         <Container>
+            <ContentContainer>
+                <PhotoContainer>
+                    <Photo src={urlImage}/>
+                </PhotoContainer>
+                <TextContainer>
+                    <>
+                        <TitleContainer>
+                            <Title>{t('introduce1')}</Title>
+                        </TitleContainer>
+                        <>
+                            <SubTitle>{t('introduce2')}</SubTitle>
+                        </>
+                        <>
+                            <SubTitle>{t('introduce3')}</SubTitle>
+                        </>
+                    </>
+                </TextContainer>
+            </ContentContainer>
         </Container>
     )
 }

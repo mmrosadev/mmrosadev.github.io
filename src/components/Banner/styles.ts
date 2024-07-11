@@ -4,22 +4,12 @@ export const Container = styled.div`
     width: 100vw;
     height: 320px;
     display: flex;
-    justify-content: space-between;
-    align-items: end;
+    justify-content: center;
     padding-top: 20px;
 
-    /* background: linear-gradient(90deg, rgba(65,59,107,1) 0%, rgba(92,101,192,1) 23%, rgba(111,149,255,1) 100%); */
-
-    /* background: rgb(26, 188, 156);
-    background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
-    background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
-    background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%); */
-
-
-    background: rgba(65,59,107,1);
-    background: -moz-linear-gradient(-45deg, rgba(65,59,107,1) 0%, rgba(111,149,255,1) 100%);
-    background: -webkit-linear-gradient(-45deg, rgba(65,59,107,1) 0%, rgba(111,149,255,1) 100%);
-    background: linear-gradient(135deg, rgba(65,59,107,1) 0%, rgba(111,149,255,1) 100%);
+    background: 
+        linear-gradient(to bottom, rgba(65, 59, 107, 1) 0%, rgba(26, 188, 156, 0) 58%),
+        linear-gradient(to top, rgba(94, 130, 230, 1) 100%, rgba(142, 68, 173, 0) 100%);
 
 
     @media screen and (max-width: 700px) {
@@ -27,21 +17,35 @@ export const Container = styled.div`
     }
 `
 
+export const ContentContainer = styled.div`
+    display: flex;
+    width: 50%;
+    height: 100%;
+`
+
 export const TextContainer = styled.div`
     width: 50%;
     height: 100%; 
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 60px;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
 
     @media screen and (max-width: 700px) {
         height: 20%;
         width: auto;
-        font-size: 20px;
     }
+`
+
+export const TitleContainer = styled.div`
+    height: 60px;
+`
+export const Title = styled.span`
+    font-size: 36px;
+`
+
+export const SubTitle = styled.span`
+    font-size: 20px;
 `
 
 export const PhotoContainer = styled.div`
@@ -50,7 +54,7 @@ export const PhotoContainer = styled.div`
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-end;
 
     @media screen and (max-width: 700px) {
