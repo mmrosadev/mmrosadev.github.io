@@ -4,11 +4,16 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     color: #301C41;
-    width: 50%;
+    margin-top: 40px;
+    height: 230px;
+    border: 1px solid #301C41;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
 `
 
 export const TitleContainer = styled.div`
-    padding: 20px;
+    margin-bottom: 20px;
 `
 
 export const Title = styled.span`
@@ -16,16 +21,18 @@ export const Title = styled.span`
 `
 
 export const ContentContainer = styled.div`
-    padding: 0px 20px;
     display: flex;
     flex-direction: column;
 `
 
-export const TextContainter = styled.span`
-    padding-bottom: 10px;
+export const TextContainter = styled.div`
+    margin-bottom: 10px;
 `
 
 export const Text = styled.span`
-    padding-bottom: 10px;
     font-size: 14px;
+`
+
+export const ComponentContainer = styled.div`
+    display: flex;
 `

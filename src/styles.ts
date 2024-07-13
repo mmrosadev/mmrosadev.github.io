@@ -21,6 +21,26 @@ const GlobalStyle = createGlobalStyle`
 
   body{
     background-color: #f5f5f5;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
   }
 `
 

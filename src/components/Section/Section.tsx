@@ -5,7 +5,8 @@ import {
     Title,
     TitleContainer,
     Text,
-    TextContainter
+    TextContainter,
+    ComponentContainer
 } from "./styles"
 
 interface SectionProps{
@@ -18,19 +19,27 @@ export function Section({
     content,
     component
 }: SectionProps){
+
+    const ContentComponents = content.map((text,index) => (
+        <TextContainter>
+            <Text key={index}>
+                {text}
+            </Text>
+        </TextContainter>
+    ))
+    
     return (
     <Container>
         <TitleContainer>
             <Title>{title}</Title>
         </TitleContainer>
         <ContentContainer>
-            {
-                content.map((text,index) => <TextContainter><Text key={index}>{text}</Text></TextContainter>)
-            }
+            {!!ContentComponents && ContentComponents}
         </ContentContainer>
-        {
-            !!component && component
-        }
+
+        <ComponentContainer>
+            {!!component && component}
+        </ComponentContainer>
     </Container>
     )
 }
