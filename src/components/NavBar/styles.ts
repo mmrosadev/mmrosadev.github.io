@@ -80,7 +80,7 @@ export const NavBarLinksAndButtonsContainer = styled.div<TootleNavBarProps>`
     @media screen and (max-width: 700px) {
         flex-direction: column;
         position: absolute;
-        top: 100px;
+        top: 80px;
         right: 0;
         display: ${ props => props.open ?  'flex' : 'none' };
     }

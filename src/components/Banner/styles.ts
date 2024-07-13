@@ -21,6 +21,18 @@ export const ContentContainer = styled.div`
     display: flex;
     width: 50%;
     height: 100%;
+
+    @media screen and (min-width: 701px) and (max-width: 1000px){
+        width: 80%;
+    }
+
+    @media screen and (max-width: 700px){
+        width: 100%;
+    }
+
+    @media screen and (max-width: 390px) {
+        justify-content: space-around;
+    }
 `
 
 export const TextContainer = styled.div`
@@ -32,7 +44,7 @@ export const TextContainer = styled.div`
     color: white;
 
     @media screen and (max-width: 700px) {
-        height: 20%;
+        height: 100%;
         width: auto;
     }
 `
@@ -42,10 +54,26 @@ export const TitleContainer = styled.div`
 `
 export const Title = styled.span`
     font-size: 36px;
+
+    @media screen and (min-width: 391px) and (max-width: 490px) {
+        font-size: 32px;
+    }
+
+    @media screen and (max-width: 390px) {
+        font-size: 28px;
+    }
 `
 
 export const SubTitle = styled.span`
     font-size: 20px;
+
+    @media screen and (min-width: 391px) and (max-width: 490px) {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 390px) {
+        font-size: 12px;
+    }
 `
 
 export const PhotoContainer = styled.div`
@@ -56,20 +84,13 @@ export const PhotoContainer = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
-
-    @media screen and (max-width: 700px) {
-        
-        height: 50%;
-        width: auto;
-    }
 `
 
 export const Photo = styled.img`
     height: 100%;
     width: auto;
 
-    @media screen and (max-width: 700px) {
-        height: 100%;
-        width: auto;
+    @media screen and (max-width: 490px) {
+        height: 80%;
     }
 `
