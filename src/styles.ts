@@ -27,6 +27,13 @@ const GlobalStyle = createGlobalStyle`
     overflow-y: auto;
   }
 
+  #root{
+    display: flex;
+    position: relative;
+  	min-height: 100vh;
+  	flex-direction: column;
+  }
+
   ::-webkit-scrollbar {
     width: 4px;
   }

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 320px;
     display: flex;
     justify-content: center;
@@ -21,6 +21,15 @@ export const ContentContainer = styled.div`
     display: flex;
     width: 50%;
     height: 100%;
+
+    @media screen and (min-width: 1001px){
+        width: 60%;
+    }
+
+    @media screen and (min-width: 1300px){
+        width: 40%;
+    }
+
 
     @media screen and (min-width: 701px) and (max-width: 1000px){
         width: 80%;
@@ -67,7 +76,7 @@ export const Title = styled.span`
 export const SubTitle = styled.span`
     font-size: 20px;
 
-    @media screen and (min-width: 391px) and (max-width: 490px) {
+    @media screen and (min-width: 391px) and (max-width: 540px) {
         font-size: 16px;
     }
 

@@ -14,7 +14,7 @@ interface ButtonStyleProps{
 
 export const NavBarContainer = styled.nav`
     background-color: #1c0b2b;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     padding: 10px 14px 10px 10px;
     display: flex;

@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next"
+import { TecnologyRect } from "../../components/TecnologyRect"
 import { Banner } from "../../components/Banner"
 import { Section } from "../../components/Section"
 import customPhoto from '../../assets/profile.png'
@@ -11,16 +13,30 @@ import css from '../../assets/css.svg'
 import html from '../../assets/html.svg'
 import node from '../../assets/node.svg'
 import c from '../../assets/c.svg'
-import { Main, SectionContainer, TecnologyRectContainer } from "./styles"
-import { TecnologyRect } from "../../components/TecnologyRect"
-import { useTranslation } from "react-i18next"
+// import raquelMarriege from '../../assets/raquel-marriege.svg'
+import {
+  Main,
+  SectionContainer,
+  TecnologyRectContainer,
+  Footer,
+  FooterLinksContainer,
+  CopyrightContainer,
+  Container,
+  CopyrightLabel,
+  // MyProjectsContainer,
+  // Title,
+  // SubTitle,
+  // TitleContainer,
+  // CardsContainer,
+} from "./styles"
+// import { Card } from "../../components/Card"
 
 export function Home(){
 
   const { t } = useTranslation()
   
   return (
-    <>
+    <Container>
       <Banner
         urlImage={customPhoto}
       />
@@ -46,7 +62,6 @@ export function Home(){
             ]
             }
           />
-
         </SectionContainer>
 
         <SectionContainer>
@@ -81,6 +96,30 @@ export function Home(){
           />
         </SectionContainer>
       </Main>
-    </>
+      {/* <MyProjectsContainer>
+        <TitleContainer>
+          <Title>Meus Projetos</Title>
+        </TitleContainer>
+        <TitleContainer>
+          <SubTitle>Alguns projetos que desenvolvi</SubTitle>
+        </TitleContainer>
+        <CardsContainer>
+          <Card 
+            title="teste"
+            subtitle="teste"
+            previewSrc={raquelMarriege}
+          />
+        </CardsContainer>
+      </MyProjectsContainer> */}
+      <Footer>
+        <FooterLinksContainer>  
+        </FooterLinksContainer>
+        <CopyrightContainer>
+            <CopyrightLabel>
+              Copyright © 2024 Mayara Marques
+            </CopyrightLabel>
+          </CopyrightContainer>
+      </Footer>
+    </Container>
   )
 } 
