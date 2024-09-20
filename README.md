@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 -->
 
 - 🔭 I’m currently working as software engineer and programming instructor.
-- 🌱 JavaScript, Typescript, React, React Native and Python.
+- 🌱 JavaScript, Typescript, React, NodeJS, React Native and Python.
 - :e-mail: mmrosatab@hotmail.com
 - :raising_hand: https://www.linkedin.com/in/mmrosatab/
 
