@@ -13,7 +13,7 @@ import css from '../../assets/css.svg'
 import html from '../../assets/html.svg'
 import node from '../../assets/node.svg'
 import c from '../../assets/c.svg'
-// import raquelMarriege from '../../assets/raquel-marriege.svg'
+import raquelMarriege from '../../assets/raquel-marriege.svg'
 import {
   Main,
   SectionContainer,
@@ -23,13 +23,13 @@ import {
   CopyrightContainer,
   Container,
   CopyrightLabel,
-  // MyProjectsContainer,
-  // Title,
-  // SubTitle,
-  // TitleContainer,
-  // CardsContainer,
+  MyProjectsContainer,
+  Title,
+  SubTitle,
+  TitleContainer,
+  CardsContainer,
 } from "./styles"
-// import { Card } from "../../components/Card"
+import { Card } from "../../components/Card"
 
 export function Home(){
 
@@ -48,7 +48,7 @@ export function Home(){
             [
               t('workWith'),
               t('fromAndLive'),
-              t('age', { age: 31 }),
+              t('hobbies'),
             ]
             }
           />
@@ -96,7 +96,7 @@ export function Home(){
           />
         </SectionContainer>
       </Main>
-      {/* <MyProjectsContainer>
+      <MyProjectsContainer>
         <TitleContainer>
           <Title>Meus Projetos</Title>
         </TitleContainer>
@@ -110,7 +110,7 @@ export function Home(){
             previewSrc={raquelMarriege}
           />
         </CardsContainer>
-      </MyProjectsContainer> */}
+      </MyProjectsContainer>
       <Footer>
         <FooterLinksContainer>  
         </FooterLinksContainer>

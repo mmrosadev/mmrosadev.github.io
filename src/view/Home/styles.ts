@@ -35,9 +35,10 @@ export const TecnologyRectContainer = styled.div`
 `
 
 export const MyProjectsContainer = styled.div`
-    height: 30%;
+    height: 800px;
     display: flex;
     flex-direction: column;
+    margin: 20px;
 `
 
 export const TitleContainer = styled.div`
@@ -92,5 +93,4 @@ export const CardsContainer = styled.div`
     display: flex;
     width: 100%;
     background-color: red;
-    /* padding: 20px; */
 `

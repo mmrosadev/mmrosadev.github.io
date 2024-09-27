@@ -17,8 +17,9 @@ export default {
     interests: "Desenvolvimento web frontend e extração de dados.",
     iLike: "Gosto de prototipar interfaces e deixá-las com alto nível de fidelidade.",
     currentOccupations: "Ocupações atuais",
-    position1: "Engenheira de software plena na Getrak",
+    position1: "Desenvolvedora fullstack plena",
     position2: "Instrutora de programação.",
     technologies: "Tecnologias",
-    technologies2: "Tecnologias que trabalho recentemente:",
+    technologies2: "Tecnologias que trabalho atualmente:",
+    hobbies: "Atleta de corrida de rua e vôlei de praia"
 }

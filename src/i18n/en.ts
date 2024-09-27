@@ -17,8 +17,9 @@ export default {
     interests: "Frontend web development and data extraction.",
     iLike: "I like prototyping interfaces and leaving them with a high level of fidelity.",
     currentOccupations: "Current occupations",
-    position1: "Mid-level Software Engineer at Getrak",
-    position2: "Programming instructor.",
+    position1: "Mid-level fullstack developer",
+    position2: "Programming instructor",
     technologies: "Technologies",
     technologies2: "I've been working on recently:",
+    hobbies: "Road running and beach volleyball athlete"
 }
