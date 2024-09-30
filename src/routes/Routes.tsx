@@ -3,6 +3,7 @@ import { Home } from "../view/Home"
 import { Contact } from "../view/Contact"
 import { NoMatch } from "../view/NoMatch"
 import { NavBar } from "../components/NavBar"
+import { Footer } from "../components/Footer"
 
 export function Routes(){
     return (
@@ -17,6 +18,7 @@ export function Routes(){
                 <Route path="/contact" Component={Contact}/>
                 <Route path='*' Component={NoMatch} />
             </DomRoutes>
+            <Footer/>
         </HashRouter>
     )
 }

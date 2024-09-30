@@ -14,14 +14,17 @@ import {
     MenuButton,
     CrossButton,
 } from "./styles"
-import brazilImg from '../../assets/brazil-flag.svg'
-import usaImg from '../../assets/usa-flag.svg'
-import spainImg from '../../assets/spain-flag.svg'
-import infinityImg from '../../assets/infinity.svg'
-import githubImg from '../../assets/github.svg'
-import linkedinImg from '../../assets/linkedin.svg'
-import menuImg from '../../assets/menu.svg'
-import crossImg from '../../assets/cross.svg'
+import { 
+    brasilFlagImg,
+    usaFlagImg,
+    spainFlagImg,
+    infinityImg,
+    githubImg,
+    linkedinImg,
+    menuImg,
+    crossImg,
+} from '@/assets'
+
 import i18n from "../../i18n/i18"
 import { NavBarLink } from "./NavBarLink"
 import { useEffect, useState } from "react"
@@ -114,17 +117,17 @@ export function NavBar(): JSX.Element{
                     <FlagsContainer>
                         <FlagButton
                             type="button"
-                            $imageSource={brazilImg}
+                            $imageSource={brasilFlagImg}
                             onClick={() => handleChangeLanguage('pt')}
                         />
                         <FlagButton
                             type="button"
-                            $imageSource={spainImg}
+                            $imageSource={spainFlagImg}
                             onClick={() => handleChangeLanguage('es')}
                         />
                         <FlagButton
                             type="button"
-                            $imageSource={usaImg}
+                            $imageSource={usaFlagImg}
                             onClick={() => handleChangeLanguage('en')}
                         />
                     </FlagsContainer>

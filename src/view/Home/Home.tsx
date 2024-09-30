@@ -1,28 +1,26 @@
 import { useTranslation } from "react-i18next"
 import { TecnologyRect } from "../../components/TecnologyRect"
-import { Banner } from "../../components/Banner"
+import { Banner } from "./Banner"
 import { Section } from "../../components/Section"
-import customPhoto from '../../assets/profile.png'
-import js from '../../assets/js.svg'
-import ts from '../../assets/ts.svg'
-import python from '../../assets/python.svg'
-import react from '../../assets/react.svg'
-import reactNative from '../../assets/react-native.svg'
-import java from '../../assets/java.svg'
-import css from '../../assets/css.svg'
-import html from '../../assets/html.svg'
-import node from '../../assets/node.svg'
-import c from '../../assets/c.svg'
-import raquelMarriege from '../../assets/raquel-marriege.svg'
+import {
+  profileImg, 
+  jsImg,
+  tsImg,
+  pythonImg,
+  reactImg,
+  reactNativeImg,
+  javaImg,
+  cssImg,
+  htmlImg,
+  nodeImg,
+  cImg,
+  raquelMarriegeImg,
+} from '../../assets'
 import {
   Main,
   SectionContainer,
   TecnologyRectContainer,
-  Footer,
-  FooterLinksContainer,
-  CopyrightContainer,
   Container,
-  CopyrightLabel,
   MyProjectsContainer,
   Title,
   SubTitle,
@@ -38,7 +36,7 @@ export function Home(){
   return (
     <Container>
       <Banner
-        urlImage={customPhoto}
+        urlImage={profileImg}
       />
       <Main>
         <SectionContainer>
@@ -81,16 +79,16 @@ export function Home(){
             content={[t('technologies2')]}
             component={
               <TecnologyRectContainer>
-                <TecnologyRect imageSrc={js} label="Javascript"/>
-                <TecnologyRect imageSrc={ts} label="Typescript"/>
-                <TecnologyRect imageSrc={react} label="React"/>
-                <TecnologyRect imageSrc={reactNative} label="React Native"/>
-                <TecnologyRect imageSrc={node} label="Node"/>
-                <TecnologyRect imageSrc={python} label="Python"/>
-                <TecnologyRect imageSrc={c} label="C"/>
-                <TecnologyRect imageSrc={java} label="Java"/>
-                <TecnologyRect imageSrc={css} label="CSS"/>
-                <TecnologyRect imageSrc={html} label="HTML"/>
+                <TecnologyRect imageSrc={jsImg} label="Javascript"/>
+                <TecnologyRect imageSrc={tsImg} label="Typescript"/>
+                <TecnologyRect imageSrc={reactImg} label="React"/>
+                <TecnologyRect imageSrc={reactNativeImg} label="React Native"/>
+                <TecnologyRect imageSrc={nodeImg} label="Node"/>
+                <TecnologyRect imageSrc={pythonImg} label="Python"/>
+                <TecnologyRect imageSrc={cImg} label="C"/>
+                <TecnologyRect imageSrc={javaImg} label="Java"/>
+                <TecnologyRect imageSrc={cssImg} label="CSS"/>
+                <TecnologyRect imageSrc={htmlImg} label="HTML"/>
               </TecnologyRectContainer>
             }
           />
@@ -107,19 +105,10 @@ export function Home(){
           <Card 
             title="teste"
             subtitle="teste"
-            previewSrc={raquelMarriege}
+            previewSrc={raquelMarriegeImg}
           />
         </CardsContainer>
       </MyProjectsContainer>
-      <Footer>
-        <FooterLinksContainer>  
-        </FooterLinksContainer>
-        <CopyrightContainer>
-            <CopyrightLabel>
-              Copyright © 2024 Mayara Marques
-            </CopyrightLabel>
-          </CopyrightContainer>
-      </Footer>
     </Container>
   )
 } 
