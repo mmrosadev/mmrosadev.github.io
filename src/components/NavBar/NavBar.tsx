@@ -73,7 +73,6 @@ export function NavBar(): JSX.Element{
         <NavBarContainer>
             <LogoContainer>
                 <Logo src={infinityImg} alt="infinity image"/>
-                
             </LogoContainer>
             <MenuButton
                 $imageSource={menuImg}  
