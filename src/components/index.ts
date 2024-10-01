@@ -1,0 +1,5 @@
+export { Card } from './Card'
+export { NavBar } from './NavBar'
+export { Footer } from './Footer'
+export { Section } from './Section'
+export { TecnologyRect } from './TecnologyRect'

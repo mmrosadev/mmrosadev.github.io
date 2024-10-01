@@ -1,9 +1,18 @@
-import { Route, Routes as DomRoutes, HashRouter } from "react-router-dom"
-import { Home } from "../view/Home"
-import { Contact } from "../view/Contact"
-import { NoMatch } from "../view/NoMatch"
-import { NavBar } from "../components/NavBar"
-import { Footer } from "../components/Footer"
+import { 
+    Route, 
+    Routes as DomRoutes, 
+    HashRouter 
+} from "react-router-dom"
+import { 
+    Home,
+    Portfolio,
+    Resume,
+    Classes,
+    Budgets,
+    Contact,
+    NoMatch
+} from "@/views"
+import { Footer, NavBar } from "@/components"
 
 export function Routes(){
     return (
@@ -11,10 +20,10 @@ export function Routes(){
             <NavBar/>
             <DomRoutes>
                 <Route path="/" Component={Home}/>
-                {/* <Route path="/portifolio" Component={Contact}/>
-                <Route path="/curriculum" Component={Contact}/>
-                <Route path="/classes" Component={Contact}/>
-                <Route path="/budges" Component={Contact}/> */}
+                <Route path="/portfolio" Component={Portfolio}/>
+                <Route path="/resume" Component={Resume}/>
+                <Route path="/classes" Component={Classes}/>
+                <Route path="/budgets" Component={Budgets}/>
                 <Route path="/contact" Component={Contact}/>
                 <Route path='*' Component={NoMatch} />
             </DomRoutes>

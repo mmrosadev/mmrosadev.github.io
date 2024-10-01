@@ -1,0 +1,7 @@
+export { Home } from './Home'
+export { Portfolio } from './Portfolio'
+export { Resume } from './Resume'
+export { Classes } from './Classes'
+export { Budgets } from './Budgets'
+export { Contact } from './Contact'
+export { NoMatch } from './NoMatch'

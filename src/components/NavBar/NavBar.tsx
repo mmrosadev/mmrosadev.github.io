@@ -1,4 +1,15 @@
+import { useEffect, useState } from "react"
 import { useTranslation } from "react-i18next"
+import { 
+    brasilFlagImg,
+    usaFlagImg,
+    spainFlagImg,
+    infinityImg,
+    githubImg,
+    linkedinImg,
+    menuImg,
+    crossImg,
+} from '@/assets'
 import {
     NavBarContainer,
     UnorderedList,
@@ -14,20 +25,8 @@ import {
     MenuButton,
     CrossButton,
 } from "./styles"
-import { 
-    brasilFlagImg,
-    usaFlagImg,
-    spainFlagImg,
-    infinityImg,
-    githubImg,
-    linkedinImg,
-    menuImg,
-    crossImg,
-} from '@/assets'
-
 import i18n from "../../i18n/i18"
 import { NavBarLink } from "./NavBarLink"
-import { useEffect, useState } from "react"
 
 type LanguageOptions = 'en' | 'es' | 'pt'
 const LANG_KEY = 'LANG_REACT_APP'
@@ -94,10 +93,10 @@ export function NavBar(): JSX.Element{
             >
                 <UnorderedList>
                     <ListItem><NavBarLink to='/'>{t('home')}</NavBarLink></ListItem>
-                    <ListItem><NavBarLink to='/a'>{t('portfolio')}</NavBarLink></ListItem>
-                    <ListItem><NavBarLink to='/b'>{t('resume')}</NavBarLink></ListItem>
-                    <ListItem><NavBarLink to='/c'>{t('classes')}</NavBarLink></ListItem>
-                    <ListItem><NavBarLink to='/d'>{t('budgets')}</NavBarLink></ListItem>
+                    <ListItem><NavBarLink to='/portfolio'>{t('portfolio')}</NavBarLink></ListItem>
+                    <ListItem><NavBarLink to='/resume'>{t('resume')}</NavBarLink></ListItem>
+                    <ListItem><NavBarLink to='/classes'>{t('classes')}</NavBarLink></ListItem>
+                    <ListItem><NavBarLink to='/budgets'>{t('budgets')}</NavBarLink></ListItem>
                     <ListItem><NavBarLink to='/contact'>{t('contact')}</NavBarLink></ListItem>
                 </UnorderedList>
 

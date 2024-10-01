@@ -1,7 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { TecnologyRect } from "../../components/TecnologyRect"
-import { Banner } from "./Banner"
-import { Section } from "../../components/Section"
+import { TecnologyRect, Section, Card } from "@/components"
 import {
   profileImg, 
   jsImg,
@@ -15,7 +13,8 @@ import {
   nodeImg,
   cImg,
   raquelMarriegeImg,
-} from '../../assets'
+} from '@/assets'
+import { Banner } from "./Banner"
 import {
   Main,
   SectionContainer,
@@ -27,7 +26,6 @@ import {
   TitleContainer,
   CardsContainer,
 } from "./styles"
-import { Card } from "../../components/Card"
 
 export function Home(){
 
@@ -83,7 +81,7 @@ export function Home(){
                 <TecnologyRect imageSrc={tsImg} label="Typescript"/>
                 <TecnologyRect imageSrc={reactImg} label="React"/>
                 <TecnologyRect imageSrc={reactNativeImg} label="React Native"/>
-                <TecnologyRect imageSrc={nodeImg} label="Node"/>
+                <TecnologyRect imageSrc={nodeImg} label="NodeJS"/>
                 <TecnologyRect imageSrc={pythonImg} label="Python"/>
                 <TecnologyRect imageSrc={cImg} label="C"/>
                 <TecnologyRect imageSrc={javaImg} label="Java"/>

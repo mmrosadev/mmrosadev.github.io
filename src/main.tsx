@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Routes } from './routes'
-import GlobalStyle from './styles'
 import { I18nextProvider } from 'react-i18next'
+import { Routes } from '@/routes'
+import GlobalStyle from './styles'
 import i18n from './i18n/i18'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
