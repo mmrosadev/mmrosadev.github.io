@@ -1,7 +1,7 @@
 import { 
     Route, 
     Routes as DomRoutes, 
-    HashRouter 
+    BrowserRouter 
 } from "react-router-dom"
 import { 
     Home,
@@ -16,18 +16,18 @@ import { Footer, NavBar } from "@/components"
 
 export function Routes(){
     return (
-        <HashRouter>
+        <BrowserRouter>
             <NavBar/>
             <DomRoutes>
-                <Route path="/" Component={Home}/>
-                <Route path="/portfolio" Component={Portfolio}/>
-                <Route path="/resume" Component={Resume}/>
-                <Route path="/classes" Component={Classes}/>
-                <Route path="/budgets" Component={Budgets}/>
-                <Route path="/contact" Component={Contact}/>
-                <Route path='*' Component={NoMatch} />
+                <Route path="/" element={<Home/>}/>
+                <Route path="/portfolio" element={<Portfolio/>}/>
+                <Route path="/resume" element={<Resume/>}/>
+                <Route path="/classes" element={<Classes/>}/>
+                <Route path="/budgets" element={<Budgets/>}/>
+                <Route path="/contact" element={<Contact/>}/>
+                <Route path='*' element={<NoMatch/>} />
             </DomRoutes>
             <Footer/>
-        </HashRouter>
+        </BrowserRouter>
     )
 }
