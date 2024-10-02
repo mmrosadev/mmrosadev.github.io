@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🔭 I’m currently working as software engineer and programming instructor.
+- 🔭 I’m currently working as fullstack developer and programming instructor.
 - 🌱 JavaScript, Typescript, React, NodeJS, React Native and Python.
 - :e-mail: mmrosatab@hotmail.com
 - :raising_hand: https://www.linkedin.com/in/mmrosatab/
@@ -27,8 +27,8 @@ Here are some ideas to get you started:
     <img height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
     <img height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
     <img height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+    <img height="30" width="40" src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg">
     <img height="30" width="40" src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg">
-    
   </div>
 </div>
 
