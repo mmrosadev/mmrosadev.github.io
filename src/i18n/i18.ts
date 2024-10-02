@@ -12,11 +12,11 @@ i18n
       es: { translation: es },
       pt: { translation: pt },
     },
-    lng: "pt",
-    fallbackLng: "pt",
+    lng: 'pt',
+    fallbackLng: 'pt',
     interpolation: {
       escapeValue: false
     }
-})
+  })
 
 export default i18n

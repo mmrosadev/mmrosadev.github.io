@@ -1,4 +1,4 @@
-import { Container, ContainerIcon, Icon, Label } from "./styles"
+import { Container, ContainerIcon, Icon, Label } from './styles'
 
 interface TecnologyRectProps{
     imageSrc: string

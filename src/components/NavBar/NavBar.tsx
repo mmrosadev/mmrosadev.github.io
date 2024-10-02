@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react"
-import { useTranslation } from "react-i18next"
-import { 
+import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import {
     brasilFlagImg,
     usaFlagImg,
     spainFlagImg,
@@ -21,17 +21,16 @@ import {
     NavBarLinksAndButtonsContainer,
     SocialMediaAndFlagsContainer,
     SocialMediaContainer,
-    SocialMediaButton,
     MenuButton,
     CrossButton,
-} from "./styles"
-import i18n from "../../i18n/i18"
-import { NavBarLink } from "./NavBarLink"
+} from './styles'
+import i18n from '@/i18n/i18'
+import { NavBarLink, SocialMediaButton } from '@/components'
 
 type LanguageOptions = 'en' | 'es' | 'pt'
 const LANG_KEY = 'LANG_REACT_APP'
 
-export function NavBar(): JSX.Element{
+export function NavBar(): JSX.Element {
 
     const { t } = useTranslation()
     const [openMenu, setOpenMenu] = useState(false)
@@ -46,16 +45,16 @@ export function NavBar(): JSX.Element{
     }
 
     const setLanguageOnStorage = (language: LanguageOptions) => {
-        if(window.localStorage){
+        if (window.localStorage) {
             window.localStorage.setItem(LANG_KEY, language)
         }
     }
 
     const loadStorageInformation = () => {
-        if(window.localStorage){
+        if (window.localStorage) {
             const language = window.localStorage.getItem(LANG_KEY) as LanguageOptions
 
-            if(language && language.length > 0){
+            if (language && language.length > 0) {
                 setLanguage(language)
             }
         }
@@ -64,7 +63,7 @@ export function NavBar(): JSX.Element{
     const toggleMenu = () => {
         setOpenMenu(!openMenu)
     }
-    
+
     useEffect(() => {
         loadStorageInformation()
     }, [])
@@ -72,16 +71,16 @@ export function NavBar(): JSX.Element{
     return (
         <NavBarContainer>
             <LogoContainer>
-                <Logo src={infinityImg} alt="infinity image"/>
+                <Logo src={infinityImg} alt="infinity image" />
             </LogoContainer>
             <MenuButton
-                $imageSource={menuImg}  
+                $imageSource={menuImg}
                 onClick={toggleMenu}
                 id='menu-button'
                 open={openMenu}
             />
-            <CrossButton 
-                $imageSource={crossImg} 
+            <CrossButton
+                $imageSource={crossImg}
                 onClick={toggleMenu}
                 id='cross-button'
                 open={openMenu}

@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { I18nextProvider } from 'react-i18next'
 import { Routes } from '@/routes'
+import i18n from '@/i18n/i18'
 import GlobalStyle from './styles'
-import i18n from './i18n/i18'
 
 const LANG_KEY = 'LANG_REACT_APP'
 

@@ -1,9 +1,9 @@
-import { 
-    Route, 
-    Routes as DomRoutes, 
-    BrowserRouter 
-} from "react-router-dom"
-import { 
+import {
+    Route,
+    Routes as DomRoutes,
+    BrowserRouter
+} from 'react-router-dom'
+import {
     Home,
     Portfolio,
     Resume,
@@ -11,23 +11,23 @@ import {
     Budgets,
     Contact,
     NoMatch
-} from "@/views"
-import { Footer, NavBar } from "@/components"
+} from '@/views'
+import { Footer, NavBar } from '@/components'
 
-export function Routes(){
+export function Routes() {
     return (
         <BrowserRouter>
-            <NavBar/>
+            <NavBar />
             <DomRoutes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/portfolio" element={<Portfolio/>}/>
-                <Route path="/resume" element={<Resume/>}/>
-                <Route path="/classes" element={<Classes/>}/>
-                <Route path="/budgets" element={<Budgets/>}/>
-                <Route path="/contact" element={<Contact/>}/>
-                <Route path='*' element={<NoMatch/>} />
+                <Route path='/' element={<Home />} />
+                <Route path='/portfolio' element={<Portfolio />} />
+                <Route path='/resume' element={<Resume />} />
+                <Route path='/classes' element={<Classes />} />
+                <Route path='/budgets' element={<Budgets />} />
+                <Route path='/contact' element={<Contact />} />
+                <Route path='*' element={<NoMatch />} />
             </DomRoutes>
-            <Footer/>
+            <Footer />
         </BrowserRouter>
     )
 }

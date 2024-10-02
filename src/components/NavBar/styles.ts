@@ -1,14 +1,14 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
-interface TootleNavBarProps{
+interface TootleNavBarProps {
     open: boolean
 }
 
-interface TootleNavBarButtonsProps extends TootleNavBarProps{
+interface TootleNavBarButtonsProps extends TootleNavBarProps {
     $imageSource: string
 }
 
-interface ButtonStyleProps{
+interface ButtonStyleProps {
     $imageSource: string
 }
 
@@ -51,7 +51,7 @@ export const FlagButton = styled.button<ButtonStyleProps>`
     width: 24px;
     height: 24px;
 
-    background: url(${({$imageSource}) => $imageSource}) no-repeat center center ;
+    background: url(${({ $imageSource }) => $imageSource}) no-repeat center center ;
     background-size: cover;
 `
 
@@ -82,7 +82,7 @@ export const NavBarLinksAndButtonsContainer = styled.div<TootleNavBarProps>`
         position: absolute;
         top: 80px;
         right: 0;
-        display: ${ props => props.open ?  'flex' : 'none' };
+        display: ${props => props.open ? 'flex' : 'none'};
     }
 `
 
@@ -99,11 +99,11 @@ export const SocialMediaContainer = styled.div`
     }
 `
 
-export const SocialMediaButton= styled.a<ButtonStyleProps>`
+export const SocialMediaButton = styled.a<ButtonStyleProps>`
     width: 28px;
     height: 28px;
 
-    background: url(${({$imageSource}) => $imageSource}) no-repeat center center ;
+    background: url(${({ $imageSource }) => $imageSource}) no-repeat center center ;
     background-size: cover;
 `
 
@@ -122,10 +122,10 @@ export const MenuButton = styled.button<TootleNavBarButtonsProps>`
     width: 36px;
     height: 36px;
 
-    background: url(${({$imageSource}) => $imageSource}) no-repeat center center ;
+    background: url(${({ $imageSource }) => $imageSource}) no-repeat center center ;
     background-size: cover;
 
-    display: ${ props => props.open ?  'none' : 'flex' };
+    display: ${props => props.open ? 'none' : 'flex'};
 
     @media screen and (min-width: 701px) {
         display: none;
@@ -136,9 +136,9 @@ export const CrossButton = styled.button<TootleNavBarButtonsProps>`
     width: 20px;
     height: 20px;
 
-    background: url(${({$imageSource}) => $imageSource}) no-repeat center center ;
+    background: url(${({ $imageSource }) => $imageSource}) no-repeat center center ;
     background-size: cover;
-    display: ${ props => props.open ?  'flex' : 'none' };
+    display: ${props => props.open ? 'flex' : 'none'};
 
     @media screen and (min-width: 701px) {
         display: none;

@@ -18,6 +18,8 @@ import reactImg from './images/react.svg'
 import spainFlagImg from './images/spain-flag.svg'
 import tsImg from './images/ts.svg'
 import usaFlagImg from './images/usa-flag.svg'
+import phoneImg from './images/phone.svg'
+import letterImg from './images/letter.svg'
 
 
 export {
@@ -41,4 +43,6 @@ export {
     spainFlagImg,
     tsImg,
     usaFlagImg,
+    phoneImg,
+    letterImg,
 }

@@ -1,45 +1,45 @@
-import { ReactNode } from "react"
+import { ReactNode } from 'react'
 import {
-    Container, 
+    Container,
     ContentContainer,
     Title,
     TitleContainer,
     Text,
     TextContainter,
     ComponentContainer
-} from "./styles"
+} from './styles'
 
-interface SectionProps{
+interface SectionProps {
     title: string
     content: string[]
     component?: ReactNode
 }
+
 export function Section({
     title,
     content,
     component
-}: SectionProps){
+}: SectionProps) {
 
-    const ContentComponents = content.map((text,index) => (
+    const ContentComponents = content.map((text, index) => (
         <TextContainter>
             <Text key={index}>
                 {text}
             </Text>
         </TextContainter>
     ))
-    
-    return (
-    <Container>
-        <TitleContainer>
-            <Title>{title}</Title>
-        </TitleContainer>
-        <ContentContainer>
-            {!!ContentComponents && ContentComponents}
-        </ContentContainer>
 
-        <ComponentContainer>
-            {!!component && component}
-        </ComponentContainer>
-    </Container>
+    return (
+        <Container>
+            <TitleContainer>
+                <Title>{title}</Title>
+            </TitleContainer>
+            <ContentContainer>
+                {!!ContentComponents && ContentComponents}
+            </ContentContainer>
+            <ComponentContainer>
+                {!!component && component}
+            </ComponentContainer>
+        </Container>
     )
 }
