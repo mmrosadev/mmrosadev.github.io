@@ -7,11 +7,9 @@ import {
   ListItem,
   UnorderedList,
   SocialMediaContainer,
-  WrapperIconLabel,
-  WrapperIcon,
-  WrapperLabel,
+  WrapperContact,
 } from './styles'
-import { NavBarLink, SocialMediaButton } from '@/components'
+import { NavBarLink, CustomAnchor } from '@/components'
 import { githubImg, letterImg, linkedinImg, phoneImg } from '@/assets'
 
 export function Footer() {
@@ -22,23 +20,23 @@ export function Footer() {
     <FooterContainer>
       <FooterLinksContainer>
         <UnorderedList>
-          <ListItem><NavBarLink to='/' >{t('home')}</NavBarLink></ListItem>
+          <ListItem><NavBarLink to='/'>{t('home')}</NavBarLink></ListItem>
           <ListItem><NavBarLink to='/portfolio'>{t('portfolio')}</NavBarLink></ListItem>
-          <ListItem><NavBarLink to='/resume' >{t('resume')}</NavBarLink></ListItem>
-          <ListItem><NavBarLink to='/classes' >{t('classes')}</NavBarLink></ListItem>
+          <ListItem><NavBarLink to='/resume'>{t('resume')}</NavBarLink></ListItem>
+          <ListItem><NavBarLink to='/classes'>{t('classes')}</NavBarLink></ListItem>
           <ListItem><NavBarLink to='/budgets'>{t('budgets')}</NavBarLink></ListItem>
           <ListItem><NavBarLink to='/contact'>{t('contact')}</NavBarLink></ListItem>
         </UnorderedList>
-        {/* <UnorderedList>
+        <UnorderedList>
           <SocialMediaContainer>
-            <SocialMediaButton
-              $imageSource={githubImg}
+            <CustomAnchor
+              imageSource={githubImg}
               href='https://github.com/mmrosatab'
               target='_blank'
               size='small'
             />
-            <SocialMediaButton
-              $imageSource={linkedinImg}
+            <CustomAnchor
+              imageSource={linkedinImg}
               href='https://www.linkedin.com/in/mmrosatab/'
               target='_blank'
               size='small'
@@ -46,15 +44,25 @@ export function Footer() {
           </SocialMediaContainer>
         </UnorderedList>
         <UnorderedList>
-          <WrapperIconLabel>
-            <WrapperIcon src={phoneImg} />
-            <WrapperLabel>+55 21 97560-6376</WrapperLabel>
-          </WrapperIconLabel>
-          <WrapperIconLabel>
-            <WrapperIcon src={letterImg} />
-            <WrapperLabel> mmrosatab@gmail.com</WrapperLabel>
-          </WrapperIconLabel>
-        </UnorderedList> */}
+          <WrapperContact>
+            <CustomAnchor
+              imageSource={phoneImg}
+              href='https://wa.me/5521975606376'
+              target='_blank'
+              size='small'
+              label="+55 21 97560-6376"
+            />
+          </WrapperContact>
+          <WrapperContact>
+            <CustomAnchor
+              imageSource={letterImg}
+              href='mailto: mmrosatab@gmail.com'
+              target='_blank'
+              size='small'
+              label="mmrosatab@gmail.com"
+            />
+          </WrapperContact>
+        </UnorderedList>
       </FooterLinksContainer>
       <CopyrightContainer>
         <CopyrightLabel>

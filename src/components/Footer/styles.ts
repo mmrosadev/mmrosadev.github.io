@@ -2,22 +2,29 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     position: relative;
     bottom: 0;
     background-color: #1C0B2B;
     color: #fff;
+
+    display: flex;
+    justify-content: flex-end;
+    
+    @media screen and (max-width: 700px) {
+        min-height: 450px;
+        justify-content: center;
+    }
 `
 
 export const FooterLinksContainer = styled.div`
-    padding: 20px;
-    width: 500px;
+    padding-top: 30px;
     display: flex;
+    width: 50%;
+    height: max-content;
 
     @media screen and (min-width: 701px) {
-        justify-content: space-between;
-        position: absolute;
-        right: 100px;
+        justify-content: space-evenly;
     }
 
     @media screen and (min-width: 200px) and (max-width: 700px) {
@@ -37,6 +44,7 @@ export const CopyrightContainer = styled.div`
 
     @media screen and (min-width: 200px) and (max-width: 700px) {
         justify-content: center;
+        height: 10%;
     }
 `
 
@@ -46,7 +54,6 @@ export const CopyrightLabel = styled.span`
     @media screen and (min-width: 701px){
        margin-left: 100px;
     }
-
 `
 
 export const UnorderedList = styled.ul`
@@ -72,29 +79,18 @@ export const SocialMediaContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 40px;
-    height: 60px;
+    height: 62px;
     padding: 4px 0px;
 
     @media screen and (max-width: 700px) {
-        flex-direction: column;
-        align-items: center;
-        height: 70px;
-        margin-bottom: 10px;
+        flex-direction: row;
+        width: 60px;
+        height: 40px;
     }
 `
 
-export const WrapperIconLabel = styled.div`
+export const WrapperContact = styled.div`
     display: flex;
     align-items: center;
     padding: 4px 10px;
-
-`
-
-export const WrapperIcon = styled.img`
-    width: 22px;
-    height: 22px;
-`
-
-export const WrapperLabel = styled.div`
-    padding-left: 8px;
 `

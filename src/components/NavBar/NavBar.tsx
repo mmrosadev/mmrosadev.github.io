@@ -25,7 +25,7 @@ import {
     CrossButton,
 } from './styles'
 import i18n from '@/i18n/i18'
-import { NavBarLink, SocialMediaButton } from '@/components'
+import { NavBarLink, CustomAnchor } from '@/components'
 
 type LanguageOptions = 'en' | 'es' | 'pt'
 const LANG_KEY = 'LANG_REACT_APP'
@@ -100,13 +100,13 @@ export function NavBar(): JSX.Element {
 
                 <SocialMediaAndFlagsContainer>
                     <SocialMediaContainer>
-                        <SocialMediaButton
-                            $imageSource={githubImg}
+                        <CustomAnchor
+                            imageSource={githubImg}
                             href='https://github.com/mmrosatab'
                             target='_blank'
                         />
-                        <SocialMediaButton
-                            $imageSource={linkedinImg}
+                        <CustomAnchor
+                            imageSource={linkedinImg}
                             href='https://www.linkedin.com/in/mmrosatab/'
                             target='_blank'
                         />
