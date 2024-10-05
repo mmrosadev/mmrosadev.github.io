@@ -74,13 +74,13 @@ export function NavBar(): JSX.Element {
                 <Logo src={infinityImg} alt="infinity image" />
             </LogoContainer>
             <MenuButton
-                $imageSource={menuImg}
+                imageSource={menuImg}
                 onClick={toggleMenu}
                 id='menu-button'
                 open={openMenu}
             />
             <CrossButton
-                $imageSource={crossImg}
+                imageSource={crossImg}
                 onClick={toggleMenu}
                 id='cross-button'
                 open={openMenu}
@@ -114,17 +114,17 @@ export function NavBar(): JSX.Element {
                     <FlagsContainer>
                         <FlagButton
                             type="button"
-                            $imageSource={brasilFlagImg}
+                            imageSource={brasilFlagImg}
                             onClick={() => handleChangeLanguage('pt')}
                         />
                         <FlagButton
                             type="button"
-                            $imageSource={spainFlagImg}
+                            imageSource={spainFlagImg}
                             onClick={() => handleChangeLanguage('es')}
                         />
                         <FlagButton
                             type="button"
-                            $imageSource={usaFlagImg}
+                            imageSource={usaFlagImg}
                             onClick={() => handleChangeLanguage('en')}
                         />
                     </FlagsContainer>

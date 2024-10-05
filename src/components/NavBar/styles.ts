@@ -5,11 +5,11 @@ interface TootleNavBarProps {
 }
 
 interface TootleNavBarButtonsProps extends TootleNavBarProps {
-    $imageSource: string
+    imageSource: string
 }
 
 interface ButtonStyleProps {
-    $imageSource: string
+    imageSource: string
 }
 
 export const NavBarContainer = styled.nav`
@@ -51,7 +51,7 @@ export const FlagButton = styled.button<ButtonStyleProps>`
     width: 24px;
     height: 24px;
 
-    background: url(${({ $imageSource }) => $imageSource}) no-repeat center center ;
+    background: url(${({ imageSource }) => imageSource}) no-repeat center center ;
     background-size: cover;
 `
 
@@ -101,7 +101,7 @@ export const SocialMediaButton = styled.a<ButtonStyleProps>`
     width: 28px;
     height: 28px;
 
-    background: url(${({ $imageSource }) => $imageSource}) no-repeat center center ;
+    background: url(${({ imageSource }) => imageSource}) no-repeat center center ;
     background-size: cover;
 `
 
@@ -120,7 +120,7 @@ export const MenuButton = styled.button<TootleNavBarButtonsProps>`
     width: 36px;
     height: 36px;
 
-    background: url(${({ $imageSource }) => $imageSource}) no-repeat center center ;
+    background: url(${({ imageSource }) => imageSource}) no-repeat center center ;
     background-size: cover;
 
     display: ${props => props.open ? 'none' : 'flex'};
@@ -134,7 +134,7 @@ export const CrossButton = styled.button<TootleNavBarButtonsProps>`
     width: 20px;
     height: 20px;
 
-    background: url(${({ $imageSource }) => $imageSource}) no-repeat center center ;
+    background: url(${({ imageSource }) => imageSource}) no-repeat center center ;
     background-size: cover;
     display: ${props => props.open ? 'flex' : 'none'};
 
