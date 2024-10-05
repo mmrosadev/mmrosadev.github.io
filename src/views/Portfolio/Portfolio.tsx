@@ -1,3 +1,5 @@
-export function Portfolio(){
-    return <>Portfolio</>
+import { Container } from './style'
+
+export function Portfolio() {
+    return <Container>Portfolio</Container>
 }

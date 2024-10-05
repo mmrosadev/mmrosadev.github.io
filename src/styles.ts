@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+    font-family: 'Acme', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
   #root{

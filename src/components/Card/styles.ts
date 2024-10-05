@@ -1,39 +1,46 @@
 import styled from 'styled-components'
+import Card from '@mui/material/Card'
+import CardActions from '@mui/material/CardActions'
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
 
-export const Container = styled.div`
-    background-color: #413B6B;
+export const Container = styled(Card)`
+    max-width: 280px;
+    border: 8px solid #413B6B;
     border-radius: 7px;
+    cursor: pointer;
 `
 
-export const Preview = styled.img`
-    border-radius: 7px;
-    width: 320px;
-    height: 200px;
-    padding: 10px 0px;
+export const MediaContainer = styled(CardMedia)`
+    height: 190;
 `
 
-export const TitleContainer = styled.div``
-
-export const SubTitleContainer = styled.div``
-
-export const Title = styled.span`
-    font-size: 32px;
-    color: #fff;
-`
-
-export const SubTitle = styled.span`
-    font-size: 16px;
-    color: #fff;
-`
-
-export const ButtonContainer = styled.div`
+export const ActionsContainer = styled(CardActions)`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    background-color: #413B6B;
+    height: 100px !important;
+    padding: 8px 0px 0px 0px !important;
 `
 
-export const Button = styled.button`
-    background-color: #301C41;
-    color: #fff;
-    display: flex;
-    justify-content: space-evenly;
+export const Content = styled(CardContent)`
+    background-color: #413B6B;
+    padding-left: 0;
+    padding-right: 0;
 `
+
+
+export const Title = styled.div`
+    font-size: 20px;
+    margin: 14px 0px;
+    color: #fff;
+`
+
+export const Subtitle = styled.div`
+    font-size: 12px;
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+    margin-bottom: 4px;
+    color: #fff;
+`
+

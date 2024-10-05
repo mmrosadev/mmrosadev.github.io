@@ -24,7 +24,6 @@ import {
   Title,
   SubTitle,
   TitleContainer,
-  CardsContainer,
 } from './styles'
 
 export function Home() {
@@ -44,7 +43,7 @@ export function Home() {
               [
                 t('workWith'),
                 t('fromAndLive'),
-                t('hobbies'),
+                t('hobbies')
               ]
             }
           />
@@ -54,7 +53,7 @@ export function Home() {
             content={
               [
                 t('position1'),
-                t('position2'),
+                t('position2')
               ]
             }
           />
@@ -64,8 +63,7 @@ export function Home() {
             content={
               [
                 t('formation'),
-                t('interests'),
-                t('iLike'),
+                t('interests')
               ]
             }
           />
@@ -91,22 +89,21 @@ export function Home() {
         </SectionContainer>
       </Main>
 
-
-      {/* <MyProjectsContainer>
-          <TitleContainer>
-            <Title>Meus Projetos</Title>
-          </TitleContainer>
-          <TitleContainer>
-            <SubTitle>Alguns projetos que desenvolvi</SubTitle>
-          </TitleContainer>
-          <CardsContainer>
-            <Card
-              title="teste"
-              subtitle="teste"
-              previewSrc={raquelMarriegeImg}
-            />
-          </CardsContainer>
-        </MyProjectsContainer> */}
+      <MyProjectsContainer>
+        <TitleContainer>
+          <Title>{t('myProjectsTitle')}</Title>
+        </TitleContainer>
+        <TitleContainer>
+          <SubTitle>{t('myProjectsSubtitle')}</SubTitle>
+        </TitleContainer>
+        <Card
+          imageSource={raquelMarriegeImg}
+          title={t('titleCardMarriage')}
+          subtitle={t('subtitleCardMarriage')}
+          urlCode='https://github.com/mmrosatab/Raquels-Marriage'
+          urlApplication='https://raquels-marriage.vercel.app/'
+        />
+      </MyProjectsContainer>
     </Container>
   )
 } 

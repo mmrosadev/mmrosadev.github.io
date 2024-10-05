@@ -4,6 +4,7 @@ export const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 `
 
 export const Main = styled.main`
@@ -25,7 +26,6 @@ export const TecnologyRectContainer = styled.div`
 `
 
 export const MyProjectsContainer = styled.div`
-    height: 800px;
     display: flex;
     flex-direction: column;
     margin: 20px;

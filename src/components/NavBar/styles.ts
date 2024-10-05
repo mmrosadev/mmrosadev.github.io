@@ -92,9 +92,7 @@ export const SocialMediaContainer = styled.div`
     width: 70px;
 
     @media screen and (max-width: 700px) {
-        flex-direction: column;
         align-items: center;
-        height: 70px;
         margin-bottom: 10px;
     }
 `

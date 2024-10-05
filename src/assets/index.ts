@@ -20,6 +20,7 @@ import tsImg from './images/ts.svg'
 import usaFlagImg from './images/usa-flag.svg'
 import phoneImg from './images/phone.svg'
 import letterImg from './images/letter.svg'
+import pageImg from './images/page.svg'
 
 
 export {
@@ -45,4 +46,5 @@ export {
     usaFlagImg,
     phoneImg,
     letterImg,
+    pageImg,
 }
