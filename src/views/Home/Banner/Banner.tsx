@@ -1,5 +1,5 @@
-import { useTranslation } from "react-i18next"
-import { 
+import { useTranslation } from 'react-i18next'
+import {
     Container,
     ContentContainer,
     Photo,
@@ -8,20 +8,20 @@ import {
     TextContainer,
     Title,
     TitleContainer
-} from "./styles"
+} from './styles'
 
-interface BannerProps{
+interface BannerProps {
     urlImage: string
 }
 
-export function Banner({ urlImage }:BannerProps){
+export function Banner({ urlImage }: BannerProps) {
     const { t } = useTranslation()
-    
+
     return (
         <Container>
             <ContentContainer>
                 <PhotoContainer>
-                    <Photo src={urlImage}/>
+                    <Photo src={urlImage} />
                 </PhotoContainer>
                 <TextContainer>
                     <>

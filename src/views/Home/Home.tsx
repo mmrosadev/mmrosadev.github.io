@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { TecnologyRect, Section, Card } from '@/components'
+
 import {
   profileImg,
   jsImg,
@@ -29,6 +30,14 @@ import {
 export function Home() {
 
   const { t } = useTranslation()
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 10,
+    slidesToScroll: 10,
+  }
 
   return (
     <Container>
@@ -96,13 +105,70 @@ export function Home() {
         <TitleContainer>
           <SubTitle>{t('myProjectsSubtitle')}</SubTitle>
         </TitleContainer>
-        <Card
-          imageSource={raquelMarriegeImg}
-          title={t('titleCardMarriage')}
-          subtitle={t('subtitleCardMarriage')}
-          urlCode='https://github.com/mmrosatab/Raquels-Marriage'
-          urlApplication='https://raquels-marriage.vercel.app/'
-        />
+        {/* <Card
+            imageSource={raquelMarriegeImg}
+            title={t('titleCardMarriage')}
+            subtitle={t('subtitleCardMarriage')}
+            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
+            urlApplication='https://raquels-marriage.vercel.app/'
+          />
+
+          <Card
+            imageSource={raquelMarriegeImg}
+            title={t('titleCardMarriage')}
+            subtitle={t('subtitleCardMarriage')}
+            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
+            urlApplication='https://raquels-marriage.vercel.app/'
+          />
+
+          <Card
+            imageSource={raquelMarriegeImg}
+            title={t('titleCardMarriage')}
+            subtitle={t('subtitleCardMarriage')}
+            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
+            urlApplication='https://raquels-marriage.vercel.app/'
+          />
+
+          <Card
+            imageSource={raquelMarriegeImg}
+            title={t('titleCardMarriage')}
+            subtitle={t('subtitleCardMarriage')}
+            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
+            urlApplication='https://raquels-marriage.vercel.app/'
+          />
+
+          <Card
+            imageSource={raquelMarriegeImg}
+            title={t('titleCardMarriage')}
+            subtitle={t('subtitleCardMarriage')}
+            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
+            urlApplication='https://raquels-marriage.vercel.app/'
+          />
+
+          <Card
+            imageSource={raquelMarriegeImg}
+            title={t('titleCardMarriage')}
+            subtitle={t('subtitleCardMarriage')}
+            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
+            urlApplication='https://raquels-marriage.vercel.app/'
+          />
+
+          <Card
+            imageSource={raquelMarriegeImg}
+            title={t('titleCardMarriage')}
+            subtitle={t('subtitleCardMarriage')}
+            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
+            urlApplication='https://raquels-marriage.vercel.app/'
+          />
+
+
+          <Card
+            imageSource={raquelMarriegeImg}
+            title={t('titleCardMarriage')}
+            subtitle={t('subtitleCardMarriage')}
+            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
+            urlApplication='https://raquels-marriage.vercel.app/'
+          /> */}
       </MyProjectsContainer>
     </Container>
   )
