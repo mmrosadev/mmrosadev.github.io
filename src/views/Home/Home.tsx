@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { TecnologyRect, Section, Card } from '@/components'
+import { TecnologyRect, Section, Card, CardProps } from '@/components'
 
 import {
   profileImg,
@@ -26,18 +26,84 @@ import {
   SubTitle,
   TitleContainer,
 } from './styles'
+import { Swiper } from './Swiper'
 
 export function Home() {
 
   const { t } = useTranslation()
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 10,
-    slidesToScroll: 10,
-  }
+    const slides = [
+      {
+        imageSource: raquelMarriegeImg,
+        title: 'Card 1',
+        subtitle: t('subtitleCardMarriage'),
+        urlCode: 'https://github.com/mmrosatab/Raquels-Marriage',
+        urlApplication: 'https://raquels-marriage.vercel.app/',
+      },
+      {
+        imageSource: profileImg,
+        title: t('titleCardMarriage'),
+        subtitle: t('subtitleCardMarriage'),
+        urlCode: 'https://github.com/mmrosatab/Raquels-Marriage',
+        urlApplication: 'https://nozbooks-app.vercel.app/',
+      },
+      {
+        imageSource: javaImg,
+        title: t('titleCardMarriage'),
+        subtitle: t('subtitleCardMarriage'),
+        urlCode: 'https://github.com/mmrosatab/Raquels-Marriage',
+        urlApplication: 'https://challenge-chart-plot.vercel.app/',
+      },
+      {
+        imageSource: cssImg,
+        title: t('titleCardMarriage'),
+        subtitle: t('subtitleCardMarriage'),
+        urlCode: 'https://github.com/mmrosatab/Raquels-Marriage',
+        urlApplication: 'https://challenge-posts-and-upvotes.vercel.app/',
+      },
+      {
+        imageSource: htmlImg,
+        title: t('titleCardMarriage'),
+        subtitle: t('subtitleCardMarriage'),
+        urlCode: 'https://github.com/mmrosatab/Raquels-Marriage',
+        urlApplication: 'to-explore-viacep-api.vercel.app/',
+      },
+      {
+        imageSource: pythonImg,
+        title: t('titleCardMarriage'),
+        subtitle: t('subtitleCardMarriage'),
+        urlCode: 'https://github.com/mmrosatab/Raquels-Marriage',
+        urlApplication: 'https://challenge-chart-plot.vercel.app/',
+      },
+      {
+        imageSource: nodeImg,
+        title: t('titleCardMarriage'),
+        subtitle: t('subtitleCardMarriage'),
+        urlCode: 'https://github.com/mmrosatab/Raquels-Marriage',
+        urlApplication: 'https://raquels-marriage.vercel.app/',
+      },
+      {
+        imageSource: reactNativeImg,
+        title: t('titleCardMarriage'),
+        subtitle: t('subtitleCardMarriage'),
+        urlCode: 'https://github.com/mmrosatab/Raquels-Marriage',
+        urlApplication: 'https://raquels-marriage.vercel.app/',
+      },
+      {
+        imageSource: reactImg,
+        title: t('titleCardMarriage'),
+        subtitle: t('subtitleCardMarriage'),
+        urlCode: 'https://github.com/mmrosatab/Raquels-Marriage',
+        urlApplication: 'https://raquels-marriage.vercel.app/',
+      },
+      {
+        imageSource: tsImg,
+        title: 'Card 10',
+        subtitle: t('subtitleCardMarriage'),
+        urlCode: 'https://github.com/mmrosatab/Raquels-Marriage',
+        urlApplication: 'https://raquels-marriage.vercel.app/',
+      },
+    ]
 
   return (
     <Container>
@@ -102,73 +168,14 @@ export function Home() {
         <TitleContainer>
           <Title>{t('myProjectsTitle')}</Title>
         </TitleContainer>
-        <TitleContainer>
-          <SubTitle>{t('myProjectsSubtitle')}</SubTitle>
-        </TitleContainer>
-        {/* <Card
-            imageSource={raquelMarriegeImg}
-            title={t('titleCardMarriage')}
-            subtitle={t('subtitleCardMarriage')}
-            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
-            urlApplication='https://raquels-marriage.vercel.app/'
+        <div style={{display: 'flex'}}>
+
+          <Swiper
+            slideWidth={280}
+            slidesPerView={4}
+            slides={slides}
           />
-
-          <Card
-            imageSource={raquelMarriegeImg}
-            title={t('titleCardMarriage')}
-            subtitle={t('subtitleCardMarriage')}
-            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
-            urlApplication='https://raquels-marriage.vercel.app/'
-          />
-
-          <Card
-            imageSource={raquelMarriegeImg}
-            title={t('titleCardMarriage')}
-            subtitle={t('subtitleCardMarriage')}
-            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
-            urlApplication='https://raquels-marriage.vercel.app/'
-          />
-
-          <Card
-            imageSource={raquelMarriegeImg}
-            title={t('titleCardMarriage')}
-            subtitle={t('subtitleCardMarriage')}
-            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
-            urlApplication='https://raquels-marriage.vercel.app/'
-          />
-
-          <Card
-            imageSource={raquelMarriegeImg}
-            title={t('titleCardMarriage')}
-            subtitle={t('subtitleCardMarriage')}
-            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
-            urlApplication='https://raquels-marriage.vercel.app/'
-          />
-
-          <Card
-            imageSource={raquelMarriegeImg}
-            title={t('titleCardMarriage')}
-            subtitle={t('subtitleCardMarriage')}
-            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
-            urlApplication='https://raquels-marriage.vercel.app/'
-          />
-
-          <Card
-            imageSource={raquelMarriegeImg}
-            title={t('titleCardMarriage')}
-            subtitle={t('subtitleCardMarriage')}
-            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
-            urlApplication='https://raquels-marriage.vercel.app/'
-          />
-
-
-          <Card
-            imageSource={raquelMarriegeImg}
-            title={t('titleCardMarriage')}
-            subtitle={t('subtitleCardMarriage')}
-            urlCode='https://github.com/mmrosatab/Raquels-Marriage'
-            urlApplication='https://raquels-marriage.vercel.app/'
-          /> */}
+        </div>
       </MyProjectsContainer>
     </Container>
   )

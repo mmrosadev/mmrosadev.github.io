@@ -10,7 +10,7 @@ import {
 } from './styles'
 import { CardButton } from './CardButton'
 
-interface CardProps {
+export interface CardProps {
     title: string
     subtitle: string
     imageSource: string

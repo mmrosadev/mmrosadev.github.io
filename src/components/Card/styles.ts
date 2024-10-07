@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 
 export const Container = styled(Card)`
-    max-width: 280px;
+    width: 280px;
     border: 8px solid #413B6B;
     border-radius: 7px;
 `
