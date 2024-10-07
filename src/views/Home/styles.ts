@@ -39,8 +39,3 @@ export const Title = styled.span`
     color: #301C41;
     font-size: 32px;
 `
-
-export const SubTitle = styled.span`
-    color: #301C41;
-    font-size: 16px;
-`

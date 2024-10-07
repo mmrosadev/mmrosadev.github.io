@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { TecnologyRect, Section, Card, CardProps } from '@/components'
+import { TecnologyRect, Section } from '@/components'
 
 import {
   profileImg,
@@ -23,7 +23,6 @@ import {
   Container,
   MyProjectsContainer,
   Title,
-  SubTitle,
   TitleContainer,
 } from './styles'
 import { Swiper } from './Swiper'
