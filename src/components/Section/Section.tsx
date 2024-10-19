@@ -22,7 +22,7 @@ export function Section({
 }: SectionProps) {
 
     const ContentComponents = content.map((text, index) => (
-        <TextContainter>
+        <TextContainter key={index}>
             <Text key={index}>
                 {text}
             </Text>

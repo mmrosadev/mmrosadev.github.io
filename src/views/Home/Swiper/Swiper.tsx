@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { SwiperButton, SwiperContainer, SwiperWrapper } from './styles'
-import { Card, CardProps  } from '@/components'
+import { Card, CardProps } from '@/components'
 
-interface CardsSwiperProps{
+interface CardsSwiperProps {
     slides: CardProps[]
     slidesPerView: number
     slideWidth: number
@@ -12,32 +12,25 @@ export function Swiper({
     slides,
     slidesPerView,
     slideWidth,
-}: CardsSwiperProps){
+}: CardsSwiperProps) {
 
     const [currentSlide, setCurrentSlide] = useState(0)
 
     const nextSlide = () => {
-       const maxSlides = slides.length - slidesPerView
-       console.log({
-            maxSlides,
-            slidesPerView
-        }, 
-       )
+        const maxSlides = slides.length - slidesPerView
 
-       console.log(slides.length)
-       console.log(currentSlide)
-       if (currentSlide < maxSlides) {
-           setCurrentSlide((prev) => prev + 1)
-       }
+        if (currentSlide < maxSlides) {
+            setCurrentSlide((prev) => prev + 1)
+        }
     }
-  
+
     const prevSlide = () => {
         if (currentSlide > 0) {
             setCurrentSlide((prev) => prev - 1)
         }
     }
 
-    return(
+    return (
         <SwiperContainer>
             <SwiperButton className="left" onClick={prevSlide}>
                 &lt;
@@ -45,16 +38,15 @@ export function Swiper({
 
             <SwiperWrapper translateX={-currentSlide * slideWidth}>
                 {slides.map((slide, index) => (
-                <div style={{padding: '0px 1px'}}>
-
-                <Card
-                    key={index}
-                    imageSource={slide.imageSource}
-                    title={slide.title}
-                    subtitle={slide.subtitle}
-                    urlCode={slide.urlCode}
-                    urlApplication={slide.urlApplication}
-                    />
+                    <div key={index} style={{ padding: '0px 1px' }}>
+                        <Card
+                            key={index}
+                            imageSource={slide.imageSource}
+                            title={slide.title}
+                            subtitle={slide.subtitle}
+                            urlCode={slide.urlCode}
+                            urlApplication={slide.urlApplication}
+                        />
                     </div>
                 ))}
             </SwiperWrapper>
