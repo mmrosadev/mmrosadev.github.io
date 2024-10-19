@@ -74,12 +74,14 @@ export function NavBar(): JSX.Element {
                 <Logo src={infinityImg} alt="infinity image" />
             </LogoContainer>
             <MenuButton
+                type="button"
                 imageSource={menuImg}
                 onClick={toggleMenu}
                 id='menu-button'
                 open={openMenu}
             />
             <CrossButton
+                type="button"
                 imageSource={crossImg}
                 onClick={toggleMenu}
                 id='cross-button'
