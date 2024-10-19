@@ -25,5 +25,10 @@ export default {
     titleCardMarriage: "Raquel's Marriage",
     subtitleCardMarriage: 'Website developed to promote a wedding.',
     myProjectsTitle: 'Meus projetos',
-    myProjectsSubtitle: 'Some projects I have developed',
+    myProjectsSubtitle: 'Some projects I have developed.',
+    appnozbookDescription: 'React application for book catalog.',
+    appChartPlotDescription: 'React application for plotting graphs using json data.',
+    appPostsUpvotes: 'React application for creating posts and upvotes.',
+    apiPhonebookBackend: 'NodeJs API for registering phone contacts.',
+    appViaCep: 'React application to search address by zipcode.',
 }

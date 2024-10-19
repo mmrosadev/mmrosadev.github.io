@@ -21,6 +21,10 @@ import usaFlagImg from './images/usa-flag.svg'
 import phoneImg from './images/phone.svg'
 import letterImg from './images/letter.svg'
 import pageImg from './images/page.svg'
+import chartplotImg from './images/chartplot.svg'
+import nozbooksImg from './images/nozbooks.svg'
+import postsUpvotesImg from './images/posts-upvotes.svg'
+import viacepImg from './images/viacep.svg'
 
 
 export {
@@ -47,4 +51,8 @@ export {
     phoneImg,
     letterImg,
     pageImg,
+    chartplotImg,
+    nozbooksImg,
+    postsUpvotesImg,
+    viacepImg,
 }

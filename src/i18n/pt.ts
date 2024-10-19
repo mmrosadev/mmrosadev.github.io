@@ -26,4 +26,9 @@ export default {
     subtitleCardMarriage: 'Site desenvolvido para divulgação de um casamento.',
     myProjectsTitle: 'Meus projetos',
     myProjectsSubtitle: 'Alguns projetos que desenvolvi',
+    appnozbookDescription: 'Aplicação React de catálogo de livros.',
+    appChartPlotDescription: 'Aplicação React para plot de gráficos via dados em formato json.',
+    appPostsUpvotes: 'Aplicação React para criar posts e upvotes.',
+    apiPhonebookBackend: 'Api NodeJs para registro de contatos telefônicos',
+    appViaCep: 'Aplicação React para pesquisar endereço por CEP.',
 }

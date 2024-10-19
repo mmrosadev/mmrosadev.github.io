@@ -41,5 +41,6 @@ export const Subtitle = styled.div`
     font-family: system-ui, Arial, Helvetica, sans-serif;
     margin-bottom: 4px;
     color: #fff;
+    height: 32px;
 `
 

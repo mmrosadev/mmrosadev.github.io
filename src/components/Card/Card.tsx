@@ -31,7 +31,7 @@ export function Card({
     return (
         <Container>
             <MediaContainer
-                sx={{ height: 190 }}
+                sx={{ height: 190, width: '100%' }}
                 image={imageSource}
                 title={`${title}_image`}
             />
