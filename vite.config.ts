@@ -7,6 +7,10 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 export default defineConfig({
+  base: '/mmrosadev/', // Certifique-se de incluir a barra no final
+  build: {
+    outDir: 'dist',
+  },
   plugins: [react()],
   resolve: {
     alias: {
