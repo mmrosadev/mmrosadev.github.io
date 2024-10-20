@@ -1,15 +1,17 @@
+import { useTranslation } from 'react-i18next'
 import { useProjects } from '@/hooks'
-import { Container, ProjectsContainer, Title, TitleContainer } from './style'
 import { Card } from '@/components'
+import { Container, ProjectsContainer, Title, TitleContainer } from './style'
 
 export function Portfolio() {
 
+    const { t } = useTranslation()
     const projects = useProjects()
 
     return (
         <Container>
             <TitleContainer>
-                <Title>Meus Projetos</Title>
+                <Title>{t('myProjectsTitle')}</Title>
             </TitleContainer>
             <ProjectsContainer>
                 {

@@ -24,7 +24,7 @@ export default {
     viewApplication: 'View application',
     titleCardMarriage: "Raquel's Marriage",
     subtitleCardMarriage: 'Website developed to promote a wedding.',
-    myProjectsTitle: 'Meus projetos',
+    myProjectsTitle: 'My projects',
     myProjectsSubtitle: 'Some projects I have developed.',
     appnozbookDescription: 'React application for book catalog.',
     appChartPlotDescription: 'React application for plotting graphs using json data.',

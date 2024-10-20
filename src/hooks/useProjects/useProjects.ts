@@ -6,7 +6,7 @@ import {
     chartplotImg,
     postsUpvotesImg,
     viacepImg,
-    nodeImg
+    phonebookImg
 } from '@/assets'
 
 export function useProjects() {
@@ -47,10 +47,10 @@ export function useProjects() {
             title: 'Address search by zipcode',
             subtitle: t('appViaCep'),
             urlCode: 'https://github.com/mmrosatab/to-explore-viacep-api',
-            urlApplication: 'to-explore-viacep-api.vercel.app/',
+            urlApplication: 'https://to-explore-viacep-api.vercel.app/',
         },
         {
-            imageSource: nodeImg,
+            imageSource: phonebookImg,
             title: 'Phonebook api',
             subtitle: t('apiPhonebookBackend'),
             urlCode: 'https://github.com/mmrosatab/phonebook-backend',

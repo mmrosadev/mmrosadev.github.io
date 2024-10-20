@@ -96,7 +96,6 @@ export function Home() {
           <Title>{t('myProjectsTitle')}</Title>
         </TitleContainer>
         <div style={{display: 'flex'}}>
-
           <Swiper
             slideWidth={280}
             slidesPerView={4}
