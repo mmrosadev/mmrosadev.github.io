@@ -12,12 +12,7 @@ import {
   cssImg,
   htmlImg,
   nodeImg,
-  cImg,
-  raquelMarriegeImg,
-  chartplotImg,
-  nozbooksImg,
-  postsUpvotesImg,
-  viacepImg,
+  cImg
 } from '@/assets'
 import { Banner } from './Banner'
 import {
@@ -30,55 +25,12 @@ import {
   TitleContainer,
 } from './styles'
 import { Swiper } from './Swiper'
+import { useProjects } from '@/hooks'
 
 export function Home() {
 
   const { t } = useTranslation()
-
-    const slides = [
-      {
-        imageSource: raquelMarriegeImg,
-        title: t('titleCardMarriage'),
-        subtitle: t('subtitleCardMarriage'),
-        urlCode: 'https://github.com/mmrosatab/Raquels-Marriage',
-        urlApplication: 'https://raquels-marriage.vercel.app/',
-      },
-      {
-        imageSource: nozbooksImg,
-        title: 'NozBooks',
-        subtitle: t('appnozbookDescription'),
-        urlCode: 'https://github.com/mmrosatab/nozbooks-app',
-        urlApplication: 'https://nozbooks-app.vercel.app/',
-      },
-      {
-        imageSource: chartplotImg,
-        title: 'Chartplot challenge',
-        subtitle: t('appChartPlotDescription'),
-        urlCode: 'https://github.com/mmrosatab/challenge-chart-plot',
-        urlApplication: 'https://challenge-chart-plot.vercel.app/',
-      },
-      {
-        imageSource: postsUpvotesImg,
-        title: 'Post and upvotes challenge',
-        subtitle: t('appPostsUpvotes'),
-        urlCode: 'https://github.com/mmrosatab/challenge-posts-and-upvotes',
-        urlApplication: 'https://challenge-posts-and-upvotes.vercel.app/',
-      },
-      {
-        imageSource: viacepImg,
-        title: 'Address search by zipcode',
-        subtitle: t('appViaCep'),
-        urlCode: 'https://github.com/mmrosatab/to-explore-viacep-api',
-        urlApplication: 'to-explore-viacep-api.vercel.app/',
-      },
-      {
-        imageSource: nodeImg,
-        title: 'Phonebook api',
-        subtitle: t('apiPhonebookBackend'),
-        urlCode: 'https://github.com/mmrosatab/phonebook-backend',
-        urlApplication: 'https://challenge-chart-plot.vercel.app/',
-      },
-    ]
+  const slides = useProjects()
 
   return (
     <Container>

@@ -31,7 +31,13 @@ export function Card({
     return (
         <Container>
             <MediaContainer
-                sx={{ height: 190, width: '100%' }}
+                sx={{
+                    height: 190,
+                    width: '100%',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                }}
                 image={imageSource}
                 title={`${title}_image`}
             />
