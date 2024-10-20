@@ -31,4 +31,5 @@ export default {
     appPostsUpvotes: 'Aplicação React para criar posts e upvotes.',
     apiPhonebookBackend: 'Api NodeJs para registro de contatos telefônicos',
     appViaCep: 'Aplicação React para pesquisar endereço por CEP.',
+    notFound: 'Ops! Página não encontrada!',
 }

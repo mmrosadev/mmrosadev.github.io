@@ -31,4 +31,5 @@ export default {
     appPostsUpvotes: 'React application for creating posts and upvotes.',
     apiPhonebookBackend: 'NodeJs API for registering phone contacts.',
     appViaCep: 'React application to search address by zipcode.',
+    notFound: 'Oops! Page not found!',
 }

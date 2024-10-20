@@ -31,4 +31,5 @@ export default {
     appPostsUpvotes: 'La aplicación React crea publicaciones y votos positivos.',
     apiPhonebookBackend: 'API de NodeJs para grabar contactos telefónicos.',
     appViaCep: 'Aplicación React para buscar direcciones por código postal.',
+    notFound: '¡Ups! ¡Página no encontrada!',
 }
