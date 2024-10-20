@@ -25,6 +25,8 @@ import chartplotImg from './chartplot.svg'
 import nozbooksImg from './nozbooks.svg'
 import postsUpvotesImg from './posts-upvotes.svg'
 import viacepImg from './viacep.svg'
+import phonebookImg from './phonebook.svg'
+import notFoundImg from './not-found.svg'
 
 export {
     brasilFlagImg,
@@ -54,4 +56,6 @@ export {
     nozbooksImg,
     postsUpvotesImg,
     viacepImg,
+    phonebookImg,
+    notFoundImg
 }
