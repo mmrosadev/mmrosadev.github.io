@@ -1,7 +1,7 @@
 import { Anchor, Icon, Label } from './styles'
 
 interface AnchorProps {
-    imageSource: string
+    $imageSource: string
     size?: 'small' | 'big'
     href: string
     target: string
@@ -10,7 +10,7 @@ interface AnchorProps {
 
 export function CustomAnchor({
     size = 'big',
-    imageSource,
+    $imageSource,
     href,
     target,
     label
@@ -22,7 +22,7 @@ export function CustomAnchor({
         >
             <Icon
                 size={size}
-                src={imageSource}
+                src={$imageSource}
             />
             {label && (
                 <Label>{label}</Label>

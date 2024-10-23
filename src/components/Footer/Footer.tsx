@@ -30,13 +30,13 @@ export function Footer() {
         <UnorderedList>
           <SocialMediaContainer>
             <CustomAnchor
-              imageSource={githubImg}
+              $imageSource={githubImg}
               href='https://github.com/mmrosatab'
               target='_blank'
               size='small'
             />
             <CustomAnchor
-              imageSource={linkedinImg}
+              $imageSource={linkedinImg}
               href='https://www.linkedin.com/in/mmrosatab/'
               target='_blank'
               size='small'
@@ -46,7 +46,7 @@ export function Footer() {
         <UnorderedList>
           <WrapperContact>
             <CustomAnchor
-              imageSource={phoneImg}
+              $imageSource={phoneImg}
               href='https://wa.me/5521975606376'
               target='_blank'
               size='small'
@@ -55,7 +55,7 @@ export function Footer() {
           </WrapperContact>
           <WrapperContact>
             <CustomAnchor
-              imageSource={letterImg}
+              $imageSource={letterImg}
               href='mailto: mmrosatab@gmail.com'
               target='_blank'
               size='small'

@@ -36,7 +36,7 @@ export function NavBar(): JSX.Element {
     const [openMenu, setOpenMenu] = useState(false)
 
     const handleChangeLanguage = (language: LanguageOptions) => {
-        i18n.changeLanguage(language)
+        setLanguage(language)
         setLanguageOnStorage(language)
     }
 
@@ -75,14 +75,14 @@ export function NavBar(): JSX.Element {
             </LogoContainer>
             <MenuButton
                 type="button"
-                imageSource={menuImg}
+                $imageSource={menuImg}
                 onClick={toggleMenu}
                 id='menu-button'
                 open={openMenu}
             />
             <CrossButton
                 type="button"
-                imageSource={crossImg}
+                $imageSource={crossImg}
                 onClick={toggleMenu}
                 id='cross-button'
                 open={openMenu}
@@ -103,12 +103,12 @@ export function NavBar(): JSX.Element {
                 <SocialMediaAndFlagsContainer>
                     <SocialMediaContainer>
                         <CustomAnchor
-                            imageSource={githubImg}
+                            $imageSource={githubImg}
                             href='https://github.com/mmrosatab'
                             target='_blank'
                         />
                         <CustomAnchor
-                            imageSource={linkedinImg}
+                            $imageSource={linkedinImg}
                             href='https://www.linkedin.com/in/mmrosatab/'
                             target='_blank'
                         />
@@ -116,17 +116,17 @@ export function NavBar(): JSX.Element {
                     <FlagsContainer>
                         <FlagButton
                             type="button"
-                            imageSource={brasilFlagImg}
+                            $imageSource={brasilFlagImg}
                             onClick={() => handleChangeLanguage('pt')}
                         />
                         <FlagButton
                             type="button"
-                            imageSource={spainFlagImg}
+                            $imageSource={spainFlagImg}
                             onClick={() => handleChangeLanguage('es')}
                         />
                         <FlagButton
                             type="button"
-                            imageSource={usaFlagImg}
+                            $imageSource={usaFlagImg}
                             onClick={() => handleChangeLanguage('en')}
                         />
                     </FlagsContainer>
