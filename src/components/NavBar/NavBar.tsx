@@ -15,7 +15,6 @@ import {
     UnorderedList,
     ListItem,
     FlagsContainer,
-    FlagButton,
     LogoContainer,
     Logo,
     NavBarLinksAndButtonsContainer,
@@ -23,9 +22,11 @@ import {
     SocialMediaContainer,
     MenuButton,
     CrossButton,
+    Icon
 } from './styles'
 import i18n from '@/i18n/i18'
 import { NavBarLink, CustomAnchor } from '@/components'
+import { CustomButton } from '../CustomButton'
 
 type LanguageOptions = 'en' | 'es' | 'pt'
 const LANG_KEY = 'LANG_REACT_APP'
@@ -50,7 +51,7 @@ export function NavBar(): JSX.Element {
         }
     }
 
-    const loadStorageInformation = () => {
+    const loadStorageLanguage = () => {
         if (window.localStorage) {
             const language = window.localStorage.getItem(LANG_KEY) as LanguageOptions
 
@@ -65,7 +66,7 @@ export function NavBar(): JSX.Element {
     }
 
     useEffect(() => {
-        loadStorageInformation()
+        loadStorageLanguage()
     }, [])
 
     return (
@@ -75,18 +76,19 @@ export function NavBar(): JSX.Element {
             </LogoContainer>
             <MenuButton
                 type="button"
-                $imageSource={menuImg}
                 onClick={toggleMenu}
-                id='menu-button'
                 open={openMenu}
-            />
+            >
+                <Icon src={menuImg} />
+            </MenuButton>
             <CrossButton
                 type="button"
-                $imageSource={crossImg}
                 onClick={toggleMenu}
-                id='cross-button'
                 open={openMenu}
-            />
+            >
+                <Icon src={crossImg} />
+            </CrossButton>
+
             <NavBarLinksAndButtonsContainer
                 id='navbar-links-buttons'
                 open={openMenu}
@@ -114,21 +116,24 @@ export function NavBar(): JSX.Element {
                         />
                     </SocialMediaContainer>
                     <FlagsContainer>
-                        <FlagButton
-                            type="button"
-                            $imageSource={brasilFlagImg}
+                        <CustomButton
+                            size='middle'
                             onClick={() => handleChangeLanguage('pt')}
-                        />
-                        <FlagButton
-                            type="button"
-                            $imageSource={spainFlagImg}
+                        >
+                            <Icon src={brasilFlagImg} />
+                        </CustomButton>
+                        <CustomButton
+                            size='middle'
                             onClick={() => handleChangeLanguage('es')}
-                        />
-                        <FlagButton
-                            type="button"
-                            $imageSource={usaFlagImg}
+                        >
+                            <Icon src={spainFlagImg} />
+                        </CustomButton>
+                        <CustomButton
+                            size='middle'
                             onClick={() => handleChangeLanguage('en')}
-                        />
+                        >
+                            <Icon src={usaFlagImg} />
+                        </CustomButton>
                     </FlagsContainer>
                 </SocialMediaAndFlagsContainer>
             </NavBarLinksAndButtonsContainer>

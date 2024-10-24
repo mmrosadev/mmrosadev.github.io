@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { useProjects } from '@/hooks'
 import { Card } from '@/components'
-import { Container, ProjectsContainer, Title, TitleContainer } from './style'
+import { Container, ProjectsContainer, Title, TitleContainer } from './styles'
 
 export function Portfolio() {
 
@@ -16,7 +16,7 @@ export function Portfolio() {
             <ProjectsContainer>
                 {
                     projects.map((item, key) => (
-                        <Card 
+                        <Card
                             imageSource={item.imageSource}
                             subtitle={item.subtitle}
                             title={item.title}
