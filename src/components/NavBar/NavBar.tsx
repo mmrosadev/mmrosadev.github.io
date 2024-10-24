@@ -105,15 +105,18 @@ export function NavBar(): JSX.Element {
                 <SocialMediaAndFlagsContainer>
                     <SocialMediaContainer>
                         <CustomAnchor
-                            $imageSource={githubImg}
                             href='https://github.com/mmrosatab'
                             target='_blank'
-                        />
+                        >
+                            <Icon src={githubImg} size='big' />
+                        </CustomAnchor>
+
                         <CustomAnchor
-                            $imageSource={linkedinImg}
                             href='https://www.linkedin.com/in/mmrosatab/'
                             target='_blank'
-                        />
+                        >
+                            <Icon src={linkedinImg} size='big' />
+                        </CustomAnchor>
                     </SocialMediaContainer>
                     <FlagsContainer>
                         <CustomButton

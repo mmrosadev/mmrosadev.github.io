@@ -4,6 +4,10 @@ interface TootleNavBarProps {
     open: boolean
 }
 
+interface IconProps {
+    size?: 'small' | 'big'
+}
+
 export const NavBarContainer = styled.nav`
     background-color: #1c0b2b;
     width: 100%;
@@ -35,9 +39,21 @@ export const Logo = styled.img`
     height: 50px;
 `
 
-export const Icon = styled.img`
-    width: 100%;
-    height: 100%;
+export const Icon = styled.img<IconProps>`
+    ${({ size }) => size === 'small' && `
+        width: 20px;
+        height: 20px;
+    `}
+
+    ${({ size }) => size === 'big' && `
+        width: 28px;
+        height: 28px;
+    `}
+
+    ${({ size }) => size === undefined && `
+        width: 100%;
+        height: 100%;
+    `}
 `
 
 export const LogoContainer = styled.div`

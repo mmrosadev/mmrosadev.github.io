@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+interface IconProps {
+    size?: 'small' | 'big'
+}
+
 export const FooterContainer = styled.footer`
     width: 100%;
     min-height: 300px;
@@ -56,9 +60,21 @@ export const CopyrightLabel = styled.span`
     }
 `
 
-export const Icon = styled.img`
-    width: 100%;
-    height: 100%;
+export const Icon = styled.img<IconProps>`
+    ${({ size }) => size === 'small' && `
+        width: 22px;
+        height: 22px;
+    `}
+
+    ${({ size }) => size === 'big' && `
+        width: 28px;
+        height: 28px;
+    `}
+
+    ${({ size }) => size === undefined && `
+        width: 100%;
+        height: 100%;
+    `}
 `
 
 export const UnorderedList = styled.ul`

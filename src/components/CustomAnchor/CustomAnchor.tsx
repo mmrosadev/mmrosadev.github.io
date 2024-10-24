@@ -1,16 +1,14 @@
-import { Anchor, Icon, Label } from './styles'
+import { Anchor, Label } from './styles'
 
 interface AnchorProps {
-    $imageSource: string
-    size?: 'small' | 'big'
+    children?: React.ReactNode
     href: string
     target: string
     label?: string
 }
 
 export function CustomAnchor({
-    size = 'big',
-    $imageSource,
+    children,
     href,
     target,
     label
@@ -20,10 +18,8 @@ export function CustomAnchor({
             href={href}
             target={target}
         >
-            <Icon
-                size={size}
-                src={$imageSource}
-            />
+            {children && children}
+
             {label && (
                 <Label>{label}</Label>
             )}

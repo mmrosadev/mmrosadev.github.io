@@ -8,6 +8,7 @@ import {
   UnorderedList,
   SocialMediaContainer,
   WrapperContact,
+  Icon,
 } from './styles'
 import { NavBarLink, CustomAnchor } from '@/components'
 import { githubImg, letterImg, linkedinImg, phoneImg } from '@/assets'
@@ -30,37 +31,44 @@ export function Footer() {
         <UnorderedList>
           <SocialMediaContainer>
             <CustomAnchor
-              $imageSource={githubImg}
               href='https://github.com/mmrosatab'
               target='_blank'
-              size='small'
-            />
+
+            >
+              <Icon src={githubImg} size='small' />
+            </CustomAnchor>
+
             <CustomAnchor
-              $imageSource={linkedinImg}
               href='https://www.linkedin.com/in/mmrosatab/'
               target='_blank'
-              size='small'
-            />
+            >
+              <Icon src={linkedinImg} size='small' />
+            </CustomAnchor>
           </SocialMediaContainer>
         </UnorderedList>
         <UnorderedList>
           <WrapperContact>
+
             <CustomAnchor
-              $imageSource={phoneImg}
               href='https://wa.me/5521975606376'
               target='_blank'
-              size='small'
               label="+55 21 97560-6376"
-            />
+            >
+              <Icon src={phoneImg} size='small' />
+            </CustomAnchor>
+
           </WrapperContact>
           <WrapperContact>
+
             <CustomAnchor
-              $imageSource={letterImg}
               href='mailto: mmrosatab@gmail.com'
               target='_blank'
-              size='small'
+
               label="mmrosatab@gmail.com"
-            />
+            >
+              <Icon src={letterImg} size='small' />
+            </CustomAnchor>
+
           </WrapperContact>
         </UnorderedList>
       </FooterLinksContainer>
