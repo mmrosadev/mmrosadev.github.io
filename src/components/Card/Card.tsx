@@ -11,6 +11,7 @@ import {
 import { CardButton } from './CardButton'
 
 export interface CardProps {
+    id?: number
     title: string
     subtitle: string
     imageSource: string

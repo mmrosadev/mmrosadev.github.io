@@ -1,47 +1,39 @@
 import styled from 'styled-components'
 
 interface SwiperWrapperProps {
-  translateX: number
+  slidesPerView: number
+  slideWidth: number
 }
 
-// interface SwiperWrapperProps {
-//   translateX: number
-// }
 
 export const SwiperContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: ${4*280+8*4}px;
-  overflow: hidden;
-  position: relative;
 `
 
 export const SwiperWrapper = styled.div<SwiperWrapperProps>`
   display: flex;
-  transition: transform 0.3s ease-in-out;
-  transform: ${({ translateX }) => `translateX(${translateX}px)`};
+  width: ${({ slidesPerView, slideWidth }) => slidesPerView * slideWidth}px;
+  overflow: hidden;
 `
 
 export const SwiperButton = styled.button`
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
+  padding: 8px;
+  border-radius: 99999px;
+  background-color: #413B6B;
 
-  &:hover {
-    color: #000;
-  }
+  width: 8px;
+  height: 8px;
 
-  &.left {
-    left: 1px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 
-  &.right {
-    right: 1px;
-  }
+export const SwiperButtonLabel = styled.span`
+  font-size: 20px;
+`
+
+export const CardWrapper = styled.span`
+  padding: 0px 1px;
 `

@@ -15,14 +15,14 @@ export function Portfolio() {
             </TitleContainer>
             <ProjectsContainer>
                 {
-                    projects.map((item, key) => (
+                    projects.map((item) => (
                         <Card
                             imageSource={item.imageSource}
                             subtitle={item.subtitle}
                             title={item.title}
                             urlApplication={item.urlApplication}
                             urlCode={item.urlCode}
-                            key={key}
+                            key={item.id}
                         />
                     ))
                 }

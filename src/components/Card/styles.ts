@@ -11,7 +11,7 @@ export const Container = styled(Card)`
 `
 
 export const MediaContainer = styled(CardMedia)`
-    height: 190;
+    height: 190px;
 `
 
 export const ActionsContainer = styled(CardActions)`

@@ -28,14 +28,20 @@ export const TecnologyRectContainer = styled.div`
 export const MyProjectsContainer = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 20px;
 `
 
 export const TitleContainer = styled.div`
-    margin: 0px 0px 20px 20px;
+    margin-bottom: 20px;
 `
 
 export const Title = styled.span`
     color: #301C41;
     font-size: 32px;
+`
+
+export const SwiperWrapper = styled.div`
+    display: flex;
+    justify-content: center;
 `

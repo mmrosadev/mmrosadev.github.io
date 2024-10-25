@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { TecnologyRect, Section } from '@/components'
-
+import { useProjects } from '@/hooks'
 import {
   profileImg,
   jsImg,
@@ -23,9 +23,9 @@ import {
   MyProjectsContainer,
   Title,
   TitleContainer,
+  SwiperWrapper,
 } from './styles'
 import { Swiper } from './Swiper'
-import { useProjects } from '@/hooks'
 
 export function Home() {
 
@@ -95,13 +95,12 @@ export function Home() {
         <TitleContainer>
           <Title>{t('myProjectsTitle')}</Title>
         </TitleContainer>
-        <div style={{display: 'flex'}}>
+        <SwiperWrapper>
           <Swiper
-            slideWidth={280}
-            slidesPerView={4}
+            slideWidth={282}
             slides={slides}
           />
-        </div>
+        </SwiperWrapper>
       </MyProjectsContainer>
     </Container>
   )

@@ -15,6 +15,7 @@ export function useProjects() {
 
     return [
         {
+            id: 0,
             imageSource: raquelMarriegeImg,
             title: t('titleCardMarriage'),
             subtitle: t('subtitleCardMarriage'),
@@ -22,6 +23,7 @@ export function useProjects() {
             urlApplication: 'https://raquels-marriage.vercel.app/',
         },
         {
+            id: 1,
             imageSource: nozbooksImg,
             title: 'NozBooks',
             subtitle: t('appnozbookDescription'),
@@ -29,6 +31,7 @@ export function useProjects() {
             urlApplication: 'https://nozbooks-app.vercel.app/',
         },
         {
+            id: 2,
             imageSource: chartplotImg,
             title: 'Chartplot challenge',
             subtitle: t('appChartPlotDescription'),
@@ -36,6 +39,7 @@ export function useProjects() {
             urlApplication: 'https://challenge-chart-plot.vercel.app/',
         },
         {
+            id: 3,
             imageSource: postsUpvotesImg,
             title: 'Post and upvotes challenge',
             subtitle: t('appPostsUpvotes'),
@@ -43,6 +47,7 @@ export function useProjects() {
             urlApplication: 'https://challenge-posts-and-upvotes.vercel.app/',
         },
         {
+            id: 4,
             imageSource: viacepImg,
             title: 'Address search by zipcode',
             subtitle: t('appViaCep'),
@@ -50,6 +55,7 @@ export function useProjects() {
             urlApplication: 'https://to-explore-viacep-api.vercel.app/',
         },
         {
+            id: 5,
             imageSource: phonebookImg,
             title: 'Phonebook api',
             subtitle: t('apiPhonebookBackend'),

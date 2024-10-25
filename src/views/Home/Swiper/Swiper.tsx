@@ -1,20 +1,25 @@
-import { useState } from 'react'
-import { SwiperButton, SwiperContainer, SwiperWrapper } from './styles'
+import { useEffect, useState } from 'react'
 import { Card, CardProps } from '@/components'
+import {
+    CardWrapper,
+    SwiperButton,
+    SwiperButtonLabel,
+    SwiperContainer,
+    SwiperWrapper
+} from './styles'
 
 interface CardsSwiperProps {
     slides: CardProps[]
-    slidesPerView: number
     slideWidth: number
 }
 
 export function Swiper({
     slides,
-    slidesPerView,
     slideWidth,
 }: CardsSwiperProps) {
 
     const [currentSlide, setCurrentSlide] = useState(0)
+    const [slidesPerView, setSlidesPerView] = useState(3)
 
     const nextSlide = () => {
         const maxSlides = slides.length - slidesPerView
@@ -30,30 +35,46 @@ export function Swiper({
         }
     }
 
+    useEffect(() => {
+        function handleResize() {
+            if (window.innerWidth <= 700) { // Mobile
+                setSlidesPerView(1)
+            } else if (window.innerWidth > 700 && window.innerWidth <= 1024) {
+                setSlidesPerView(2)
+            } else if (window.innerWidth > 1024 && window.innerWidth <= 1440) {
+                setSlidesPerView(3)
+            } else if (window.innerWidth > 1440 && window.innerWidth <= 2048) {
+                setSlidesPerView(4)
+            } else {
+                setSlidesPerView(5)
+            }
+        }
+
+        handleResize()
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
+
     return (
         <SwiperContainer>
-            <SwiperButton className="left" onClick={prevSlide}>
-                &lt;
-            </SwiperButton>
-
-            <SwiperWrapper translateX={-currentSlide * slideWidth}>
-                {slides.map((slide, index) => (
-                    <div key={index} style={{ padding: '0px 1px' }}>
+            <SwiperButton onClick={prevSlide}><SwiperButtonLabel>&lt;</SwiperButtonLabel></SwiperButton>
+            <SwiperWrapper
+                slidesPerView={slidesPerView}
+                slideWidth={slideWidth}
+            >
+                {slides.slice(currentSlide, slidesPerView + currentSlide).map((slide) => (
+                    <CardWrapper key={slide.id}>
                         <Card
-                            key={index}
                             imageSource={slide.imageSource}
                             title={slide.title}
                             subtitle={slide.subtitle}
                             urlCode={slide.urlCode}
                             urlApplication={slide.urlApplication}
                         />
-                    </div>
+                    </CardWrapper>
                 ))}
             </SwiperWrapper>
-
-            <SwiperButton className="right" onClick={nextSlide}>
-                &gt;
-            </SwiperButton>
+            <SwiperButton onClick={nextSlide}><SwiperButtonLabel>&gt;</SwiperButtonLabel></SwiperButton>
         </SwiperContainer>
     )
 }
