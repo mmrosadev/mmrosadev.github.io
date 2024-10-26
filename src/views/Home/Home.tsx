@@ -75,8 +75,8 @@ export function Home() {
             content={[t('technologies2')]}
             component={
               <TecnologyRectContainer>
-                <TecnologyRect imageSrc={jsImg} label="Javascript" />
-                <TecnologyRect imageSrc={tsImg} label="Typescript" />
+                <TecnologyRect imageSrc={jsImg} label="JavaScript" />
+                <TecnologyRect imageSrc={tsImg} label="TypeScript" />
                 <TecnologyRect imageSrc={reactImg} label="React" />
                 <TecnologyRect imageSrc={reactNativeImg} label="React Native" />
                 <TecnologyRect imageSrc={nodeImg} label="NodeJS" />
