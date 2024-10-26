@@ -37,7 +37,7 @@ export function Swiper({
 
     useEffect(() => {
         function handleResize() {
-            if (window.innerWidth <= 700) { // Mobile
+            if (window.innerWidth <= 700) {
                 setSlidesPerView(1)
             } else if (window.innerWidth > 700 && window.innerWidth <= 1024) {
                 setSlidesPerView(2)

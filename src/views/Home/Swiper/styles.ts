@@ -18,20 +18,15 @@ export const SwiperWrapper = styled.div<SwiperWrapperProps>`
 `
 
 export const SwiperButton = styled.button`
-  padding: 8px;
-  border-radius: 99999px;
-  background-color: #413B6B;
-
-  width: 8px;
-  height: 8px;
-
+  padding: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
 `
 
 export const SwiperButtonLabel = styled.span`
-  font-size: 20px;
+  font-size: 40px;
+  color: #413B6B;
 `
 
 export const CardWrapper = styled.span`
