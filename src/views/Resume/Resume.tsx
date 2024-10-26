@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import pdfMake from 'pdfmake/build/pdfmake'
-import * as pdfFonts from 'pdfmake/build/vfs_fonts'
+import pdfFonts from 'pdfmake/build/vfs_fonts'
 import {
     Container,
     Header,
@@ -20,7 +20,7 @@ import {
 import { downloadImg } from '@/assets'
 import { Margins, Alignment } from 'pdfmake/interfaces'
 
-pdfMake.vfs = pdfFonts.pdfMake ? pdfFonts.pdfMake.vfs : pdfFonts.vfs
+pdfMake.vfs = pdfFonts.pdfMake.vfs
 
 export function Resume() {
 
