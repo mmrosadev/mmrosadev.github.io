@@ -8,7 +8,6 @@ import {
     Portfolio,
     Resume,
     Classes,
-    Budgets,
     Contact,
     NoMatch
 } from '@/views'
@@ -23,7 +22,6 @@ export function Routes() {
                 <Route path='/portfolio' element={<Portfolio />} />
                 <Route path='/resume' element={<Resume />} />
                 <Route path='/classes' element={<Classes />} />
-                <Route path='/budgets' element={<Budgets />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='*' element={<NoMatch />} />
             </DomRoutes>

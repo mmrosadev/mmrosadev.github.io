@@ -3,7 +3,6 @@ export default {
     home: 'Home',
     portfolio: 'Portfolio',
     contact: 'Contact',
-    budgets: 'Budgets',
     classes: 'Classes',
     introduce1: 'Hello,',
     introduce2: 'my name is Mayara Marques',

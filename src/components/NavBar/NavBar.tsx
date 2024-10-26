@@ -98,7 +98,6 @@ export function NavBar(): JSX.Element {
                     <ListItem><NavBarLink to='/portfolio'>{t('portfolio')}</NavBarLink></ListItem>
                     <ListItem><NavBarLink to='/resume'>{t('resume')}</NavBarLink></ListItem>
                     <ListItem><NavBarLink to='/classes'>{t('classes')}</NavBarLink></ListItem>
-                    <ListItem><NavBarLink to='/budgets'>{t('budgets')}</NavBarLink></ListItem>
                     <ListItem><NavBarLink to='/contact'>{t('contact')}</NavBarLink></ListItem>
                 </UnorderedList>
 

@@ -3,7 +3,6 @@ export default {
     home: 'Home',
     portfolio: 'Portfólio',
     contact: 'Contato',
-    budgets: 'Orçamentos',
     classes: 'Aulas',
     introduce1: 'Olá,',
     introduce2: 'me chamo Mayara Marques',
