@@ -154,11 +154,7 @@ export function Resume() {
                 ]
             },
             { text: t('availability'), style: 'section' },
-            {
-                ul: [
-                    { text: t('availabilityContent'), style: 'ulTitle' },
-                ]
-            },
+            { text: t('availabilityContent'), style: 'contentSection' },
         ],
 
         styles: {
@@ -327,11 +323,7 @@ export function Resume() {
 
                 <Section>
                     <TitleSection>{t('availability')}</TitleSection>
-                    <ContentSection>
-                        <UL>
-                            <LI>{t('availabilityContent')}</LI>
-                        </UL>
-                    </ContentSection>
+                    <ContentSection>{t('availabilityContent')}</ContentSection>
                 </Section>
             </ResumeContainer>
         </Container>
