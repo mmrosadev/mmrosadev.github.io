@@ -1,7 +1,7 @@
 import {
     Route,
     Routes as DomRoutes,
-    BrowserRouter
+    HashRouter,
 } from 'react-router-dom'
 import {
     Home,
@@ -15,7 +15,7 @@ import { Footer, NavBar } from '@/components'
 
 export function Routes() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <NavBar />
             <DomRoutes>
                 <Route path='/' element={<Home />} />
@@ -26,6 +26,6 @@ export function Routes() {
                 <Route path='*' element={<NoMatch />} />
             </DomRoutes>
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     )
 }
