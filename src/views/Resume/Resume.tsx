@@ -1,4 +1,8 @@
 import { useTranslation } from 'react-i18next'
+import pdfMake from 'pdfmake/build/pdfmake'
+import { pdfFonts } from '@/assets'
+pdfMake.vfs = pdfFonts
+
 import {
     Container,
     Header,
@@ -16,16 +20,191 @@ import {
     LI
 } from './styles'
 import { downloadImg } from '@/assets'
+import { Margins, Alignment } from 'pdfmake/interfaces'
 
 export function Resume() {
 
     const { t } = useTranslation()
 
+    const docDefinition = {
+        content: [
+            { text: 'Mayara Marques da Rosa', style: 'header' },
+            { text: '+55 21 97560-6376', style: 'subheader' },
+            { text: 'mmrosatab@hotmail.com', style: 'subheader' },
+            { text: 'github.com/mmrosatab', style: 'subheader' },
+            { text: 'linkedin.com/in/mmrosatab', style: 'lastSubheader' },
+            { text: t('professionalSummary'), style: 'section' },
+            { text: t('professionalSummaryContent'), style: 'contentSection' },
+            { text: t('education'), style: 'section' },
+            { text: t('educationContent'), style: 'contentSection' },
+            { text: t('professionalExperience'), style: 'section' },
+            {
+                ul: [
+                    {
+                        text: t('professionalExperience1Title'),
+                        style: 'ulTitle',
+                    },
+                    {
+                        ul: [
+                            { text: t('pe1Activity1'), style: 'ul' },
+                            { text: t('pe1Activity2'), style: 'ul' },
+                            { text: t('pe1Activity3'), style: 'ul' },
+                            { text: t('pe1Activity4'), style: 'ul' },
+                            { text: t('pe1Activity5'), style: 'ul' },
+                            { text: t('pe1Activity6'), style: 'ul' },
+                        ]
+                    }
+                ]
+            },
+            {
+                ul: [
+                    {
+                        text: t('professionalExperience2Title'),
+                        style: 'ulTitle',
+                    },
+                    {
+                        ul: [
+                            { text: t('pe2Activity1'), style: 'ul' },
+                            { text: t('pe2Activity2'), style: 'ul' },
+                        ]
+                    }
+                ]
+            },
+            {
+                ul: [
+                    {
+                        text: t('professionalExperience3Title'),
+                        style: 'ulTitle',
+                    },
+                    {
+                        ul: [
+                            { text: t('pe3Activity1'), style: 'ul' },
+                        ]
+                    }
+                ]
+            },
+            {
+                ul: [
+                    {
+                        text: t('professionalExperience4Title'),
+                        style: 'ulTitle',
+                    },
+                    {
+                        ul: [
+                            { text: t('pe4Activity1'), style: 'ul' },
+                            { text: t('pe4Activity2'), style: 'ul' },
+                            { text: t('pe4Activity3'), style: 'lastUl' },
+                        ]
+                    }
+                ]
+            },
+            { text: t('complementaryActivities'), style: 'section' },
+            {
+                ul: [
+                    {
+                        text: t('ca1Title'),
+                        style: 'ulTitle',
+                    },
+                    {
+                        ul: [
+                            { text: t('ca1Activity1'), style: 'ul' },
+                            { text: t('ca1Activity2'), style: 'ul' },
+                        ]
+                    }
+                ]
+            },
+            {
+                ul: [
+                    {
+                        text: t('ca2Title'),
+                        style: 'ulTitle',
+                    },
+                    {
+                        ul: [
+                            { text: t('ca2Activity1'), style: 'ul' },
+                            { text: t('ca2Activity2'), style: 'ul' },
+                            { text: t('ca2Activity3'), style: 'ul' },
+                        ]
+                    }
+                ]
+            },
+            {
+                ul: [
+                    {
+                        text: t('ca3Title'),
+                        style: 'ulTitle',
+                    },
+                    {
+                        ul: [
+                            { text: t('ca3Activity1'), style: 'ul' },
+                            { text: t('ca3Activity2'), style: 'ul' },
+                            { text: t('ca3Activity3'), style: 'lastUl' },
+                        ]
+                    }
+                ]
+            },
+            { text: t('complementaryCourses'), style: 'section' },
+            {
+
+                ul: [
+                    { text: t('cc1Title'), style: 'ulTitle' },
+                    { text: t('cc2Title'), style: 'ul' },
+                    { text: t('cc3Title'), style: 'ul' },
+                    { text: t('cc4Title'), style: 'lastUl' },
+                ]
+            },
+            { text: t('availability'), style: 'section' },
+            {
+                ul: [
+                    { text: t('availabilityContent'), style: 'ulTitle' },
+                ]
+            },
+        ],
+
+        styles: {
+            header: {
+                fontSize: 18,
+                bold: true,
+                alignment: 'center' as Alignment,
+                margin: [0, 0, 0, 2] as Margins,
+            },
+            subheader: {
+                fontSize: 11,
+                alignment: 'center' as Alignment,
+                margin: [0, 2, 0, 2] as Margins,
+            },
+            lastSubheader: {
+                fontSize: 11,
+                alignment: 'center' as Alignment,
+                margin: [0, 0, 0, 60] as Margins,
+            },
+            section: {
+                fontSize: 12,
+                bold: true,
+                alignment: 'left' as Alignment,
+                margin: [0, 0, 0, 0] as Margins,
+            },
+            contentSection: {
+                fontSize: 11,
+                alignment: 'justify' as Alignment,
+                margin: [0, 10, 0, 20] as Margins,
+            },
+            ul: { fontSize: 11 },
+            lastUl: { fontSize: 11, margin: [0, 0, 0, 10] as Margins },
+            ulTitle: { fontSize: 11, margin: [0, 10, 0, 0] as Margins }
+        },
+    }
+
+
+    const createPdf = () => {
+        pdfMake.createPdf(docDefinition).download('mmrosa.pdf')
+    }
+
     return (
         <Container>
             <Header>
                 <Title>{t('resume')}</Title>
-                <DownloadIconWrapper onClick={() => console.log('implementar')}>
+                <DownloadIconWrapper onClick={createPdf}>
                     <Icon src={downloadImg} alt='download' />
                 </DownloadIconWrapper>
             </Header>
