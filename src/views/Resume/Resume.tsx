@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next'
 import pdfMake from 'pdfmake/build/pdfmake'
-import pdfFonts from 'pdfmake/build/vfs_fonts'
+import { pdfFonts } from '@/assets'
+pdfMake.vfs = pdfFonts
+
 import {
     Container,
     Header,
@@ -19,8 +21,6 @@ import {
 } from './styles'
 import { downloadImg } from '@/assets'
 import { Margins, Alignment } from 'pdfmake/interfaces'
-
-pdfMake.vfs = pdfFonts.pdfMake.vfs
 
 export function Resume() {
 
@@ -166,16 +166,17 @@ export function Resume() {
                 fontSize: 18,
                 bold: true,
                 alignment: 'center' as Alignment,
-                margin: [0, 2, 0, 2] as Margins,
+                margin: [0, 0, 0, 2] as Margins,
             },
             subheader: {
                 fontSize: 11,
                 alignment: 'center' as Alignment,
+                margin: [0, 2, 0, 2] as Margins,
             },
             lastSubheader: {
                 fontSize: 11,
                 alignment: 'center' as Alignment,
-                margin: [0, 0, 0, 30] as Margins,
+                margin: [0, 0, 0, 60] as Margins,
             },
             section: {
                 fontSize: 12,
@@ -196,7 +197,7 @@ export function Resume() {
 
 
     const createPdf = () => {
-        pdfMake.createPdf(docDefinition).download('mmrosa.pdf', () => console.log('asdasdas'))
+        pdfMake.createPdf(docDefinition).download('mmrosa.pdf')
     }
 
     return (

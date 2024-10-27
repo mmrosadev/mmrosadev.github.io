@@ -65,7 +65,7 @@ export default {
     ca3Activity2: 'Configuração de computadores e equipamentos eletrônicos.',
     ca3Activity3: 'Suporte técnico aos palestrantes.',
     complementaryCourses: 'CURSOS COMPLEMENTARES',
-    cc1Title: 'Curso TypeScript parte 2: avançando na linguagem - Alura (2023)',
+    cc1Title: 'Curso TypeScript parte 2: avançando na linguagem - Alura (2023)',
     cc2Title: 'Curso TypeScript parte 1: evoluindo seu JavaScript - Alura (2023)',
     cc3Title: 'Curso JavaScript – IFRS (2019)',
     cc4Title: 'Curso Python Fundamentos para Análise de Dados – Data Science Academy (2018)',
