@@ -95,6 +95,7 @@ export function NavBar(): JSX.Element {
             >
                 <UnorderedList>
                     <ListItem><NavBarLink to='/'>{t('home')}</NavBarLink></ListItem>
+                    <ListItem><NavBarLink to='/about-me'>{t('aboutMe')}</NavBarLink></ListItem>
                     <ListItem><NavBarLink to='/portfolio'>{t('portfolio')}</NavBarLink></ListItem>
                     <ListItem><NavBarLink to='/resume'>{t('resume')}</NavBarLink></ListItem>
                     <ListItem><NavBarLink to='/classes'>{t('classes')}</NavBarLink></ListItem>

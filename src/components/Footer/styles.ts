@@ -8,7 +8,7 @@ export const FooterContainer = styled.footer`
     width: 100%;
     min-height: 300px;
     position: relative;
-    bottom: 0;
+    bottom: 0 !important;
     background-color: #1C0B2B;
     color: #fff;
 

@@ -28,6 +28,7 @@ import viacepImg from './viacep.svg'
 import phonebookImg from './phonebook.svg'
 import notFoundImg from './not-found.svg'
 import downloadImg from './download.svg'
+import photoImg from './photo.png'
 
 export {
     brasilFlagImg,
@@ -59,5 +60,6 @@ export {
     viacepImg,
     phonebookImg,
     notFoundImg,
-    downloadImg
+    downloadImg,
+    photoImg
 }

@@ -65,7 +65,7 @@ export const ResumeContainer = styled.div`
     width: 70%;
 
     border: 10px solid #301C41;
-    border-radius: 2px;
+    border-radius: 4px;
     @media screen and (max-width: 768px){
         width: 100%;
     }
