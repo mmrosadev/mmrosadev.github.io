@@ -31,19 +31,15 @@ export const TecnologyRectContainer = styled.div`
 export const PhotoContainer = styled.div`
     width: 260px;
     height: 260px;
-    border-radius: 50%; /* Mantém o formato circular */
-    padding: 10px; /* Define a “largura” da borda */
-    background: linear-gradient(to bottom, #413B6B, #5C65C0); /* Aplica o gradiente na “borda” */
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #413B6B, #5C65C0); 
     margin: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 `
 
 export const Photo = styled.img`
     width: 100%;
     height: 100%;
-    z-index: 5;
+    padding: 12px;
 `
 
 export const TitleContainer = styled.div`
@@ -54,6 +50,6 @@ export const TitleContainer = styled.div`
 export const Title = styled.span`
     color: #301C41;
     font-family: 'Roboto';
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
 `
