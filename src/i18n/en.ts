@@ -74,4 +74,11 @@ export default {
     availabilityContent: 'Full-time, remote work.',
     moreAboutMe: 'A bit more about me...',
     whoAmI: 'Who am I?',
+    classesText1: 'Are you thinking about taking your first steps in programming or pursuing a new direction for your career?',
+    classesText2: 'My programming classes are specially designed for beginners, with a focus on simple and practical exercises to make you feel confident and secure at each stage of learning.',
+    classesText3: 'Here we start from the basics, step-by-step. During the lessons, you will learn essential programming concepts and develop skills to solve problems and build projects.',
+    classesAspect1: 'Classes divided into dedicated time for both theory and practice.',
+    classesAspect2: 'Provision of supplementary materials and exercises.',
+    classesAspect3: 'Projects for hands-on experience.',
+    classesAspect4: 'Use of tools and best practices widely adopted in the software development industry.'
 }

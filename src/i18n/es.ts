@@ -74,4 +74,11 @@ export default {
     availabilityContent: 'Jornada completa, trabajo remoto.',
     moreAboutMe: 'Un poco más sobre mí...',
     whoAmI: '¿Quién soy?',
+    classesText1: '¿Estás pensando en dar tus primeros pasos en la programación o en seguir una nueva dirección para tu carrera?',
+    classesText2: 'Mis clases de programación están diseñadas especialmente para principiantes, con un enfoque en prácticas simples y reales para que te sientas seguro(a) y confiado(a) en cada etapa del aprendizaje.',
+    classesText3: 'Aquí empezamos desde lo básico, paso a paso. Durante las clases, aprenderás conceptos esenciales de programación y desarrollarás habilidades para resolver problemas y construir proyectos.',
+    classesAspect1: 'Clases divididas en tiempo exclusivo para teoría y práctica.',
+    classesAspect2: 'Disponibilidad de materiales y ejercicios de apoyo.',
+    classesAspect3: 'Proyectos para poner manos a la obra.',
+    classesAspect4: 'Uso de herramientas y buenas prácticas difundidas en el mercado de desarrollo de software.'
 }

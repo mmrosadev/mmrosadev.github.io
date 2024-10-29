@@ -74,4 +74,11 @@ export default {
     availabilityContent: 'Integral, home office.',
     moreAboutMe: 'Um pouco mais sobre mim...',
     whoAmI: 'Quem sou eu?',
+    classesText1: 'Está pensando em dar os primeiros passos na programação ou seguir uma nova direção para sua carreira?',
+    classesText2: 'Minhas aulas de programação são desenhadas especialmente para quem está começando, com foco em práticas simples e reais para que você se sinta seguro(a) e confiante em cada etapa do aprendizado.',
+    classesText3: 'Aqui começamos do básico, passo a passo. Durante as aulas, você irá aprender conceitos essenciais de programação e desenvolver habilidades para resolver problemas e construir projetos. ',
+    classesAspect1: 'Aulas divididas em tempo exclusivo para a teoria e para a prática.',
+    classesAspect2: 'Disponibilização de materiais e exercícios de apoio.',
+    classesAspect3: 'Projetos para colocar a mão na massa.',
+    classesAspect4: 'Utilização de ferramentas e boas práticas difundidas no mercado de desenvolvimento de software.',
 }

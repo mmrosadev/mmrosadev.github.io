@@ -29,6 +29,8 @@ import phonebookImg from './phonebook.svg'
 import notFoundImg from './not-found.svg'
 import downloadImg from './download.svg'
 import photoImg from './photo.png'
+import rocketImg from './rocket.svg'
+import cellphoneImg from './cellphone.svg'
 
 export {
     brasilFlagImg,
@@ -61,5 +63,7 @@ export {
     phonebookImg,
     notFoundImg,
     downloadImg,
-    photoImg
+    photoImg,
+    rocketImg,
+    cellphoneImg,
 }
