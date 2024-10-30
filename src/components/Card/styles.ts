@@ -8,6 +8,7 @@ export const Container = styled(Card)`
     width: 280px;
     border: 8px solid #413B6B;
     border-radius: 7px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4) !important;
 `
 
 export const MediaContainer = styled(CardMedia)`

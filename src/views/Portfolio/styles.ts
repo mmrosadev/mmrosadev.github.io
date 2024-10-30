@@ -12,11 +12,11 @@ export const Container = styled.div`
 export const TitleContainer = styled.div`
     display: flex;
     justify-content: center;
-    padding: 20px 0px;
+    padding: 20px 0px 40px 0px;
 `
 
 export const Title = styled.span`
-    color: #1c0b2b;
+    color: #301C41;
     font-size: 32px;
 `
 

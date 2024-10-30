@@ -77,7 +77,7 @@ export const ResumeContainer = styled.div`
     background-color: #fff;
     color: #000;
     margin-bottom: 40px;
-
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 `
 
 export const ResumeHeader = styled.div`

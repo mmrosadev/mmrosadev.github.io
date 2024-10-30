@@ -1,8 +1,14 @@
 import { useTranslation } from 'react-i18next'
 import { useProjects } from '@/hooks'
 import {
-  profileImg,
+  backendImg,
+  frontendImg,
+  githubImg,
+  mobileImg,
+  multPlatformImg,
+  profileImg
 } from '@/assets'
+
 import { Banner } from './Banner'
 import {
   Main,
@@ -11,8 +17,10 @@ import {
   Title,
   TitleContainer,
   SwiperWrapper,
+  Services,
 } from './styles'
 import { Swiper } from './Swiper'
+import { ServiceRect } from './ServiceRect'
 
 export function Home() {
 
@@ -25,6 +33,26 @@ export function Home() {
         urlImage={profileImg}
       />
       <Main>
+        <Services>
+          <ServiceRect
+            imageSrc={frontendImg}
+            title={t('frontendDevelopment')}
+            subtitle={t('frontendDevelopmentSubtitle')}
+          />
+
+          <ServiceRect
+            imageSrc={mobileImg}
+            title={t('mobileDevelopment')}
+            subtitle={t('mobileDevelopmentSubtitle')}
+          />
+
+          <ServiceRect
+            imageSrc={backendImg}
+            title={t('backendDevelopment')}
+            subtitle={t('backendDevelopmentSubtitle')}
+          />
+
+        </Services>
       </Main>
       <MyProjectsContainer>
         <TitleContainer>

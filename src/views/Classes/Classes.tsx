@@ -24,6 +24,7 @@ export function Classes() {
                 <Text>{t('classesText1')}</Text>
                 <Text>{t('classesText2')}</Text>
                 <Text>{t('classesText3')}</Text>
+                <Text>{t('languageSupport')}</Text>
             </TextContainer>
             <TextContainer>
                 <Item>

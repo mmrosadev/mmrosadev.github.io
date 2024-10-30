@@ -81,4 +81,11 @@ export default {
     classesAspect2: 'Disponibilização de materiais e exercícios de apoio.',
     classesAspect3: 'Projetos para colocar a mão na massa.',
     classesAspect4: 'Utilização de ferramentas e boas práticas difundidas no mercado de desenvolvimento de software.',
+    languageSupport: 'Suporte para as linguagens JavaScript, Python, Java e C.',
+    backendDevelopment: 'Desenvolvimento backend',
+    frontendDevelopment: 'Desenvolvimento frontend',
+    mobileDevelopment: 'Desenvolvimento mobile',
+    backendDevelopmentSubtitle: 'Criação de APIs buscando sempre solidez, escalabilidade e segurança.',
+    frontendDevelopmentSubtitle: 'Criação de websites com design responsivo e alta fidelidade visual para proporcionar uma ótima experiência para o usuário final.',
+    mobileDevelopmentSubtitle: 'Desenvolvimento de aplicativos para plataforma android, cobrindo o processo desde a concepção até a publicação na Play Store.',
 }

@@ -80,5 +80,12 @@ export default {
     classesAspect1: 'Clases divididas en tiempo exclusivo para teoría y práctica.',
     classesAspect2: 'Disponibilidad de materiales y ejercicios de apoyo.',
     classesAspect3: 'Proyectos para poner manos a la obra.',
-    classesAspect4: 'Uso de herramientas y buenas prácticas difundidas en el mercado de desarrollo de software.'
+    classesAspect4: 'Uso de herramientas y buenas prácticas difundidas en el mercado de desarrollo de software.',
+    languageSupport: 'Soporte para lenguajes JavaScript, Python, Java y C.',
+    backendDevelopment: 'Desarrollo backend',
+    frontendDevelopment: 'Desarrollo frontend',
+    mobileDevelopment: 'Desarrollo móvil',
+    backendDevelopmentSubtitle: 'Creación de APIs con enfoque en solidez, escalabilidad y seguridad.',
+    frontendDevelopmentSubtitle: 'Criação de websites com design responsivo e alta fidelidade visual para proporcionar uma ótima experiência para o usuário final.',
+    mobileDevelopmentSubtitle: 'Desarrollo de aplicaciones para la plataforma Android, cubriendo todo el proceso desde la concepción hasta la publicación en la Play Store.',
 }

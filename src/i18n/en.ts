@@ -80,5 +80,12 @@ export default {
     classesAspect1: 'Classes divided into dedicated time for both theory and practice.',
     classesAspect2: 'Provision of supplementary materials and exercises.',
     classesAspect3: 'Projects for hands-on experience.',
-    classesAspect4: 'Use of tools and best practices widely adopted in the software development industry.'
+    classesAspect4: 'Use of tools and best practices widely adopted in the software development industry.',
+    languageSupport: 'Support for JavaScript, Python, Java and C languages.',
+    backendDevelopment: 'Backend Development',
+    frontendDevelopment: 'Frontend Development',
+    mobileDevelopment: 'Mobile Development',
+    backendDevelopmentSubtitle: 'Creation of APIs with a focus on solidity, scalability, and security.',
+    frontendDevelopmentSubtitle: 'Creation of websites with responsive design and high visual fidelity to provide an excellent experience for the end user.',
+    mobileDevelopmentSubtitle: 'Development of mobile applications for the Android platform, covering the entire process from conception to publication on the Play Store.',
 }

@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import { TecnologyRect, Section } from '@/components'
 import {
     jsImg,
     tsImg,
@@ -13,6 +12,8 @@ import {
     cImg,
     photoImg
 } from '@/assets'
+import { Section } from './Section'
+import { TecnologyRect } from './TecnologyRect'
 import {
     Main,
     SectionContainer,
