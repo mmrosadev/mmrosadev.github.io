@@ -42,6 +42,7 @@ export const TitleContainer = styled.div`
 export const Title = styled.span`
     color: #301C41;
     font-size: 32px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 `
 
 export const SwiperWrapper = styled.div`
