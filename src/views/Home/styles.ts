@@ -9,9 +9,10 @@ export const Container = styled.div`
 
 export const Main = styled.main`
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    padding: 20px 0px;
+    padding: 20px 0px 40px 0px;
 `
 
 export const SectionContainer = styled.div`
@@ -30,12 +31,12 @@ export const MyProjectsContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px;
+    padding: 20px 20px 40px 20px;
     background-color: rgba(217, 217, 217, 0.3);
 `
 
 export const TitleContainer = styled.div`
-    margin-bottom: 40px;
+    margin: 40px 0px;
 `
 
 export const Title = styled.span`
@@ -62,6 +63,21 @@ export const Services = styled.div`
 
     @media screen and (min-width: 1440px){
         width: 80%;
+    }
+
+
+    @keyframes pull {
+        0%,100%{
+            transform: translateY(-40px);
+        }
+
+        10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
+            transform: translateY(1px); 
+        }
+    }
+
+    & > div:nth-child(-n+3){
+        animation: pull 5s infinite;
     }
 
 `

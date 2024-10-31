@@ -3,10 +3,8 @@ import { useProjects } from '@/hooks'
 import {
   backendImg,
   frontendImg,
-  githubImg,
   mobileImg,
-  multPlatformImg,
-  profileImg
+  meImg,
 } from '@/assets'
 
 import { Banner } from './Banner'
@@ -30,9 +28,12 @@ export function Home() {
   return (
     <Container>
       <Banner
-        urlImage={profileImg}
+        urlImage={meImg}
       />
       <Main>
+        <TitleContainer>
+          <Title>{t('services')}</Title>
+        </TitleContainer>
         <Services>
           <ServiceRect
             imageSrc={frontendImg}

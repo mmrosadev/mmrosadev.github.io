@@ -85,7 +85,8 @@ export default {
     backendDevelopment: 'Desenvolvimento backend',
     frontendDevelopment: 'Desenvolvimento frontend',
     mobileDevelopment: 'Desenvolvimento mobile',
-    backendDevelopmentSubtitle: 'Criação de APIs buscando sempre solidez, escalabilidade e segurança.',
+    backendDevelopmentSubtitle: 'Construção de APIs com foco em solidez, escalabilidade, padronização e segurança, oferecendo usabilidade intuitiva e prática para o consumo.',
     frontendDevelopmentSubtitle: 'Criação de websites com design responsivo e alta fidelidade visual para proporcionar uma ótima experiência para o usuário final.',
     mobileDevelopmentSubtitle: 'Desenvolvimento de aplicativos para plataforma android, cobrindo o processo desde a concepção até a publicação na Play Store.',
+    services: 'Serviços',
 }

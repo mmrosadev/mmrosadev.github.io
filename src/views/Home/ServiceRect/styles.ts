@@ -46,7 +46,7 @@ export const Title = styled.span`
 
 export const Subtitle = styled.span`
     text-align: justify;
-    font-size: 12px;
+    font-size: 14px;
     color: #301C41;
     font-family:  'Roboto';
 `

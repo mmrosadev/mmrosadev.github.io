@@ -34,6 +34,7 @@ import cellphoneImg from './cellphone.svg'
 import backendImg from './backend.svg'
 import frontendImg from './frontend.svg'
 import mobileImg from './mobile.svg'
+import meImg from './me.png'
 
 export {
     brasilFlagImg,
@@ -71,5 +72,6 @@ export {
     cellphoneImg,
     backendImg,
     frontendImg,
-    mobileImg
+    mobileImg,
+    meImg
 }
