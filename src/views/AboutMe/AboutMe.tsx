@@ -19,7 +19,6 @@ import {
     SectionContainer,
     TecnologyRectContainer,
     Container,
-    PhotoContainer,
     Photo,
     TitleContainer,
     Title,
@@ -32,9 +31,7 @@ export function AboutMe() {
     return (
         <Container>
             <Main>
-                <PhotoContainer>
-                    <Photo src={photoImg} />
-                </PhotoContainer>
+                <Photo src={photoImg} />
                 <TitleContainer>
                     <Title>{t('moreAboutMe')}</Title>
                 </TitleContainer>

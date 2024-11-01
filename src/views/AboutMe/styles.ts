@@ -28,17 +28,12 @@ export const TecnologyRectContainer = styled.div`
     grid-template-columns: repeat(5, 1fr);
 `
 
-export const PhotoContainer = styled.div`
+export const Photo = styled.img`
     width: 260px;
     height: 260px;
     border-radius: 50%;
     background: linear-gradient(to bottom, #413B6B, #5C65C0); 
     margin: 20px 0;
-`
-
-export const Photo = styled.img`
-    width: 100%;
-    height: 100%;
     padding: 12px;
 `
 
