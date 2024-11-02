@@ -2,88 +2,81 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     width: 100%;
-    height: 350px;
+    height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
-    padding-top: 20px;
-
     background: 
         linear-gradient(to bottom, rgba(65, 59, 107, 1) 0%, rgba(26, 188, 156, 0) 58%),
         linear-gradient(to top, rgba(94, 130, 230, 1) 100%, rgba(142, 68, 173, 0) 100%);
-
-    @media screen and (max-width: 320px) {
-        height: 250px;
-    }
-
-    @media screen and (min-width: 321px) and (max-width: 425px) {
-        height: 300px;
-    }
 `
 
 export const ContentContainer = styled.div`
     display: flex;
-    width: 100%;
+    flex-direction: column-reverse;
     height: 100%;
+    
+    @media (min-width: 1000px) {
+        flex-direction: row;
+    }
 `
 
 export const TextContainer = styled.div`
-    width: 38%;
-    height: 100%; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
     color: white;
-    padding-left: 4px;
+    font-family: 'Acme', sans-serif;
+    margin-bottom: 20px;
 
-    @media screen and (max-width: 700px) {
-        height: 100%;
-        width: auto;
+    @media (min-width: 1000px) {
+        text-align: left;
+        justify-content: center;
+        margin-bottom: 0;
     }
 `
 
 export const TitleContainer = styled.div`
-    height: 60px;
+    margin-bottom: 10px;
 `
-export const Title = styled.span`
-    font-size: 36px;
 
-    @media screen and (min-width: 391px) and (max-width: 490px) {
-        font-size: 32px;
+export const Title = styled.span`
+    font-size: 2.5rem;
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
     }
 
-    @media screen and (max-width: 390px) {
-        font-size: 28px;
+    @media (max-width: 425px) {
+        font-size: 1.8rem;
     }
 `
 
 export const SubTitle = styled.span`
-    font-size: 20px;
-
-    @media screen and (min-width: 391px) and (max-width: 540px) {
-        font-size: 16px;
+    font-size: 1.75rem;
+    
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
     }
 
-    @media screen and (max-width: 390px) {
-        font-size: 12px;
+    @media (max-width: 425px) {
+        font-size: 1.3rem;
     }
 `
 
 export const PhotoContainer = styled.div`
-    width: 50%;
-    height: 100%;
-
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
-    margin-left: 10px;
 `
 
 export const Photo = styled.img`
-    height: 100%;
-    width: auto;
+    width: 90%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: bottom;
 
-    @media screen and (max-width: 490px) {
-        height: 80%;
+    @media (max-width: 1000px) {
+        max-height: 70vh;
     }
 `

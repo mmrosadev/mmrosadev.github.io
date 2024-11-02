@@ -21,20 +21,14 @@ export function Banner({ urlImage }: BannerProps) {
         <Container>
             <ContentContainer>
                 <PhotoContainer>
-                    <Photo src={urlImage} />
+                    <Photo src={urlImage} alt="Foto de apresentação" />
                 </PhotoContainer>
                 <TextContainer>
-                    <>
-                        <TitleContainer>
-                            <Title>{t('introduce1')}</Title>
-                        </TitleContainer>
-                        <>
-                            <SubTitle>{t('introduce2')}</SubTitle>
-                        </>
-                        <>
-                            <SubTitle>{t('introduce3')}</SubTitle>
-                        </>
-                    </>
+                    <TitleContainer>
+                        <Title>{t('introduce1')}</Title>
+                    </TitleContainer>
+                    <SubTitle>{t('introduce2')}</SubTitle>
+                    <SubTitle>{t('introduce3')}</SubTitle>
                 </TextContainer>
             </ContentContainer>
         </Container>

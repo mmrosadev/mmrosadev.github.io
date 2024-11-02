@@ -13,6 +13,9 @@ export const Main = styled.main`
     align-items: center;
     width: 100%;
     padding: 20px 0px 40px 0px;
+
+    background: 
+    linear-gradient(to top, rgba(94, 130, 230, 0.1) 100%, rgba(142, 68, 173, 0) 100%);
 `
 
 export const SectionContainer = styled.div`
