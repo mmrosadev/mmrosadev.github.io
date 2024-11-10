@@ -11,7 +11,7 @@ import {
 
 interface SectionProps {
     title: string
-    content: string[]
+    content?: string[]
     component?: ReactNode
 }
 
@@ -21,7 +21,7 @@ export function Section({
     component
 }: SectionProps) {
 
-    const ContentComponents = content.map((text, index) => (
+    const ContentComponents = content?.map((text, index) => (
         <TextContainter key={index}>
             <Text key={index}>
                 {text}
@@ -34,9 +34,14 @@ export function Section({
             <TitleContainer>
                 <Title>{title}</Title>
             </TitleContainer>
-            <ContentContainer>
-                {!!ContentComponents && ContentComponents}
-            </ContentContainer>
+            {
+                !!content && (
+                    <ContentContainer>
+                        {ContentComponents}
+                    </ContentContainer>
+                )
+            }
+
             <ComponentContainer>
                 {!!component && component}
             </ComponentContainer>

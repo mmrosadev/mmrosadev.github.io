@@ -9,34 +9,85 @@ interface IconProps {
 }
 
 export const NavBarContainer = styled.nav`
-    background-color: #1c0b2b;
     width: 100%;
     height: 80px;
-    padding: 10px 14px 10px 10px;
+    padding: 8px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
+    background-color: #18171D;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
+    z-index: 1000;
+
+
+    /* @media screen and (min-width: 701px) {
+
+    } */
+
+    @media screen and (max-width: 700px) {
+        flex-direction: column-reverse;
+    }
+`
+
+export const NavBarLinksContainer = styled.div<TootleNavBarProps>`
+
+    background-color: #18171D;
+    transition: 0.1s;
+    display: flex;
+    
+    @media screen and (min-width: 701px) {
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+
+        width: 80%;
+        max-width: 1200px;
+    }
+
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        display: ${props => props.open ? 'flex' : 'none'};
+    }
 `
 
 export const UnorderedList = styled.ul`
     display: flex;
+    justify-content: space-between;
     list-style-type: none;
+    width: 100%;
 
     @media screen and (max-width: 700px) {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding: 8px;
     }
 `
 
 export const ListItem = styled.li`
-    padding: 10px;
     position: relative;
 `
 
+export const LogoContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+`
+
 export const Logo = styled.img`
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 `
 
 export const Icon = styled.img<IconProps>`
@@ -56,66 +107,45 @@ export const Icon = styled.img<IconProps>`
     `}
 `
 
-export const LogoContainer = styled.div`
-    margin: 0px 18px 0px 10px;
-`
+export const FlagsContainer = styled.div<TootleNavBarProps>`
 
-export const FlagsContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2px;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (min-width: 701px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    position: initial;
+
+    /* @media screen and (max-width: 700px) {
+        position: static;
+        display: ${props => props.open ? 'flex' : 'none'};
+        flex-direction: row;
+        justify-content: space-between;
+    } */
+
+    /* @media screen and (max-width: 700px) {
         flex-direction: row;
         justify-content: space-between;
         padding: 10px;
         width: 110px;
-    }
-`
-
-export const NavBarLinksAndButtonsContainer = styled.div<TootleNavBarProps>`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: #1c0b2b;
-    transition: 0.1s;
-
-    @media screen and (max-width: 700px) {
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        display: ${props => props.open ? 'flex' : 'none'};
-    }
-`
-
-export const SocialMediaContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
-    width: 70px;
-
-    @media screen and (max-width: 700px) {
-        align-items: center;
-        margin-bottom: 10px;
-    }
-`
-
-export const SocialMediaAndFlagsContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 120px;
-
-    @media screen and (max-width: 700px) {
-        flex-direction: column;
-    }
+    } */
 `
 
 export const MenuButton = styled.button<TootleNavBarProps>`
     width: 36px;
     height: 36px;
+
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
     display: ${props => props.open ? 'none' : 'flex'};
 
     @media screen and (min-width: 701px) {
@@ -126,6 +156,10 @@ export const MenuButton = styled.button<TootleNavBarProps>`
 export const CrossButton = styled.button<TootleNavBarProps>`
     width: 20px;
     height: 20px;
+
+    position: absolute;
+    right: 12px;
+
     display: ${props => props.open ? 'flex' : 'none'};
 
     @media screen and (min-width: 701px) {

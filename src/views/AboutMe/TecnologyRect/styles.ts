@@ -24,7 +24,7 @@ export const Container = styled.div`
 `
 
 export const ContainerIcon = styled.div`
-    background-color: #301C41;
+    background-color: #18171D;
     width: 40px;
     height: 40px;
     border-radius: 7px;
@@ -40,5 +40,8 @@ export const Icon = styled.img`
 `
 
 export const Label = styled.span`
-    font-size: 10px;
+    font-size: 12px;
+    color: #fff;
+    margin: 2px 0px 4px 0px; 
+    font-family: 'Acme';
 `

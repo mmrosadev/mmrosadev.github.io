@@ -35,6 +35,7 @@ import backendImg from './backend.svg'
 import frontendImg from './frontend.svg'
 import mobileImg from './mobile.svg'
 import meImg from './me.png'
+import diagonalArrowImg from './diagonal-arrow.svg'
 
 export {
     brasilFlagImg,
@@ -73,5 +74,6 @@ export {
     backendImg,
     frontendImg,
     mobileImg,
-    meImg
+    meImg,
+    diagonalArrowImg,
 }

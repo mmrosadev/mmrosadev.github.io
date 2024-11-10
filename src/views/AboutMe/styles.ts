@@ -13,14 +13,21 @@ export const Main = styled.main`
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 30px 0px;
+
+    padding: 20px;
 `
 
 export const SectionContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    width: 60rem;
+
     @media screen and (min-width: 701px) {
-        display: grid;
+        width: 80rem;
         grid-template-columns: repeat(2, 1fr);
     }
+    padding-bottom: 20px;
 `
 
 export const TecnologyRectContainer = styled.div`
@@ -32,18 +39,18 @@ export const Photo = styled.img`
     width: 260px;
     height: 260px;
     border-radius: 50%;
-    background: linear-gradient(to bottom, #413B6B, #5C65C0); 
-    margin: 20px 0;
-    padding: 12px;
+    background: linear-gradient(to right, #1BCF6C , #7159C1);
+    margin: 16px 0;
+    padding: 8px;
 `
 
 export const TitleContainer = styled.div`
     width: max-content;
-    margin: 10px 0px 30px 0px;
+    margin: 16px 0px 32px 0px;
 `
 
 export const Title = styled.span`
-    color: #301C41;
+    color: #fff;
     font-family: 'Roboto';
     font-size: 18px;
     font-style: italic;

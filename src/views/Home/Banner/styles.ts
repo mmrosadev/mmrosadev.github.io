@@ -1,16 +1,13 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    width: 100%;
+    width: 80%;
+    max-width: 1200px;
     height: 350px;
     display: flex;
     justify-content: center;
     padding-top: 20px;
-
-    background: 
-        linear-gradient(to bottom, rgba(65, 59, 107, 1) 0%, rgba(26, 188, 156, 0) 58%),
-        linear-gradient(to top, rgba(94, 130, 230, 1) 100%, rgba(142, 68, 173, 0) 100%);
-
+  
     @media screen and (max-width: 320px) {
         height: 250px;
     }

@@ -3,12 +3,11 @@ import styled from 'styled-components'
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    color: #301C41;
-    margin: 20px;
-    padding: 10px;
+    background-color: #1E1D26;
+    padding: 20px;
     height: 240px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    border: 1px solid #7159C1;
 `
 
 export const TitleContainer = styled.div`
@@ -16,7 +15,8 @@ export const TitleContainer = styled.div`
 `
 
 export const Title = styled.span`
-    font-size: 24px;
+    font-size: 18px;
+    color: #7159C1;
 `
 
 export const ContentContainer = styled.div`
@@ -30,6 +30,7 @@ export const TextContainter = styled.div`
 
 export const Text = styled.span`
     font-size: 14px;
+    color: #fff;
 `
 
 export const ComponentContainer = styled.div`

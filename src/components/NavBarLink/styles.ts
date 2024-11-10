@@ -14,28 +14,10 @@ export const CustomNavLink = styled(NavLink) <CustomNavLinkStyleProps>`
     transition: 0.3s ease-in-out;
 
     &:hover, &:focus{
-        color: #6f95ff;
+        color: #7159C1;
     }
 
-    &:hover::after{
-        content: "";
-        width: 30%;
-        height: 2px;
-        background: #6f95ff;
-        position: absolute;
-        bottom: 4px;
-        left: 11px;
-    }
-
-    @media screen and (max-width: 700px) {
-
-        &:hover, &:focus{
-            border-left: 2px solid #6f95ff;
-            padding-left: 6px;
-        }
-
-        &:hover::after{
-            width: 0;
-        }
+    &.active{
+        color: #7159C1;
     }
 `

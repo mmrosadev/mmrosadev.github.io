@@ -12,13 +12,14 @@ import {
 
 interface BannerProps {
     urlImage: string
+    id?: string
 }
 
-export function Banner({ urlImage }: BannerProps) {
+export function Banner({ urlImage, id }: BannerProps) {
     const { t } = useTranslation()
 
     return (
-        <Container>
+        <Container id={id}>
             <ContentContainer>
                 <PhotoContainer>
                     <Photo src={urlImage} />

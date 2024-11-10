@@ -17,9 +17,7 @@ import {
     FlagsContainer,
     LogoContainer,
     Logo,
-    NavBarLinksAndButtonsContainer,
-    SocialMediaAndFlagsContainer,
-    SocialMediaContainer,
+    NavBarLinksContainer,
     MenuButton,
     CrossButton,
     Icon
@@ -65,31 +63,35 @@ export function NavBar(): JSX.Element {
         setOpenMenu(!openMenu)
     }
 
+
     useEffect(() => {
         loadStorageLanguage()
     }, [])
 
+
     return (
-        <NavBarContainer>
+        <NavBarContainer
+            id='navbar'
+        >
             <LogoContainer>
-                <Logo src={infinityImg} alt="infinity image" />
+                <Logo src={infinityImg} alt='infinity image' />
             </LogoContainer>
             <MenuButton
-                type="button"
+                type='button'
                 onClick={toggleMenu}
                 open={openMenu}
             >
                 <Icon src={menuImg} />
             </MenuButton>
             <CrossButton
-                type="button"
+                type='button'
                 onClick={toggleMenu}
                 open={openMenu}
             >
                 <Icon src={crossImg} />
             </CrossButton>
 
-            <NavBarLinksAndButtonsContainer
+            <NavBarLinksContainer
                 id='navbar-links-buttons'
                 open={openMenu}
             >
@@ -101,45 +103,36 @@ export function NavBar(): JSX.Element {
                     <ListItem><NavBarLink to='/classes'>{t('classes')}</NavBarLink></ListItem>
                     <ListItem><NavBarLink to='/contact'>{t('contact')}</NavBarLink></ListItem>
                 </UnorderedList>
-
-                <SocialMediaAndFlagsContainer>
-                    <SocialMediaContainer>
-                        <CustomAnchor
-                            href='https://github.com/mmrosatab'
-                            target='_blank'
-                        >
-                            <Icon src={githubImg} size='big' />
-                        </CustomAnchor>
-
-                        <CustomAnchor
-                            href='https://www.linkedin.com/in/mmrosatab/'
-                            target='_blank'
-                        >
-                            <Icon src={linkedinImg} size='big' />
-                        </CustomAnchor>
-                    </SocialMediaContainer>
-                    <FlagsContainer>
-                        <CustomButton
-                            size='middle'
-                            onClick={() => handleChangeLanguage('pt')}
-                        >
-                            <Icon src={brasilFlagImg} />
-                        </CustomButton>
-                        <CustomButton
-                            size='middle'
-                            onClick={() => handleChangeLanguage('es')}
-                        >
-                            <Icon src={spainFlagImg} />
-                        </CustomButton>
-                        <CustomButton
-                            size='middle'
-                            onClick={() => handleChangeLanguage('en')}
-                        >
-                            <Icon src={usaFlagImg} />
-                        </CustomButton>
-                    </FlagsContainer>
-                </SocialMediaAndFlagsContainer>
-            </NavBarLinksAndButtonsContainer>
+            </NavBarLinksContainer>
+            <FlagsContainer
+                open={openMenu}
+            >
+                <CustomButton
+                    size='middle'
+                    onClick={() => handleChangeLanguage('pt')}
+                >
+                    <Icon src={brasilFlagImg} />
+                </CustomButton>
+                <CustomButton
+                    size='middle'
+                    onClick={() => handleChangeLanguage('es')}
+                >
+                    <Icon src={spainFlagImg} />
+                </CustomButton>
+                <CustomButton
+                    size='middle'
+                    onClick={() => handleChangeLanguage('en')}
+                >
+                    <Icon src={usaFlagImg} />
+                </CustomButton>
+            </FlagsContainer>
         </NavBarContainer>
     )
 }
+
+// <CustomAnchor
+// href='https://www.linkedin.com/in/mmrosatab/'
+// target='_blank'
+// >
+// <Icon src={linkedinImg} size='big' />
+// </CustomAnchor>

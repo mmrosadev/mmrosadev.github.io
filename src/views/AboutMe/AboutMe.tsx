@@ -30,7 +30,7 @@ export function AboutMe() {
 
     return (
         <Container>
-            <Main>
+            {/* <Main>
                 <Photo src={photoImg} />
                 <TitleContainer>
                     <Title>{t('moreAboutMe')}</Title>
@@ -69,7 +69,6 @@ export function AboutMe() {
 
                     <Section
                         title={t('technologies')}
-                        content={[t('technologies2')]}
                         component={
                             <TecnologyRectContainer>
                                 <TecnologyRect imageSrc={jsImg} label="JavaScript" />
@@ -86,7 +85,7 @@ export function AboutMe() {
                         }
                     />
                 </SectionContainer>
-            </Main>
+            </Main> */}
         </Container>
     )
 } 

@@ -1,7 +1,14 @@
 import { useTranslation } from 'react-i18next'
 import { useProjects } from '@/hooks'
 import { Card } from '@/components'
-import { Container, ProjectsContainer, Title, TitleContainer } from './styles'
+import {
+    Container,
+    ProjectsContainer,
+    Subtitle,
+    SubtitleContainer,
+    Title,
+    TitleContainer
+} from './styles'
 
 export function Portfolio() {
 
@@ -13,6 +20,9 @@ export function Portfolio() {
             <TitleContainer>
                 <Title>{t('myProjectsTitle')}</Title>
             </TitleContainer>
+            <SubtitleContainer>
+                <Subtitle>Conheça alguns dos projetos que desenvolvi</Subtitle>
+            </SubtitleContainer>
             <ProjectsContainer>
                 {
                     projects.map((item) => (

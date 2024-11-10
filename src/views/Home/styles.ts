@@ -4,6 +4,7 @@ export const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100vh;
 `
 
@@ -11,7 +12,8 @@ export const Main = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 80%;
+    max-width: 1400px;
     padding: 20px 0px 40px 0px;
 `
 
@@ -28,26 +30,55 @@ export const TecnologyRectContainer = styled.div`
 `
 
 export const MyProjectsContainer = styled.div`
+    padding-top: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 20px 40px 20px;
-    background-color: rgba(217, 217, 217, 0.3);
+    width: 80%;
+    max-width: 1200px;
 `
 
 export const TitleContainer = styled.div`
-    margin: 40px 0px;
+    margin-bottom: 24px;
+    text-align: center;
 `
 
 export const Title = styled.span`
-    color: #301C41;
-    font-size: 32px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    color: #7159C1;
+    font-size: 18px;
+    font-weight: 500;
 `
 
-export const SwiperWrapper = styled.div`
-    display: flex;
-    justify-content: center;
+export const SubtitleContainer = styled.div`
+    margin-bottom: 64px;
+    text-align: center;
+`
+
+export const Subtitle = styled.span`
+    color: #fff;
+    font-size: 20px;
+`
+
+export const ProjectsContainer = styled.div`
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    @media screen and (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+`
+
+export const ButtonContainer = styled.div`
+    margin: 64px 0px;
+    min-width: 260px;
+    height: 100px;
 `
 
 export const Services = styled.div`
