@@ -7,27 +7,10 @@ export const Container = styled.div`
     align-items: center;
     min-height: 100vh;
     padding: 140px 0px;
-`
 
-export const TitleContainer = styled.div`
-    margin-bottom: 24px;
-    text-align: center;
-`
-
-export const Title = styled.span`
-    color: #7159C1;
-    font-size: 18px;
-    font-weight: 500;
-`
-
-export const SubtitleContainer = styled.div`
-    margin-bottom: 64px;
-    text-align: center;
-`
-
-export const Subtitle = styled.span`
-    color: #fff;
-    font-size: 20px;
+    @media screen and (max-width: 700px){
+        padding: 70px 0px;
+    }
 `
 
 export const ProjectsContainer = styled.div`
