@@ -8,15 +8,6 @@ export const Container = styled.div`
     min-height: 100vh;
 `
 
-export const Main = styled.main`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    max-width: 1400px;
-    padding: 20px 0px 40px 0px;
-`
-
 export const SectionContainer = styled.div`
     @media screen and (min-width: 701px) {
         display: grid;
@@ -29,34 +20,30 @@ export const TecnologyRectContainer = styled.div`
     grid-template-columns: repeat(5, 1fr);
 `
 
-export const MyProjectsContainer = styled.div`
-    padding-top: 140px;
+export const MyServicesContainer = styled.div`
+    padding: 140px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
     max-width: 1200px;
+
+    @media screen and (max-width: 700px){
+        padding: 70px 0px;
+    }
 `
 
-export const TitleContainer = styled.div`
-    margin-bottom: 24px;
-    text-align: center;
-`
+export const MyProjectsContainer = styled.div`
+    padding: 140px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
 
-export const Title = styled.span`
-    color: #7159C1;
-    font-size: 18px;
-    font-weight: 500;
-`
-
-export const SubtitleContainer = styled.div`
-    margin-bottom: 64px;
-    text-align: center;
-`
-
-export const Subtitle = styled.span`
-    color: #fff;
-    font-size: 20px;
+    @media screen and (max-width: 700px){
+        padding: 70px 0px;
+    }
 `
 
 export const ProjectsContainer = styled.div`
@@ -76,9 +63,9 @@ export const ProjectsContainer = styled.div`
 `
 
 export const ButtonContainer = styled.div`
-    margin: 64px 0px;
+    margin-top: 64px;
     min-width: 260px;
-    height: 100px;
+    height: 60px;
 `
 
 export const Services = styled.div`

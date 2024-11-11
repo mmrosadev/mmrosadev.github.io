@@ -1,6 +1,5 @@
 import brasilFlagImg from './brasil-flag.svg'
 import cImg from './c.svg'
-import crossImg from './cross.svg'
 import cssImg from './css.svg'
 import githubImg from './github.svg'
 import htmlImg from './html.svg'
@@ -8,7 +7,6 @@ import infinityImg from './infinity.svg'
 import javaImg from './java.svg'
 import jsImg from './js.svg'
 import linkedinImg from './linkedin.svg'
-import menuImg from './menu.svg'
 import nodeImg from './node.svg'
 import profileImg from './profile.svg'
 import pythonImg from './python.svg'
@@ -40,7 +38,6 @@ import diagonalArrowImg from './diagonal-arrow.svg'
 export {
     brasilFlagImg,
     cImg,
-    crossImg,
     cssImg,
     githubImg,
     htmlImg,
@@ -48,7 +45,6 @@ export {
     javaImg,
     jsImg,
     linkedinImg,
-    menuImg,
     nodeImg,
     profileImg,
     pythonImg,

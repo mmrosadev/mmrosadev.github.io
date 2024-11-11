@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
 
   html{
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
   }
 
   * {

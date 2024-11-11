@@ -7,8 +7,6 @@ import {
     infinityImg,
     githubImg,
     linkedinImg,
-    menuImg,
-    crossImg,
 } from '@/assets'
 import {
     NavBarContainer,
@@ -18,13 +16,14 @@ import {
     LogoContainer,
     Logo,
     NavBarLinksContainer,
-    MenuButton,
-    CrossButton,
-    Icon
+    Icon,
+    ListFlagsItem,
+    MenuButtonContainer
 } from './styles'
 import i18n from '@/i18n/i18'
 import { NavBarLink, CustomAnchor } from '@/components'
 import { CustomButton } from '../CustomButton'
+import { ToogleButton } from './ToogleButton'
 
 type LanguageOptions = 'en' | 'es' | 'pt'
 const LANG_KEY = 'LANG_REACT_APP'
@@ -76,21 +75,14 @@ export function NavBar(): JSX.Element {
             <LogoContainer>
                 <Logo src={infinityImg} alt='infinity image' />
             </LogoContainer>
-            <MenuButton
-                type='button'
-                onClick={toggleMenu}
+            <MenuButtonContainer
                 open={openMenu}
             >
-                <Icon src={menuImg} />
-            </MenuButton>
-            <CrossButton
-                type='button'
-                onClick={toggleMenu}
-                open={openMenu}
-            >
-                <Icon src={crossImg} />
-            </CrossButton>
-
+                <ToogleButton
+                    open={openMenu}
+                    onClick={toggleMenu}
+                />
+            </MenuButtonContainer>
             <NavBarLinksContainer
                 id='navbar-links-buttons'
                 open={openMenu}
@@ -102,6 +94,26 @@ export function NavBar(): JSX.Element {
                     <ListItem><NavBarLink to='/resume'>{t('resume')}</NavBarLink></ListItem>
                     <ListItem><NavBarLink to='/classes'>{t('classes')}</NavBarLink></ListItem>
                     <ListItem><NavBarLink to='/contact'>{t('contact')}</NavBarLink></ListItem>
+                    <ListFlagsItem open={openMenu}>
+                        <CustomButton
+                            size='middle'
+                            onClick={() => handleChangeLanguage('pt')}
+                        >
+                            <Icon src={brasilFlagImg} />
+                        </CustomButton>
+                        <CustomButton
+                            size='middle'
+                            onClick={() => handleChangeLanguage('es')}
+                        >
+                            <Icon src={spainFlagImg} />
+                        </CustomButton>
+                        <CustomButton
+                            size='middle'
+                            onClick={() => handleChangeLanguage('en')}
+                        >
+                            <Icon src={usaFlagImg} />
+                        </CustomButton>
+                    </ListFlagsItem>
                 </UnorderedList>
             </NavBarLinksContainer>
             <FlagsContainer

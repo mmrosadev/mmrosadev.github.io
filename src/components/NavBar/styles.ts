@@ -23,11 +23,6 @@ export const NavBarContainer = styled.nav`
     position: sticky;
     z-index: 1000;
 
-
-    /* @media screen and (min-width: 701px) {
-
-    } */
-
     @media screen and (max-width: 700px) {
         flex-direction: column-reverse;
     }
@@ -36,7 +31,6 @@ export const NavBarContainer = styled.nav`
 export const NavBarLinksContainer = styled.div<TootleNavBarProps>`
 
     background-color: #18171D;
-    transition: 0.1s;
     display: flex;
     
     @media screen and (min-width: 701px) {
@@ -51,7 +45,7 @@ export const NavBarLinksContainer = styled.div<TootleNavBarProps>`
     @media screen and (max-width: 700px) {
         flex-direction: column;
         position: absolute;
-        top: 80px;
+        top: 78px;
         right: 0;
         width: 100%;
         display: ${props => props.open ? 'flex' : 'none'};
@@ -73,6 +67,19 @@ export const UnorderedList = styled.ul`
 
 export const ListItem = styled.li`
     position: relative;
+    padding: 16px 0px;
+`
+
+export const ListFlagsItem = styled.li<TootleNavBarProps>`
+    position: relative;
+    display: ${({ open }) => open ? 'flex' : 'none'};
+
+    @media screen and (min-width: 701px) {
+        display: none;
+    }
+
+    width: 100px;
+    justify-content: space-around;
 `
 
 export const LogoContainer = styled.div`
@@ -108,59 +115,24 @@ export const Icon = styled.img<IconProps>`
 `
 
 export const FlagsContainer = styled.div<TootleNavBarProps>`
-
-
-    @media screen and (min-width: 701px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        right: 8px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    position: initial;
-
-    /* @media screen and (max-width: 700px) {
-        position: static;
-        display: ${props => props.open ? 'flex' : 'none'};
-        flex-direction: row;
-        justify-content: space-between;
-    } */
-
-    /* @media screen and (max-width: 700px) {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px;
-        width: 110px;
-    } */
-`
-
-export const MenuButton = styled.button<TootleNavBarProps>`
-    width: 36px;
-    height: 36px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    right: 12px;
+    right: 8px;
     top: 50%;
     transform: translateY(-50%);
 
-    display: ${props => props.open ? 'none' : 'flex'};
-
-    @media screen and (min-width: 701px) {
+    @media screen and (max-width: 700px) {
         display: none;
     }
 `
 
-export const CrossButton = styled.button<TootleNavBarProps>`
-    width: 20px;
-    height: 20px;
-
+export const MenuButtonContainer = styled.div<TootleNavBarProps>`
     position: absolute;
     right: 12px;
-
-    display: ${props => props.open ? 'flex' : 'none'};
+    top: 50%;
+    transform: translateY(-50%);
 
     @media screen and (min-width: 701px) {
         display: none;
