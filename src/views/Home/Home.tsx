@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { useProjects } from '@/hooks'
-import { Card, ActionButton, SectionDivider } from '@/components'
+import { Card, ActionButton, SectionDivider, TitleWithSubtitle } from '@/components'
 import {
   backendImg,
   frontendImg,
@@ -11,19 +11,16 @@ import {
 
 import { Banner } from './Banner'
 import {
-  Main,
   Container,
   MyProjectsContainer,
-  Title,
-  TitleContainer,
   Services,
-  SubtitleContainer,
-  Subtitle,
   ProjectsContainer,
   ButtonContainer,
+  MyServicesContainer,
 } from './styles'
 import { ServiceRect } from './ServiceRect'
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 export function Home() {
 
@@ -36,18 +33,25 @@ export function Home() {
     navigate('/portfolio')
   }
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [])
+
   return (
     <Container>
       <Banner
         id='banner'
         urlImage={meImg}
       />
+      <SectionDivider destinyId='services' />
+      <MyServicesContainer id='services'>
+        <TitleWithSubtitle
+          title={t('services')}
+          subtitle={t('discoverServices')}
+        />
+      </MyServicesContainer>
       <SectionDivider destinyId='projects' />
-      <Main>
-        {/* <TitleContainer>
-          <Title>{t('services')}</Title>
-        </TitleContainer>
-        <Services>
+      {/* <Services>
           <ServiceRect
             imageSrc={frontendImg}
             title={t('frontendDevelopment')}
@@ -67,14 +71,11 @@ export function Home() {
           />
 
         </Services> */}
-      </Main>
       <MyProjectsContainer id='projects'>
-        <TitleContainer>
-          <Title>{t('myProjectsTitle')}</Title>
-        </TitleContainer>
-        <SubtitleContainer>
-          <Subtitle>Conheça alguns dos projetos que desenvolvi</Subtitle>
-        </SubtitleContainer>
+        <TitleWithSubtitle
+          title={t('myProjectsTitle')}
+          subtitle={t('discoverProjects')}
+        />
         <ProjectsContainer>
           {
             projects.slice(0, 4).map((item) => (
@@ -89,16 +90,17 @@ export function Home() {
             ))
           }
         </ProjectsContainer>
+
+        <ButtonContainer>
+          <ActionButton
+            imageSource={diagonalArrowImg}
+            label={t('viewCode')}
+            height={22}
+            width={22}
+            onClick={handleRedirect}
+          />
+        </ButtonContainer>
       </MyProjectsContainer>
-      <ButtonContainer>
-        <ActionButton
-          imageSource={diagonalArrowImg}
-          label={t('viewCode')}
-          height={22}
-          width={22}
-          onClick={handleRedirect}
-        />
-      </ButtonContainer>
     </Container>
   )
 } 

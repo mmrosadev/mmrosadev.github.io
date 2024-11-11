@@ -30,7 +30,7 @@ export function AboutMe() {
 
     return (
         <Container>
-            {/* <Main>
+            <Main>
                 <Photo src={photoImg} />
                 <TitleContainer>
                     <Title>{t('moreAboutMe')}</Title>
@@ -85,7 +85,7 @@ export function AboutMe() {
                         }
                     />
                 </SectionContainer>
-            </Main> */}
+            </Main>
         </Container>
     )
 } 

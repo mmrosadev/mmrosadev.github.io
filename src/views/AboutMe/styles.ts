@@ -3,17 +3,17 @@ import styled from 'styled-components'
 export const Container = styled.div`
     width: 100%;
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 `
 
 export const Main = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-
+    width: 80%;
+    max-width: 1200px;  
     padding: 20px;
 `
 
@@ -21,13 +21,15 @@ export const SectionContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-    width: 60rem;
+    width: 100%;
+    padding-bottom: 70px;
 
     @media screen and (min-width: 701px) {
-        width: 80rem;
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 140px;
     }
-    padding-bottom: 20px;
+    
 `
 
 export const TecnologyRectContainer = styled.div`
