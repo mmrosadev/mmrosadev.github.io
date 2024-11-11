@@ -5,9 +5,9 @@ import {
     Photo,
     PhotoContainer,
     SubTitle,
-    TextContainer,
+    TextWrapper,
     Title,
-    TitleContainer
+    Wrapper
 } from './styles'
 
 interface BannerProps {
@@ -17,26 +17,20 @@ interface BannerProps {
 
 export function Banner({ urlImage, id }: BannerProps) {
     const { t } = useTranslation()
+    const introduceSubtitle = t('introduce2')
 
     return (
         <Container id={id}>
             <ContentContainer>
+                <Wrapper>
+                    <TextWrapper>
+                        <Title>{t('introduce1')}</Title>
+                        <SubTitle id='introduce2'>{t('introduce2')}</SubTitle>
+                    </TextWrapper>
+                </Wrapper>
                 <PhotoContainer>
                     <Photo src={urlImage} />
                 </PhotoContainer>
-                <TextContainer>
-                    <>
-                        <TitleContainer>
-                            <Title>{t('introduce1')}</Title>
-                        </TitleContainer>
-                        <>
-                            <SubTitle>{t('introduce2')}</SubTitle>
-                        </>
-                        <>
-                            <SubTitle>{t('introduce3')}</SubTitle>
-                        </>
-                    </>
-                </TextContainer>
             </ContentContainer>
         </Container>
     )
