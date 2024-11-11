@@ -12,15 +12,14 @@ import {
 
 interface BannerProps {
     urlImage: string
-    id?: string
 }
 
-export function Banner({ urlImage, id }: BannerProps) {
+export function Banner({ urlImage }: BannerProps) {
     const { t } = useTranslation()
     const introduceSubtitle = t('introduce2')
 
     return (
-        <Container id={id}>
+        <Container>
             <ContentContainer>
                 <Wrapper>
                     <TextWrapper>

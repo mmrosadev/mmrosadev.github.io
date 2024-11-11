@@ -4,32 +4,18 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+
     border-radius: 7px;
     padding: 20px;
-    width: fit-content;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 8px #7159C1;
 
-    @media screen and (max-width: 768px){
-        width: 100%;
-    }
-
-    @media screen and (min-width: 769px) and (max-width: 1024px){
-        width: 240px;
-    }
-
-    @media screen and (min-width: 1025px) and (max-width: 1440px){
-        width: 320px;
-    }
-
-    @media screen and (min-width: 1440px){
-        width: 400px;
-    }
+    width: 280px;
+    min-height: 300px;
 `
 
 export const IconWrapper = styled.div`
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
 `
 
 export const Icon = styled.img`
@@ -38,15 +24,20 @@ export const Icon = styled.img`
 `
 
 export const Title = styled.span`
+    width: 100%;
     text-align: center;
     font-size: 16px;
-    margin: 10px 0px;
-    color: #301C41;
+    font-weight: 500;
+    margin: 40px 0px;
+    color: #7159C1;
+    min-height: 40px;
+    width: 180px;
 `
 
 export const Subtitle = styled.span`
-    text-align: justify;
-    font-size: 14px;
-    color: #301C41;
-    font-family:  'Roboto';
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    color: #fff;
+    height: 80px;
 `

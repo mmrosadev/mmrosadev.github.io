@@ -8,21 +8,18 @@ export const Container = styled(Card)`
     width: 280px;
     padding: 8px;
     background-color: #1E1D26 !important;
-    border-radius: 7px;
+    border-radius: 4px !important;
 
-    border: 1px solid #7159C1;
+    border: 0.5px solid #7159C1;
 
     &:hover{
-        border: 1px solid transparent;
-        border-image: linear-gradient(to bottom, #1BCF6C , #7159C1);
-        border-image-slice: 1;
+        border-color:  #1BCF6C;
     }
-    
 `
 
 export const MediaContainer = styled(CardMedia)`
     height: 190px;
-    border-radius: 7px;
+    border-radius: 4px;
 `
 
 export const ActionsContainer = styled(CardActions)`

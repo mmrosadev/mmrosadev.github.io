@@ -64,24 +64,22 @@ export const ProjectsContainer = styled.div`
 
 export const ButtonContainer = styled.div`
     margin-top: 64px;
-    min-width: 260px;
+    width: 262px;
     height: 60px;
 `
 
 export const Services = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
     place-items: center;
-    width: 100%;
-    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 
-    @media screen and (max-width: 768px){
-        grid-template-columns: 1fr;
+    @media screen and (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    @media screen and (min-width: 1440px){
-        width: 80%;
+    @media screen and (min-width: 601px) and (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 
@@ -95,7 +93,7 @@ export const Services = styled.div`
         }
     }
 
-    & > div:nth-child(-n+3){
+    & > div:nth-child(-n+4){
         animation: pull 5s infinite;
     }
 

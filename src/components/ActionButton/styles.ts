@@ -9,7 +9,7 @@ export const Anchor = styled.a`
     width: 100%;
     height: 42px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     color: #fff;
     background: linear-gradient(to right, #1BCF6C, #7159C1);
     display: flex;
@@ -24,7 +24,7 @@ export const Button = styled.button`
     width: 100%;
     height: 42px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     color: #fff;
     background: linear-gradient(to right, #1BCF6C, #7159C1);
     display: flex;

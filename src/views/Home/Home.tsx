@@ -7,6 +7,7 @@ import {
   mobileImg,
   meImg,
   diagonalArrowImg,
+  classesImg,
 } from '@/assets'
 
 import { Banner } from './Banner'
@@ -20,7 +21,6 @@ import {
 } from './styles'
 import { ServiceRect } from './ServiceRect'
 import { useNavigate } from 'react-router-dom'
-import { useEffect } from 'react'
 
 export function Home() {
 
@@ -33,14 +33,9 @@ export function Home() {
     navigate('/portfolio')
   }
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }, [])
-
   return (
     <Container>
       <Banner
-        id='banner'
         urlImage={meImg}
       />
       <SectionDivider destinyId='services' />
@@ -49,9 +44,7 @@ export function Home() {
           title={t('services')}
           subtitle={t('discoverServices')}
         />
-      </MyServicesContainer>
-      <SectionDivider destinyId='projects' />
-      {/* <Services>
+        <Services>
           <ServiceRect
             imageSrc={frontendImg}
             title={t('frontendDevelopment')}
@@ -70,7 +63,14 @@ export function Home() {
             subtitle={t('backendDevelopmentSubtitle')}
           />
 
-        </Services> */}
+          <ServiceRect
+            imageSrc={classesImg}
+            title={t('privateClasses')}
+            subtitle={t('privateClassesSubtitle')}
+          />
+        </Services>
+      </MyServicesContainer>
+      <SectionDivider destinyId='projects' />
       <MyProjectsContainer id='projects'>
         <TitleWithSubtitle
           title={t('myProjectsTitle')}
@@ -94,7 +94,7 @@ export function Home() {
         <ButtonContainer>
           <ActionButton
             imageSource={diagonalArrowImg}
-            label={t('viewCode')}
+            label={t('seeMore')}
             height={22}
             width={22}
             onClick={handleRedirect}

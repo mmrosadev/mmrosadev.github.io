@@ -15,6 +15,10 @@ export const Main = styled.main`
     width: 80%;
     max-width: 1200px;  
     padding: 20px;
+
+    @media screen and (max-width: 375px) {
+        width: 100%;
+    }
 `
 
 export const SectionContainer = styled.div`
@@ -24,7 +28,7 @@ export const SectionContainer = styled.div`
     width: 100%;
     padding-bottom: 70px;
 
-    @media screen and (min-width: 701px) {
+    @media screen and (min-width: 769px) {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
         padding-bottom: 140px;

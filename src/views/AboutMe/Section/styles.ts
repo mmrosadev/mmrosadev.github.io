@@ -6,8 +6,13 @@ export const Container = styled.div`
     background-color: #1E1D26;
     padding: 16px;
     height: 240px;
-    border-radius: 7px;
-    border: 1px solid #7159C1;
+    border-radius: 4px !important;
+
+    border: 0.5px solid #7159C1;
+
+    &:hover{
+        border-color:  #1BCF6C;
+    }
 `
 
 export const TitleContainer = styled.div`
