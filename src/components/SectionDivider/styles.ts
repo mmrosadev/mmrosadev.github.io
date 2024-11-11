@@ -37,14 +37,14 @@ export const Jumper = styled.button`
         border-top: 5px solid white; /* Primeira seta */
         top: 50%; /* Posição da primeira seta */
         left: 50%;
-        transform: translateX(-50%) translateY(-7px);
+        transform: translateX(-50%) translateY(-8px);
     }
 
     &::after {
         border-top: 5px solid white; /* Segunda seta */
         top: 50%;
         left: 50%;
-        transform: translateX(-50%) translateY(7px);
+        transform: translateX(-50%) translateY(6px);
     }
 
     @keyframes evanish{
