@@ -26,12 +26,12 @@ export const SectionContainer = styled.div`
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     width: 100%;
-    padding-bottom: 70px;
+    padding-bottom: 64px;
 
     @media screen and (min-width: 769px) {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
-        padding-bottom: 140px;
+        padding-bottom: 128px;
     }
     
 `
@@ -46,8 +46,12 @@ export const Photo = styled.img`
     height: 260px;
     border-radius: 50%;
     background: linear-gradient(to right, #1BCF6C , #7159C1);
-    margin: 16px 0;
     padding: 8px;
+    margin: 64px 0px 32px 0px;
+    
+    @media screen and (min-width: 701px) {
+        margin: 128px 0px 64px 0px;
+    }
 `
 
 export const TitleContainer = styled.div`

@@ -13,10 +13,12 @@ import {
     NoMatch,
 } from '@/views'
 import { Footer, NavBar } from '@/components'
+import ScrollToTop from './ScrollToTop'
 
 export function Routes() {
     return (
         <HashRouter>
+            <ScrollToTop />
             <NavBar />
             <DomRoutes>
                 <Route path='/' element={<Home />} />

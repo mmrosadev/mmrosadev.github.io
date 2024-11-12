@@ -9,7 +9,7 @@ export const Container = styled.div`
     background: linear-gradient(to right, #18171D, #737373, #18171D);
 `
 
-export const Jumper = styled.button`
+export const Jumper = styled.a`
     position: relative;
     width: 34px;
     height: 34px;

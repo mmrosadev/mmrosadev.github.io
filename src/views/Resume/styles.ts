@@ -14,8 +14,12 @@ export const Header = styled.div`
     height: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 40px 4px;
+    align-items: center;
+    padding-top: 128px;
 
+    @media screen and (max-width: 700px){
+        padding-top: 64px;
+    }
 
     @keyframes shake {
         0%, 100% {
@@ -54,7 +58,7 @@ export const ResumeContainer = styled.div`
     width: 80%;
     max-width: 1200px;
     padding-bottom: 40px;
-    margin: 100px 0px;
+    margin: 100px 0px 140px 0px;
 
     border: 1px solid #7159C1;
     border-radius: 4px;

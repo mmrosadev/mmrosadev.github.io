@@ -63,8 +63,6 @@ export function Card({
                     imageSource={pageImg}
                     label={t('viewApplication')}
                     link={urlApplication}
-                    width={24}
-                    height={24}
                 />
             </ActionsContainer>
         </Container>

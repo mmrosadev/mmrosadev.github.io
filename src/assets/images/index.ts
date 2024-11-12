@@ -27,7 +27,6 @@ import phonebookImg from './phonebook.svg'
 import notFoundImg from './not-found.svg'
 import downloadImg from './download.svg'
 import photoImg from './photo.png'
-import rocketImg from './rocket.svg'
 import cellphoneImg from './cellphone.svg'
 import backendImg from './backend.svg'
 import frontendImg from './frontend.svg'
@@ -35,6 +34,11 @@ import mobileImg from './mobile.svg'
 import meImg from './me.png'
 import diagonalArrowImg from './diagonal-arrow.svg'
 import classesImg from './classes.svg'
+import materialImg from './material.svg'
+import greenStudentImg from './green-student.svg'
+import toolsImg from './tools.svg'
+import blackboardImg from './blackboard.svg'
+import thinkingImg from './thinking.svg'
 
 export {
     brasilFlagImg,
@@ -74,4 +78,9 @@ export {
     meImg,
     diagonalArrowImg,
     classesImg,
+    materialImg,
+    greenStudentImg,
+    toolsImg,
+    blackboardImg,
+    thinkingImg,
 }

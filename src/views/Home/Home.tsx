@@ -21,12 +21,14 @@ import {
 } from './styles'
 import { ServiceRect } from './ServiceRect'
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 export function Home() {
 
   const { t } = useTranslation()
   const navigate = useNavigate()
   const projects = useProjects()
+
 
   const handleRedirect = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -95,8 +97,6 @@ export function Home() {
           <ActionButton
             imageSource={diagonalArrowImg}
             label={t('seeMore')}
-            height={22}
-            width={22}
             onClick={handleRedirect}
           />
         </ButtonContainer>

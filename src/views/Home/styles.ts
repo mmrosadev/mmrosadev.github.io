@@ -21,7 +21,7 @@ export const TecnologyRectContainer = styled.div`
 `
 
 export const MyServicesContainer = styled.div`
-    padding: 140px 0px;
+    padding: 128px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,12 +29,12 @@ export const MyServicesContainer = styled.div`
     max-width: 1200px;
 
     @media screen and (max-width: 700px){
-        padding: 70px 0px;
+        padding: 64px 0px;
     }
 `
 
 export const MyProjectsContainer = styled.div`
-    padding: 140px 0px;
+    padding: 128px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +42,7 @@ export const MyProjectsContainer = styled.div`
     max-width: 1200px;
 
     @media screen and (max-width: 700px){
-        padding: 70px 0px;
+        padding: 64px 0px;
     }
 `
 
@@ -64,7 +64,7 @@ export const ProjectsContainer = styled.div`
 
 export const ButtonContainer = styled.div`
     margin-top: 64px;
-    width: 262px;
+    width: 140px;
     height: 60px;
 `
 

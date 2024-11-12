@@ -6,10 +6,10 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    padding: 140px 0px;
+    padding: 128px 0px;
 
     @media screen and (max-width: 700px){
-        padding: 70px 0px;
+        padding: 64px 0px;
     }
 `
 

@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Container, Jumper } from './styles'
 
 interface SectionDividerProps {
@@ -6,17 +7,16 @@ interface SectionDividerProps {
 
 export function SectionDivider({ destinyId }: SectionDividerProps) {
 
-    const handleClick = () => {
-        const element = document.getElementById(destinyId || '')
-        console.log('testet')
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        }
-    }
+    // const handleClick = () => {
+    //     const element = document.getElementById(destinyId || '')
+    //     if (element) {
+    //         element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    //     }
+    // }
 
     return (
         <Container>
-            <Jumper type="button" onClick={handleClick} />
+            {/* <Jumper type="button" onClick={handleClick} /> */}
         </Container>
     )
 }
