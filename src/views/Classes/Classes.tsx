@@ -29,10 +29,10 @@ export function Classes() {
                     <Title>{t('learningProgramtion')}</Title>
                 </TitleContainer>
                 <TextContainer>
-                    <Text>{t('classesText1')}</Text>
-                    <Text>{t('classesText2')}</Text>
-                    <Text>{t('classesText3')}</Text>
-                    <Text>{t('languageSupport')}</Text>
+                    <Text>{t('classesContent1')}</Text>
+                    <Text>{t('classesContent2')}</Text>
+                    <Text>{t('classesContent3')}</Text>
+                    <Text>{t('classesContent4')}</Text>
                 </TextContainer>
                 <AdvantagesCardsContainer>
                     <AdvantagesCard>
@@ -40,7 +40,7 @@ export function Classes() {
                             <CardIcon src={blackboardImg}></CardIcon>
                         </WrapperCardIcon>
                         <CardLabel>
-                            {t('classesAspect1')}
+                            {t('classesAdvantages1')}
                         </CardLabel>
                     </AdvantagesCard>
 
@@ -49,7 +49,7 @@ export function Classes() {
                             <CardIcon src={materialImg}></CardIcon>
                         </WrapperCardIcon>
                         <CardLabel>
-                            {t('classesAspect2')}
+                            {t('classesAdvantages2')}
                         </CardLabel>
                     </AdvantagesCard>
 
@@ -58,7 +58,7 @@ export function Classes() {
                             <CardIcon src={thinkingImg}></CardIcon>
                         </WrapperCardIcon>
                         <CardLabel>
-                            {t('classesAspect3')}
+                            {t('classesAdvantages3')}
                         </CardLabel>
                     </AdvantagesCard>
 
@@ -67,7 +67,7 @@ export function Classes() {
                             <CardIcon src={toolsImg}></CardIcon>
                         </WrapperCardIcon>
                         <CardLabel>
-                            {t('classesAspect4')}
+                            {t('classesAdvantages4')}
                         </CardLabel>
                     </AdvantagesCard>
                 </AdvantagesCardsContainer>

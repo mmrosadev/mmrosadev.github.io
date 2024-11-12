@@ -15,13 +15,18 @@ export const Container = styled.div`
 export const Main = styled.main`
     width: 100%;
     max-width: 1200px;
-    padding: 128px 0px;
+    padding: 64px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 32px; 
 
     @media screen and (max-width: 425px){
-        padding: 64px 0px;
+        padding: 32px 0px;
+    }
+
+    @media screen and (min-width: 701px) {
+        margin-bottom: 64px; 
     }
 `
 

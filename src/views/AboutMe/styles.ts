@@ -47,10 +47,10 @@ export const Photo = styled.img`
     border-radius: 50%;
     background: linear-gradient(to right, #1BCF6C , #7159C1);
     padding: 8px;
-    margin: 64px 0px 32px 0px;
+    margin: 32px 0px 16px 0px;
     
     @media screen and (min-width: 701px) {
-        margin: 128px 0px 64px 0px;
+        margin: 64px 0px 32px 0px;
     }
 `
 

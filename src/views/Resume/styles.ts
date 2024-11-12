@@ -15,10 +15,10 @@ export const Header = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 128px;
+    padding-top: 64px;
 
     @media screen and (max-width: 700px){
-        padding-top: 64px;
+        padding-top: 32px;
     }
 
     @keyframes shake {
