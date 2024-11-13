@@ -88,7 +88,7 @@ export const ResumeHeader = styled.div`
 `
 
 export const TitleHeader = styled.span`
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
 
     @media screen and (max-width: 700px){
@@ -97,7 +97,7 @@ export const TitleHeader = styled.span`
 `
 
 export const SubtitleHeader = styled.span`
-    font-size: 22px;
+    font-size: 18px;
 
     @media screen and (max-width: 700px){
         font-size: 12px;
@@ -117,18 +117,18 @@ export const Section = styled.div`
 `
 
 export const TitleSection = styled.span`
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 
     @media screen and (max-width: 700px){
-        font-size: 14px;
+        font-size: 12px;
     }
 
     padding-bottom: 20px;
 `
 
 export const ContentSection = styled.span`
-    font-size: 22px;
+    font-size: 18px;
     text-align: justify;
     @media screen and (max-width: 700px){
         font-size: 12px;
