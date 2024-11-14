@@ -1,4 +1,4 @@
-import { Anchor, Label } from './styles'
+import { Anchor, Label, Wrapper } from './styles'
 
 interface AnchorProps {
     children?: React.ReactNode
@@ -18,8 +18,9 @@ export function CustomAnchor({
             href={href}
             target={target}
         >
-            {children && children}
-
+            <Wrapper>
+                {children && children}
+            </Wrapper>
             {label && (
                 <Label>{label}</Label>
             )}

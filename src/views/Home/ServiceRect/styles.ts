@@ -16,6 +16,7 @@ export const Container = styled.div`
 export const IconWrapper = styled.div`
     width: 48px;
     height: 48px;
+    z-index: 1;
 `
 
 export const Icon = styled.img`

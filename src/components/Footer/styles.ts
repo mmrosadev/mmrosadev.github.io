@@ -14,6 +14,10 @@ export const CopyrightContainer = styled.div`
     border-bottom: 4px solid transparent;
     border-image: linear-gradient(to right, #1BCF6C , #7159C1);
     border-image-slice: 1;
+
+    @media screen and (max-width: 700px){
+        border-bottom: 2px solid transparent;
+    }
 `
 
 export const CopyrightLabel = styled.span`

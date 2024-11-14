@@ -26,6 +26,14 @@ export const NavBarContainer = styled.nav`
     @media screen and (max-width: 700px) {
         flex-direction: column-reverse;
     }
+
+    & {
+        transition: border 0.3s ease;
+    }
+
+    &.scrolled {
+        border-bottom: 1px solid rgba(115,115,115, 0.1);
+    }
 `
 
 export const NavBarLinksContainer = styled.div<TootleNavBarProps>`
@@ -98,6 +106,9 @@ export const Logo = styled.img`
 `
 
 export const Icon = styled.img<IconProps>`
+    width: 100%;
+    height: 100%;
+
     ${({ size }) => size === 'small' && `
         width: 20px;
         height: 20px;
@@ -106,11 +117,6 @@ export const Icon = styled.img<IconProps>`
     ${({ size }) => size === 'big' && `
         width: 28px;
         height: 28px;
-    `}
-
-    ${({ size }) => size === undefined && `
-        width: 100%;
-        height: 100%;
     `}
 `
 

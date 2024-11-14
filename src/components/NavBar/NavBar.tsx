@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import i18n from '@/i18n/i18'
+import { NavBarLink } from '@/components'
 import {
     brasilFlagImg,
     usaFlagImg,
     spainFlagImg,
     infinityImg,
-    githubImg,
-    linkedinImg,
 } from '@/assets'
 import {
     NavBarContainer,
@@ -20,9 +20,7 @@ import {
     ListFlagsItem,
     MenuButtonContainer
 } from './styles'
-import i18n from '@/i18n/i18'
-import { NavBarLink, CustomAnchor } from '@/components'
-import { CustomButton } from '../CustomButton'
+import { CustomButton } from './CustomButton'
 import { ToogleButton } from './ToogleButton'
 
 type LanguageOptions = 'en' | 'es' | 'pt'
@@ -32,6 +30,7 @@ export function NavBar(): JSX.Element {
 
     const { t } = useTranslation()
     const [openMenu, setOpenMenu] = useState(false)
+    const [scrolled, setScrolled] = useState(false)
 
     const handleChangeLanguage = (language: LanguageOptions) => {
         setLanguage(language)
@@ -64,6 +63,15 @@ export function NavBar(): JSX.Element {
 
 
     useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 80)
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
+
+    useEffect(() => {
         loadStorageLanguage()
     }, [])
 
@@ -71,6 +79,7 @@ export function NavBar(): JSX.Element {
     return (
         <NavBarContainer
             id='navbar'
+            className={scrolled ? 'navbar scrolled' : 'navbar'}
         >
             <LogoContainer>
                 <Logo src={infinityImg} alt='infinity image' />
@@ -141,10 +150,3 @@ export function NavBar(): JSX.Element {
         </NavBarContainer>
     )
 }
-
-// <CustomAnchor
-// href='https://www.linkedin.com/in/mmrosatab/'
-// target='_blank'
-// >
-// <Icon src={linkedinImg} size='big' />
-// </CustomAnchor>
