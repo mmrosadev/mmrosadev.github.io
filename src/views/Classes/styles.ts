@@ -82,7 +82,7 @@ export const AdvantagesCardsContainer = styled.div`
     place-items: center;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 40px 0px;
+    padding: 32px 0px 8px 0px;
     @media screen and (max-width: 540px) {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -98,9 +98,8 @@ export const AdvantagesCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
     width: 240px;
-    min-height: 300px;
+    min-height: 280px;
 `
 
 export const CardIcon = styled.img`
@@ -119,6 +118,5 @@ export const CardLabel = styled.span`
     color: #fff;
     font-size: 16px;
     font-weight: 100;
-
     width: 200px;
 `
