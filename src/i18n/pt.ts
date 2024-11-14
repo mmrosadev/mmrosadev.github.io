@@ -97,4 +97,9 @@ export default {
     classesAdvantages3: 'Projetos para colocar a mão na massa.',
     classesAdvantages4: 'Ferramentas e boas práticas difundidas no mercado',
     knowMoreAboutClasses: 'Quer saber mais detalhes sobre as aulas? Entre em contato comigo!',
+    name: 'Nome',
+    message: 'Mensagem',
+    contactMe: 'ENTRE EM CONTATO COMIGO',
+    contactMeContent: 'Obrigada por visitar o meu site! Caso queira saber mais sobre algum serviço, entre em contato comigo via WhatsApp, E-mail ou LinkedIn, ou preencha o formulário abaixo.',
+    send: 'Enviar'
 }

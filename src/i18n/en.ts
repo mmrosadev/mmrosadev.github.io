@@ -97,4 +97,9 @@ export default {
     classesAdvantages3: 'Projects to get hands-on experience',
     classesAdvantages4: 'Tools and best practices used in the industry',
     knowMoreAboutClasses: 'Want to know more details about the classes? Contact me!',
+    name: 'Name',
+    message: 'Message',
+    contactMe: 'CONTACT ME',
+    contactMeContent: 'Thank you for visiting my website! If you would like to know more about any service, please contact me via WhatsApp, Email, or LinkedIn, or fill out the form below.',
+    send: 'Send'
 }

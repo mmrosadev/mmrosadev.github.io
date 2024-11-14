@@ -97,4 +97,9 @@ export default {
     classesAdvantages3: 'Proyectos para tener experiencia práctica',
     classesAdvantages4: 'Herramientas y buenas prácticas difundidas en el mercado',
     knowMoreAboutClasses: '¿Quieres saber más detalles sobre las clases? ¡Contáctame!',
+    name: 'Nombre',
+    message: 'Mensaje',
+    contactMe: 'CONTÁCTAME',
+    contactMeContent: '¡Gracias por visitar mi sitio web! Si deseas saber más sobre algún servicio, contáctame a través de WhatsApp, Correo Electrónico o LinkedIn, o completa el formulario a continuación.',
+    send: 'Enviar'
 }
