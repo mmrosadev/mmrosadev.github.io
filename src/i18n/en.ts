@@ -67,8 +67,8 @@ export default {
     ca3Activity2: 'Configuration of computers and electronic equipment.',
     ca3Activity3: 'Technical support for speakers.',
     complementaryCourses: 'ADDITIONAL COURSES',
-    cc1Title: 'TypeScript Course Part 2: Advancing in the Language - Alura (2023)',
-    cc2Title: 'TypeScript Course Part 1: Evolving Your JavaScript  - Alura (2023)',
+    cc1Title: 'TypeScript Course Part 2: Advancing in the Language - Alura (2022)',
+    cc2Title: 'TypeScript Course Part 1: Evolving Your JavaScript  - Alura (2022)',
     cc3Title: 'JavaScript Course – IFRS (2019)',
     cc4Title: 'Python Fundamentals for Data Analysis Course – Data Science Academy (2018)',
     availability: 'AVAILABILITY',
@@ -101,5 +101,9 @@ export default {
     message: 'Message',
     contactMe: 'CONTACT ME',
     contactMeContent: 'Thank you for visiting my website! If you would like to know more about any service, please contact me via WhatsApp, Email, or LinkedIn, or fill out the form below.',
-    send: 'Send'
+    send: 'Send',
+    fillAllFields: 'All fields must be filled',
+    successSend: 'Message sent successfully!',
+    failureSend: 'There was an error sending the message. Please try again!',
+    invalidEmail: 'Invalid email',
 }

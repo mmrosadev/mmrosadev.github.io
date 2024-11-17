@@ -15,7 +15,6 @@ export const Anchor = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2px 0px 0px 0px;
     margin: 0 !important;
     text-decoration: none;
 `

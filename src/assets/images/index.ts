@@ -70,7 +70,6 @@ export {
     notFoundImg,
     downloadImg,
     photoImg,
-    rocketImg,
     cellphoneImg,
     backendImg,
     frontendImg,

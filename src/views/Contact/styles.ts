@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 interface FeedbackMessageStyleProps {
-    status: 'waiting' | 'sucess' | 'failure'
+    status: 'waiting' | 'success' | 'failure'
 }
 
 export const Container = styled.div`
@@ -124,6 +124,10 @@ export const Input = styled.input`
     margin-bottom: 8px;
     padding: 8px;
     outline: none;
+
+    .error{
+        border-color: red;
+    }
 `
 
 export const TextArea = styled.textarea`
@@ -137,6 +141,10 @@ export const TextArea = styled.textarea`
     font-size: 14px;
     outline: none;
     resize: none;
+
+    .error{
+        border-color: red;
+    }
 `
 
 export const WrapperRow = styled.div`
@@ -161,24 +169,30 @@ export const Button = styled.button`
     border: none;
     border-radius: 4px;
     color: #fff;
+    font-size: 14px;
+    font-weight: 700;
     background: linear-gradient(to right, #1BCF6C, #7159C1);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2px 0px 0px 0px;
     margin: 0 !important;
     text-decoration: none;
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
 `
 
 export const FeedbackMessage = styled.div<FeedbackMessageStyleProps>`
     padding: 10px;
     height: 20px;
 
-    ${({ status }) => status == 'failure' && `
+    ${({ status }) => status === 'failure' && `
         color: red;
     `}; 
 
-    ${({ status }) => status == 'sucess' && `
+    ${({ status }) => status === 'success' && `
         color: green;
     `}; 
         

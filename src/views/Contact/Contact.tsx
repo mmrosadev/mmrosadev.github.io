@@ -1,6 +1,7 @@
 import { useState } from 'react'
+import axios from 'axios'
 import { useTranslation } from 'react-i18next'
-import { useForm, ValidationError } from '@formspree/react'
+import { letterImg, linkedinImg, phoneImg } from '@/assets'
 import { CustomAnchor } from './CustomAnchor'
 import {
     Container,
@@ -23,37 +24,94 @@ import {
     Divider,
     FeedbackMessage,
 } from './styles'
-import { letterImg, linkedinImg, phoneImg } from '@/assets'
+
+export interface FeedbackProps {
+    message: string,
+    status: 'waiting' | 'success' | 'failure',
+    error: boolean,
+}
 
 export function Contact() {
 
     const { t } = useTranslation()
-
-    const [state, handleSubmit, reset] = useForm('myzyjnrn')
-    // if (state.succeeded) {
-    //   return <div>Thank you for signing up!</div>
-    // }
-
     const [formData, setFormData] = useState({
-        nome: '',
+        name: '',
         email: '',
-        mensagem: ''
+        message: ''
     })
 
-    // const [errorMessage, setErrorMessage] = useState('')
+    const [feedback, setFeedback] = useState<FeedbackProps>({
+        message: '',
+        status: 'waiting',
+        error: false,
+    })
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target
         setFormData({
             ...formData,
             [name]: value
         })
+
+        setFeedback({ message: '', status: 'waiting', error: false })
     }
 
-    // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    //     e.preventDefault()
-    //     console.log('Dados do formulário:', formData)
-    // }
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        const { name, email, message } = formData
+
+        if (isFormEmptyOrIncomplete(name, email, message)) {
+            setFeedback({
+                message: t('fillAllFields'),
+                status: 'failure',
+                error: true,
+            })
+        } else if (isEmailInvalid(email)) {
+            setFeedback({
+                message: t('invalidEmail'),
+                status: 'failure',
+                error: true,
+            })
+        } else {
+
+            try {
+
+                await axios.post('https://formspree.io/f/myzyjnrn', {
+                    ...formData
+                })
+
+                setFeedback({
+                    message: t('successSend'),
+                    status: 'success',
+                    error: false,
+                })
+            } catch (error) {
+                console.log(error)
+                setFeedback({
+                    message: t('failureSend'),
+                    status: 'failure',
+                    error: true,
+                })
+            } finally {
+                setFormData({ name: '', email: '', message: '' })
+            }
+
+        }
+    }
+
+    const isFormEmptyOrIncomplete = (name: string, email: string, message: string) => {
+        return (name.length === 0 || email.length === 0 || message.length === 0)
+    }
+
+    const isEmailInvalid = (email: string) => {
+        const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+        return !regexEmail.test(email)
+    }
+
+    const isButtonDisabled = () => {
+        const { name, email, message } = formData
+        return isFormEmptyOrIncomplete(name, email, message) || isEmailInvalid(email)
+    }
 
     return (
         <Container>
@@ -101,9 +159,10 @@ export function Contact() {
                                 type='text'
                                 name='name'
                                 id='name'
-                                value={formData.nome}
+                                value={formData.name}
                                 onChange={handleChange}
                                 required
+                                className={feedback.error ? 'error' : undefined}
                             />
                         </WrapperInputs>
 
@@ -113,10 +172,10 @@ export function Contact() {
                                 type='email'
                                 name='email'
                                 id='email'
-                                defaultValue='test@example.com'
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
+                                className={feedback.error ? 'error' : undefined}
                             />
                         </WrapperInputs>
                     </WrapperRow>
@@ -127,19 +186,23 @@ export function Contact() {
                             <TextArea
                                 id='message'
                                 name='message'
-                                value={formData.mensagem}
+                                value={formData.message}
                                 onChange={handleChange}
                                 required
+                                className={feedback.error ? 'error' : undefined}
                             />
                         </WrapperTextArea>
                     </WrapperRow>
-                    <FeedbackMessage status={'sucess'}>
-                        Todos os campos devem ser preenchidos
+
+                    <FeedbackMessage status={feedback.status}>
+                        {feedback.message && feedback.message}
                     </FeedbackMessage>
+
                     <WrapperRow>
                         <ButtonContainer>
                             <Button
                                 type='submit'
+                                disabled={isButtonDisabled()}
                             >
                                 {t('send')}
                             </Button>
