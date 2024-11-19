@@ -4,7 +4,6 @@ export const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
 `
@@ -15,12 +14,11 @@ export const Icon = styled.img`
 `
 
 export const TitleContainer = styled.div`
-    width: max-content;
-    padding-bottom: 30px;
+    padding: 128px 0px 30px 0px;
 `
 
 export const Title = styled.span`
     font-size: 28px;
-    color: #413B6B;
+    color: #7159C1;
     display: inline-block;
 `
