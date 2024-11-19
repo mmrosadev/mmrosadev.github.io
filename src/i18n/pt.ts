@@ -106,4 +106,7 @@ export default {
     successSend: 'Mensagem enviada com sucesso!',
     failureSend: 'Houve um erro no envio da mensagem. Tente novamente!',
     invalidEmail: 'E-mail inválido',
+    bookRentalControlApi: 'NodeJS api para gerenciar o empréstimo de livros',
+    ontologiaRelembrar: 'Website do projeto Ontologia Relembrar',
+    myWebsite: 'Site para divulgação de portfólio',
 }

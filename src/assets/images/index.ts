@@ -39,6 +39,9 @@ import greenStudentImg from './green-student.svg'
 import toolsImg from './tools.svg'
 import blackboardImg from './blackboard.svg'
 import thinkingImg from './thinking.svg'
+import mywebisteImg from './mywebsite.svg'
+import relembrarOntologyImg from './relembrar-ontology.svg'
+import bookImg from './book.svg'
 
 export {
     brasilFlagImg,
@@ -82,4 +85,7 @@ export {
     toolsImg,
     blackboardImg,
     thinkingImg,
+    mywebisteImg,
+    relembrarOntologyImg,
+    bookImg,
 }
