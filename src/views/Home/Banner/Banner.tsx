@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import {
     Container,
@@ -16,7 +17,28 @@ interface BannerProps {
 
 export function Banner({ urlImage }: BannerProps) {
     const { t } = useTranslation()
-    const introduceSubtitle = t('introduce2')
+
+
+    useEffect(() => {
+        const introduceSubtitle = t('introduce2')
+        const subtitleDiv = document.getElementById('subtitle')
+
+        if (subtitleDiv) {
+            let currentIndex = 0
+            subtitleDiv.textContent = ''
+
+            const typingInterval = setInterval(() => {
+                if (currentIndex < introduceSubtitle.length) {
+                    subtitleDiv.textContent += introduceSubtitle[currentIndex]
+                    currentIndex++
+                } else {
+                    clearInterval(typingInterval)
+                }
+            }, 300)
+
+            return () => clearInterval(typingInterval)
+        }
+    }, [t])
 
     return (
         <Container>
@@ -24,7 +46,7 @@ export function Banner({ urlImage }: BannerProps) {
                 <Wrapper>
                     <TextWrapper>
                         <Title>{t('introduce1')}</Title>
-                        <SubTitle id='introduce2'>{t('introduce2')}</SubTitle>
+                        <SubTitle id='subtitle'></SubTitle>
                     </TextWrapper>
                 </Wrapper>
                 <PhotoContainer>
