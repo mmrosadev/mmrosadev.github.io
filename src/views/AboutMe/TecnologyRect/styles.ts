@@ -24,9 +24,9 @@ export const Container = styled.div`
 `
 
 export const ContainerIcon = styled.div`
-    background-color: #301C41;
-    width: 40px;
-    height: 40px;
+    background-color: #18171D;
+    width: 38px;
+    height: 38px;
     border-radius: 7px;
     display: flex;
     justify-content: center;
@@ -35,10 +35,13 @@ export const ContainerIcon = styled.div`
 `
 
 export const Icon = styled.img`
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
 `
 
 export const Label = styled.span`
-    font-size: 10px;
+    font-size: 12px;
+    color: #fff;
+    margin: 2px 0px; 
+    font-family: 'Acme';
 `

@@ -69,7 +69,6 @@ export function AboutMe() {
 
                     <Section
                         title={t('technologies')}
-                        content={[t('technologies2')]}
                         component={
                             <TecnologyRectContainer>
                                 <TecnologyRect imageSrc={jsImg} label="JavaScript" />

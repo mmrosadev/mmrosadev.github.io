@@ -1,39 +1,49 @@
 import { useTranslation } from 'react-i18next'
 import { useProjects } from '@/hooks'
+import { Card, ActionButton, SectionDivider, TitleWithSubtitle } from '@/components'
 import {
   backendImg,
   frontendImg,
   mobileImg,
   meImg,
+  diagonalArrowImg,
+  classesImg,
 } from '@/assets'
 
 import { Banner } from './Banner'
 import {
-  Main,
   Container,
   MyProjectsContainer,
-  Title,
-  TitleContainer,
-  SwiperWrapper,
   Services,
+  ProjectsContainer,
+  ButtonContainer,
+  MyServicesContainer,
 } from './styles'
-import { Swiper } from './Swiper'
 import { ServiceRect } from './ServiceRect'
+import { useNavigate } from 'react-router-dom'
 
 export function Home() {
 
   const { t } = useTranslation()
-  const slides = useProjects()
+  const navigate = useNavigate()
+  const projects = useProjects()
+
+  const handleRedirect = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    navigate('/portfolio')
+  }
 
   return (
     <Container>
       <Banner
         urlImage={meImg}
       />
-      <Main>
-        <TitleContainer>
-          <Title>{t('services')}</Title>
-        </TitleContainer>
+      <SectionDivider destinyId='services' />
+      <MyServicesContainer id='services'>
+        <TitleWithSubtitle
+          title={t('services')}
+          subtitle={t('discoverServices')}
+        />
         <Services>
           <ServiceRect
             imageSrc={frontendImg}
@@ -53,18 +63,41 @@ export function Home() {
             subtitle={t('backendDevelopmentSubtitle')}
           />
 
-        </Services>
-      </Main>
-      <MyProjectsContainer>
-        <TitleContainer>
-          <Title>{t('myProjectsTitle')}</Title>
-        </TitleContainer>
-        <SwiperWrapper>
-          <Swiper
-            slideWidth={282}
-            slides={slides}
+          <ServiceRect
+            imageSrc={classesImg}
+            title={t('privateClasses')}
+            subtitle={t('privateClassesSubtitle')}
           />
-        </SwiperWrapper>
+        </Services>
+      </MyServicesContainer>
+      <SectionDivider destinyId='projects' />
+      <MyProjectsContainer id='projects'>
+        <TitleWithSubtitle
+          title={t('myProjectsTitle')}
+          subtitle={t('discoverProjects')}
+        />
+        <ProjectsContainer>
+          {
+            projects.slice(0, 4).map((item) => (
+              <Card
+                imageSource={item.imageSource}
+                subtitle={item.subtitle}
+                title={item.title}
+                urlApplication={item.urlApplication}
+                urlCode={item.urlCode}
+                key={item.id}
+              />
+            ))
+          }
+        </ProjectsContainer>
+
+        <ButtonContainer>
+          <ActionButton
+            imageSource={diagonalArrowImg}
+            label={t('seeMore')}
+            onClick={handleRedirect}
+          />
+        </ButtonContainer>
       </MyProjectsContainer>
     </Container>
   )

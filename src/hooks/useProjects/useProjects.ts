@@ -1,12 +1,14 @@
 import { useTranslation } from 'react-i18next'
-
 import {
     raquelMarriegeImg,
     nozbooksImg,
     chartplotImg,
     postsUpvotesImg,
     viacepImg,
-    phonebookImg
+    mywebisteImg,
+    relembrarOntologyImg,
+    phonebookImg,
+    bookImg
 } from '@/assets'
 
 export function useProjects() {
@@ -61,6 +63,30 @@ export function useProjects() {
             subtitle: t('apiPhonebookBackend'),
             urlCode: 'https://github.com/mmrosatab/phonebook-backend',
             urlApplication: 'https://challenge-chart-plot.vercel.app/',
+        },
+        {
+            id: 6,
+            imageSource: mywebisteImg,
+            title: 'Portfolio',
+            subtitle: t('myWebsite'),
+            urlCode: 'https://github.com/mmrosatab/mmrosatab.github.io',
+            urlApplication: 'https://mmrosatab.github.io/',
+        },
+        {
+            id: 7,
+            imageSource: relembrarOntologyImg,
+            title: 'Ontologia Relembrar',
+            subtitle: t('ontologiaRelembrar'),
+            urlCode: 'https://github.com/mmrosatab/WebsiteOntologiaRelembrar',
+            urlApplication: 'https://ontologiarelembrar.github.io/',
+        },
+        {
+            id: 8,
+            imageSource: bookImg,
+            title: 'Book Rental Control api',
+            subtitle: t('bookRentalControlApi'),
+            urlCode: 'https://github.com/mmrosatab/book-rental-control-backend',
+            urlApplication: 'https://github.com/mmrosatab/book-rental-control-backend',
         },
     ]
 }

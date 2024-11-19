@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import {
     Container,
@@ -5,9 +6,9 @@ import {
     Photo,
     PhotoContainer,
     SubTitle,
-    TextContainer,
+    TextWrapper,
     Title,
-    TitleContainer
+    Wrapper
 } from './styles'
 
 interface BannerProps {
@@ -17,25 +18,40 @@ interface BannerProps {
 export function Banner({ urlImage }: BannerProps) {
     const { t } = useTranslation()
 
+
+    useEffect(() => {
+        const introduceSubtitle = t('introduce2')
+        const subtitleDiv = document.getElementById('subtitle')
+
+        if (subtitleDiv) {
+            let currentIndex = 0
+            subtitleDiv.textContent = ''
+
+            const typingInterval = setInterval(() => {
+                if (currentIndex < introduceSubtitle.length) {
+                    subtitleDiv.textContent += introduceSubtitle[currentIndex]
+                    currentIndex++
+                } else {
+                    clearInterval(typingInterval)
+                }
+            }, 300)
+
+            return () => clearInterval(typingInterval)
+        }
+    }, [t])
+
     return (
         <Container>
             <ContentContainer>
+                <Wrapper>
+                    <TextWrapper>
+                        <Title>{t('introduce1')}</Title>
+                        <SubTitle id='subtitle'></SubTitle>
+                    </TextWrapper>
+                </Wrapper>
                 <PhotoContainer>
                     <Photo src={urlImage} />
                 </PhotoContainer>
-                <TextContainer>
-                    <>
-                        <TitleContainer>
-                            <Title>{t('introduce1')}</Title>
-                        </TitleContainer>
-                        <>
-                            <SubTitle>{t('introduce2')}</SubTitle>
-                        </>
-                        <>
-                            <SubTitle>{t('introduce3')}</SubTitle>
-                        </>
-                    </>
-                </TextContainer>
             </ContentContainer>
         </Container>
     )

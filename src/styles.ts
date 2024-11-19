@@ -1,8 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+
   * {
-    font-family: 'Acme', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -20,12 +21,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    background-color: #f5f5f5;
+    background-color: #18171D;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    font-family: 'Acme', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
   #root{

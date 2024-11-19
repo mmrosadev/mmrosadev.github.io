@@ -1,18 +1,21 @@
 import { useTranslation } from 'react-i18next'
-import { cellphoneImg, rocketImg } from '@/assets'
+import { blackboardImg, cellphoneImg, greenStudentImg, materialImg, thinkingImg, toolsImg } from '@/assets'
 import {
     Container,
     TextContainer,
     Text,
-    IconWrapper,
-    Label,
-    Icon,
-    Item,
+    WrapperCardIcon,
     ButtonContainer,
-    Button,
-    ButtonIconWrapper,
-    ButtonIcon,
+    Main,
+    TitleContainer,
+    TitleIcon,
+    Title,
+    AdvantagesCard,
+    AdvantagesCardsContainer,
+    CardIcon,
+    CardLabel,
 } from './styles'
+import { ActionButton } from '@/components'
 
 export function Classes() {
 
@@ -20,61 +23,67 @@ export function Classes() {
 
     return (
         <Container>
-            <TextContainer>
-                <Text>{t('classesText1')}</Text>
-                <Text>{t('classesText2')}</Text>
-                <Text>{t('classesText3')}</Text>
-                <Text>{t('languageSupport')}</Text>
-            </TextContainer>
-            <TextContainer>
-                <Item>
-                    <IconWrapper>
-                        <Icon src={rocketImg}></Icon>
-                    </IconWrapper>
-                    <Label>
-                        {t('classesAspect1')}
-                    </Label>
-                </Item>
+            <Main>
+                <TitleContainer>
+                    <TitleIcon src={greenStudentImg} alt='student' />
+                    <Title>{t('learningProgramtion')}</Title>
+                </TitleContainer>
+                <TextContainer>
+                    <Text>{t('classesContent1')}</Text>
+                    <Text>{t('classesContent2')}</Text>
+                    <Text>{t('classesContent3')}</Text>
+                    <Text>{t('classesContent4')}</Text>
+                </TextContainer>
+                <AdvantagesCardsContainer>
+                    <AdvantagesCard>
+                        <WrapperCardIcon>
+                            <CardIcon src={blackboardImg}></CardIcon>
+                        </WrapperCardIcon>
+                        <CardLabel>
+                            {t('classesAdvantages1')}
+                        </CardLabel>
+                    </AdvantagesCard>
 
-                <Item>
-                    <IconWrapper>
-                        <Icon src={rocketImg}></Icon>
-                    </IconWrapper>
-                    <Label>
-                        {t('classesAspect2')}
-                    </Label>
-                </Item>
+                    <AdvantagesCard>
+                        <WrapperCardIcon>
+                            <CardIcon src={materialImg}></CardIcon>
+                        </WrapperCardIcon>
+                        <CardLabel>
+                            {t('classesAdvantages2')}
+                        </CardLabel>
+                    </AdvantagesCard>
 
-                <Item>
-                    <IconWrapper>
-                        <Icon src={rocketImg}></Icon>
-                    </IconWrapper>
-                    <Label>
-                        {t('classesAspect3')}
-                    </Label>
-                </Item>
+                    <AdvantagesCard>
+                        <WrapperCardIcon>
+                            <CardIcon src={thinkingImg}></CardIcon>
+                        </WrapperCardIcon>
+                        <CardLabel>
+                            {t('classesAdvantages3')}
+                        </CardLabel>
+                    </AdvantagesCard>
 
-                <Item>
-                    <IconWrapper>
-                        <Icon src={rocketImg}></Icon>
-                    </IconWrapper>
-                    <Label>
-                        {t('classesAspect4')}
-                    </Label>
-                </Item>
-            </TextContainer>
+                    <AdvantagesCard>
+                        <WrapperCardIcon>
+                            <CardIcon src={toolsImg}></CardIcon>
+                        </WrapperCardIcon>
+                        <CardLabel>
+                            {t('classesAdvantages4')}
+                        </CardLabel>
+                    </AdvantagesCard>
+                </AdvantagesCardsContainer>
 
-            <ButtonContainer>
-                <Button
-                    href='https://wa.me/5521975606376'
-                    target='_blank'
-                >
-                    <ButtonIconWrapper>
-                        <ButtonIcon src={cellphoneImg} />
-                    </ButtonIconWrapper>
-                    <Label>55+ 21 975606376</Label>
-                </Button>
-            </ButtonContainer>
+                <TextContainer>
+                    <Text>{t('knowMoreAboutClasses')}</Text>
+                </TextContainer>
+
+                <ButtonContainer>
+                    <ActionButton
+                        link='https://wa.me/5521975606376'
+                        imageSource={cellphoneImg}
+                        label='55+ 21 975606376'
+                    />
+                </ButtonContainer>
+            </Main>
         </Container>
     )
 }

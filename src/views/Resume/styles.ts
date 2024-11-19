@@ -6,34 +6,30 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    padding: 0px 10px;
 `
 
 export const Header = styled.div`
-    width: 70%;
+    width: 80%;
+    max-width: 1200px;
     height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 64px;
 
     @media screen and (max-width: 700px){
-        width: 100%;
+        padding-top: 32px;
     }
-
-    @media screen and (min-width: 769px) and (max-width: 1024px){
-        width: 70%;
-    }
-
-    padding: 40px 4px;
 
     @keyframes shake {
         0%, 100% {
-            transform: translateX(0); /* Posição inicial e final sem deslocamento */
+            transform: translateX(0); 
         }
         10%, 30%, 50%, 70%, 90% {
-            transform: translateX(-5px); /* Deslocamento para a esquerda */
+            transform: translateX(-5px);
         }
         20%, 40%, 60%, 80% {
-            transform: translateX(5px); /* Deslocamento para a direita */
+            transform: translateX(5px);
         }
     }
 
@@ -43,14 +39,14 @@ export const Header = styled.div`
 `
 
 export const Title = styled.span`
-    color: #301C41;
-    font-size: 32px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    color: #7159C1;
+    font-size: 18px;
+    font-weight: 500;
 `
 
 export const DownloadIconWrapper = styled.button`
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
 `
 
 export const Icon = styled.img`
@@ -59,26 +55,16 @@ export const Icon = styled.img`
 `
 
 export const ResumeContainer = styled.div`
-    *{
-        font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    }
+    width: 80%;
+    max-width: 1200px;
+    padding-bottom: 40px;
+    margin: 100px 0px 140px 0px;
 
-    width: 70%;
-
-    border: 10px solid #301C41;
+    border: 1px solid #7159C1;
     border-radius: 4px;
-    @media screen and (max-width: 768px){
-        width: 100%;
-    }
 
-    @media screen and (min-width: 769px) and (max-width: 1024px){
-        width: 70%;
-    }
-
-    background-color: #fff;
-    color: #000;
-    margin-bottom: 40px;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+    background-color: #1E1D26;
+    color: #fff;
 `
 
 export const ResumeHeader = styled.div`
@@ -96,13 +82,13 @@ export const ResumeHeader = styled.div`
 
     a{
         text-decoration: none;
-        color: #000;
+        color: #fff;
     }
 
 `
 
 export const TitleHeader = styled.span`
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
 
     @media screen and (max-width: 700px){
@@ -111,7 +97,7 @@ export const TitleHeader = styled.span`
 `
 
 export const SubtitleHeader = styled.span`
-    font-size: 22px;
+    font-size: 18px;
 
     @media screen and (max-width: 700px){
         font-size: 12px;
@@ -131,18 +117,18 @@ export const Section = styled.div`
 `
 
 export const TitleSection = styled.span`
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 
     @media screen and (max-width: 700px){
-        font-size: 14px;
+        font-size: 12px;
     }
 
     padding-bottom: 20px;
 `
 
 export const ContentSection = styled.span`
-    font-size: 22px;
+    font-size: 18px;
     text-align: justify;
     @media screen and (max-width: 700px){
         font-size: 12px;

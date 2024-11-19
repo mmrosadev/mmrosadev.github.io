@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import i18n from '@/i18n/i18'
+import { NavBarLink } from '@/components'
 import {
     brasilFlagImg,
     usaFlagImg,
     spainFlagImg,
     infinityImg,
-    githubImg,
-    linkedinImg,
-    menuImg,
-    crossImg,
 } from '@/assets'
 import {
     NavBarContainer,
@@ -17,16 +15,13 @@ import {
     FlagsContainer,
     LogoContainer,
     Logo,
-    NavBarLinksAndButtonsContainer,
-    SocialMediaAndFlagsContainer,
-    SocialMediaContainer,
-    MenuButton,
-    CrossButton,
-    Icon
+    NavBarLinksContainer,
+    Icon,
+    ListFlagsItem,
+    MenuButtonContainer
 } from './styles'
-import i18n from '@/i18n/i18'
-import { NavBarLink, CustomAnchor } from '@/components'
-import { CustomButton } from '../CustomButton'
+import { CustomButton } from './CustomButton'
+import { ToogleButton } from './ToogleButton'
 
 type LanguageOptions = 'en' | 'es' | 'pt'
 const LANG_KEY = 'LANG_REACT_APP'
@@ -35,6 +30,7 @@ export function NavBar(): JSX.Element {
 
     const { t } = useTranslation()
     const [openMenu, setOpenMenu] = useState(false)
+    const [scrolled, setScrolled] = useState(false)
 
     const handleChangeLanguage = (language: LanguageOptions) => {
         setLanguage(language)
@@ -65,31 +61,38 @@ export function NavBar(): JSX.Element {
         setOpenMenu(!openMenu)
     }
 
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 80)
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
+
     useEffect(() => {
         loadStorageLanguage()
     }, [])
 
-    return (
-        <NavBarContainer>
-            <LogoContainer>
-                <Logo src={infinityImg} alt="infinity image" />
-            </LogoContainer>
-            <MenuButton
-                type="button"
-                onClick={toggleMenu}
-                open={openMenu}
-            >
-                <Icon src={menuImg} />
-            </MenuButton>
-            <CrossButton
-                type="button"
-                onClick={toggleMenu}
-                open={openMenu}
-            >
-                <Icon src={crossImg} />
-            </CrossButton>
 
-            <NavBarLinksAndButtonsContainer
+    return (
+        <NavBarContainer
+            id='navbar'
+            className={scrolled ? 'navbar scrolled' : 'navbar'}
+        >
+            <LogoContainer>
+                <Logo src={infinityImg} alt='infinity image' />
+            </LogoContainer>
+            <MenuButtonContainer
+                open={openMenu}
+            >
+                <ToogleButton
+                    open={openMenu}
+                    onClick={toggleMenu}
+                />
+            </MenuButtonContainer>
+            <NavBarLinksContainer
                 id='navbar-links-buttons'
                 open={openMenu}
             >
@@ -100,25 +103,7 @@ export function NavBar(): JSX.Element {
                     <ListItem><NavBarLink to='/resume'>{t('resume')}</NavBarLink></ListItem>
                     <ListItem><NavBarLink to='/classes'>{t('classes')}</NavBarLink></ListItem>
                     <ListItem><NavBarLink to='/contact'>{t('contact')}</NavBarLink></ListItem>
-                </UnorderedList>
-
-                <SocialMediaAndFlagsContainer>
-                    <SocialMediaContainer>
-                        <CustomAnchor
-                            href='https://github.com/mmrosatab'
-                            target='_blank'
-                        >
-                            <Icon src={githubImg} size='big' />
-                        </CustomAnchor>
-
-                        <CustomAnchor
-                            href='https://www.linkedin.com/in/mmrosatab/'
-                            target='_blank'
-                        >
-                            <Icon src={linkedinImg} size='big' />
-                        </CustomAnchor>
-                    </SocialMediaContainer>
-                    <FlagsContainer>
+                    <ListFlagsItem open={openMenu}>
                         <CustomButton
                             size='middle'
                             onClick={() => handleChangeLanguage('pt')}
@@ -137,9 +122,31 @@ export function NavBar(): JSX.Element {
                         >
                             <Icon src={usaFlagImg} />
                         </CustomButton>
-                    </FlagsContainer>
-                </SocialMediaAndFlagsContainer>
-            </NavBarLinksAndButtonsContainer>
+                    </ListFlagsItem>
+                </UnorderedList>
+            </NavBarLinksContainer>
+            <FlagsContainer
+                open={openMenu}
+            >
+                <CustomButton
+                    size='middle'
+                    onClick={() => handleChangeLanguage('pt')}
+                >
+                    <Icon src={brasilFlagImg} />
+                </CustomButton>
+                <CustomButton
+                    size='middle'
+                    onClick={() => handleChangeLanguage('es')}
+                >
+                    <Icon src={spainFlagImg} />
+                </CustomButton>
+                <CustomButton
+                    size='middle'
+                    onClick={() => handleChangeLanguage('en')}
+                >
+                    <Icon src={usaFlagImg} />
+                </CustomButton>
+            </FlagsContainer>
         </NavBarContainer>
     )
 }

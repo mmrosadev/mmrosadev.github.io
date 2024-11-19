@@ -1,10 +1,6 @@
-<svg viewBox="0 0 24 24" fill="none"
+<svg width="40" height="36" viewBox="0 0 40 36" fill="none"
     xmlns="http://www.w3.org/2000/svg">
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-    <g id="SVGRepo_iconCarrier">
-        <path d="M12 5H7C5.89543 5 5 5.89543 5 7V16H19V12.5" stroke="#301C41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M3 16H21V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V16Z" stroke="#301C41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M18.5 3V9M18.5 9L16 6.5M18.5 9L21 6.5" stroke="#301C41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-    </g>
+    <path d="M20 6H10C7.79086 6 6 7.79086 6 10V28H34V21" stroke="#7159C1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2 28H38V30C38 32.2092 36.2092 34 34 34H6C3.79086 34 2 32.2092 2 30V28Z" stroke="#7159C1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M33 2V14M33 14L28 9M33 14L38 9" stroke="#7159C1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

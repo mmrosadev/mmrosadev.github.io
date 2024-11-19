@@ -12,69 +12,111 @@ export const Container = styled.div`
     }
 `
 
-export const TextContainer = styled.div`
-    margin-top: 50px;
+export const Main = styled.main`
+    width: 100%;
+    max-width: 1200px;
+    padding: 64px 0px;
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    width: 50%;
+    align-items: center;
+    margin-bottom: 32px; 
 
     @media screen and (max-width: 425px){
-        width: 90%;
+        padding: 32px 0px;
     }
 
-    @media screen and (min-width: 426px) and (max-width: 1024px){
-        width: 60%;
+    @media screen and (min-width: 701px) {
+        margin-bottom: 64px; 
     }
+`
+
+export const TitleContainer = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 375px){
+        padding: 10px;
+    }
+`
+
+export const Title = styled.span`
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+
+    @media screen and (max-width: 375px){
+        font-size: 20px;
+    }
+`
+
+export const TitleIcon = styled.img`
+    width: 94px;
+    height: 128px;
+`
+
+export const TextContainer = styled.div`
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 `
 
 export const Text = styled.span`
-    text-align: justify;
-    padding: 20px 0px;
-`
-
-export const Item = styled.div`
-    display: flex;
-    align-items: center;
-    margin: 10px 0px;
-`
-
-export const Label = styled.span`
-    padding-left: 10px;
-`
-
-export const IconWrapper = styled.div`
-    width: 18px;
-    height: 18px;
-`
-
-export const Icon = styled.img`
-    width: 18px;
-    height: 18px;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
 `
 
 export const ButtonContainer = styled.div`
-    margin: 50px 0px;
+    margin-top: 24px;
+    width: 180px;
+    height: 60px;
 `
 
-export const Button = styled.a`
-    padding: 10px;
+export const AdvantagesCardsContainer = styled.div`
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 32px 0px 8px 0px;
+    @media screen and (max-width: 540px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media screen and (min-width: 541px) and (max-width: 1100px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+`
+
+export const AdvantagesCard = styled.div`
+    background-color: #1E1D26;
+    border-radius: 4px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: #1C0B2B;
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    text-decoration: none;
+    width: 240px;
+    min-height: 280px;
 `
 
-
-export const ButtonIconWrapper = styled.div`
-    width: 22px;
-    height: 22px;
+export const CardIcon = styled.img`
+    height: 100%;
+    width: 100%;
 `
 
-export const ButtonIcon = styled.img`
-    width: 22px;
-    height: 22px;
+export const WrapperCardIcon = styled.div`
+    height: 160px;
+    width: 128px;
+`
+
+export const CardLabel = styled.span`
+    text-align: center;
+    padding: 10px 0px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    width: 200px;
 `

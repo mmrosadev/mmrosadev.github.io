@@ -1,6 +1,5 @@
 import brasilFlagImg from './brasil-flag.svg'
 import cImg from './c.svg'
-import crossImg from './cross.svg'
 import cssImg from './css.svg'
 import githubImg from './github.svg'
 import htmlImg from './html.svg'
@@ -8,7 +7,6 @@ import infinityImg from './infinity.svg'
 import javaImg from './java.svg'
 import jsImg from './js.svg'
 import linkedinImg from './linkedin.svg'
-import menuImg from './menu.svg'
 import nodeImg from './node.svg'
 import profileImg from './profile.svg'
 import pythonImg from './python.svg'
@@ -29,17 +27,25 @@ import phonebookImg from './phonebook.svg'
 import notFoundImg from './not-found.svg'
 import downloadImg from './download.svg'
 import photoImg from './photo.png'
-import rocketImg from './rocket.svg'
 import cellphoneImg from './cellphone.svg'
 import backendImg from './backend.svg'
 import frontendImg from './frontend.svg'
 import mobileImg from './mobile.svg'
 import meImg from './me.png'
+import diagonalArrowImg from './diagonal-arrow.svg'
+import classesImg from './classes.svg'
+import materialImg from './material.svg'
+import greenStudentImg from './green-student.svg'
+import toolsImg from './tools.svg'
+import blackboardImg from './blackboard.svg'
+import thinkingImg from './thinking.svg'
+import mywebisteImg from './mywebsite.svg'
+import relembrarOntologyImg from './relembrar-ontology.svg'
+import bookImg from './book.svg'
 
 export {
     brasilFlagImg,
     cImg,
-    crossImg,
     cssImg,
     githubImg,
     htmlImg,
@@ -47,7 +53,6 @@ export {
     javaImg,
     jsImg,
     linkedinImg,
-    menuImg,
     nodeImg,
     profileImg,
     pythonImg,
@@ -68,10 +73,19 @@ export {
     notFoundImg,
     downloadImg,
     photoImg,
-    rocketImg,
     cellphoneImg,
     backendImg,
     frontendImg,
     mobileImg,
-    meImg
+    meImg,
+    diagonalArrowImg,
+    classesImg,
+    materialImg,
+    greenStudentImg,
+    toolsImg,
+    blackboardImg,
+    thinkingImg,
+    mywebisteImg,
+    relembrarOntologyImg,
+    bookImg,
 }

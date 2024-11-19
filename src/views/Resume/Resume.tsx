@@ -49,6 +49,7 @@ export function Resume() {
                             { text: t('pe1Activity1'), style: 'ul' },
                             { text: t('pe1Activity2'), style: 'ul' },
                             { text: t('pe1Activity3'), style: 'ul' },
+                            { text: t('pe1Activity7'), style: 'ul' },
                             { text: t('pe1Activity4'), style: 'ul' },
                             { text: t('pe1Activity5'), style: 'ul' },
                             { text: t('pe1Activity6'), style: 'ul' },
@@ -239,6 +240,7 @@ export function Resume() {
                                 <LI>{t('pe1Activity1')}</LI>
                                 <LI>{t('pe1Activity2')}</LI>
                                 <LI>{t('pe1Activity3')}</LI>
+                                <LI>{t('pe1Activity7')}</LI>
                                 <LI>{t('pe1Activity4')}</LI>
                                 <LI>{t('pe1Activity5')}</LI>
                                 <LI>{t('pe1Activity6')}</LI>

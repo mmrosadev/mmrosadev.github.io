@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { githubImg, pageImg } from '@/assets'
+import { ActionButton } from '@/components'
 import {
     ActionsContainer,
     Container,
@@ -8,7 +9,6 @@ import {
     Subtitle,
     Title
 } from './styles'
-import { CardButton } from './CardButton'
 
 export interface CardProps {
     id?: number
@@ -43,7 +43,7 @@ export function Card({
                 title={`${title}_image`}
             />
             <Content
-                sx={{ backgroundColor: '#413B6B', paddingLeft: 0, paddingRight: 0 }}
+                sx={{ backgroundColor: '#1E1D26', paddingLeft: 0, paddingRight: 0 }}
             >
                 <Title>
                     {title}
@@ -53,18 +53,16 @@ export function Card({
                 </Subtitle>
             </Content>
             <ActionsContainer>
-                <CardButton
+                <ActionButton
                     imageSource={githubImg}
                     label={t('viewCode')}
                     link={urlCode}
                 />
 
-                <CardButton
+                <ActionButton
                     imageSource={pageImg}
                     label={t('viewApplication')}
                     link={urlApplication}
-                    width={24}
-                    height={24}
                 />
             </ActionsContainer>
         </Container>

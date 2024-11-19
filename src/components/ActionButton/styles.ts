@@ -5,13 +5,27 @@ interface IconStyleProps {
     height?: number
 }
 
-export const Button = styled.a`
+export const Anchor = styled.a`
     width: 100%;
     height: 42px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     color: #fff;
-    background-color: #301C41;
+    background: linear-gradient(to right, #1BCF6C, #7159C1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    text-decoration: none;
+`
+
+export const Button = styled.button`
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: linear-gradient(to right, #1BCF6C, #7159C1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +41,8 @@ export const Icon = styled.img<IconStyleProps>`
 
 export const Label = styled.label`
     color: #fff;
-    margin-left: 10px;
+    margin-left: 8px;
     font-size: 14px;
+    font-weight: 700;
     cursor: pointer;
 `

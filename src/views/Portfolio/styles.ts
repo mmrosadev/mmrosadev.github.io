@@ -6,19 +6,11 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    padding: 20px 0px;
-`
+    padding: 64px 0px;
 
-export const TitleContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    padding: 20px 0px 40px 0px;
-`
-
-export const Title = styled.span`
-    color: #301C41;
-    font-size: 32px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    @media screen and (max-width: 700px){
+        padding: 32px 0px;
+    }
 `
 
 export const ProjectsContainer = styled.div`
@@ -26,6 +18,7 @@ export const ProjectsContainer = styled.div`
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    margin-bottom: 32px; 
 
     @media screen and (max-width: 600px) {
         grid-template-columns: repeat(1, 1fr);
@@ -34,4 +27,9 @@ export const ProjectsContainer = styled.div`
     @media screen and (min-width: 601px) and (max-width: 900px) {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    @media screen and (min-width: 701px) {
+        margin-bottom: 64px; 
+    }
+    
 `
