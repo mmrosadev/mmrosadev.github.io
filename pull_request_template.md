@@ -1,11 +1,11 @@
-# Avaliação da Alteração
+# Change Assessment
 
-## Descrição
+## Description
 
-## PRs relacionados
+## Related PRs
 
-## Checklist da pessoa desenvolvedora
+## Developer's Checklist
 
-- [ ] Revisei meu próprio código.
-- [ ] Meu PR não tem debugs, console.logs ou linhas de código comentadas.
-- [ ] Meu branch está atualizado com o branch main / master.
+- [ ] I have reviewed my own code.
+- [ ] My PR has no debugs, console.logs, or commented-out lines of code.
+- [ ] My branch is up to date with the main/master branch.
