@@ -2,4 +2,5 @@
 
 React TS application for my website portfolio
 
-[resposiviness.webm](https://github.com/user-attachments/assets/7366793b-a101-427c-a212-b4e0b0da8fff)
+
+[recording.webm](https://github.com/user-attachments/assets/e7283d56-4215-4529-9d26-b24819600fa1)
