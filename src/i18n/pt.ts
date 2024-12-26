@@ -38,7 +38,7 @@ export default {
     educationContent: 'Bacharela em Ciência da Computação - UFRRJ (2019)',
     professionalExperience: 'EXPERIÊNCIA PROFISSIONAL',
     professionalExperience1Title: 'Analista desenvolvedora plena – Getrak - Jan/2024 a Set/2024',
-    pe1Activity1: 'Desenvolvimento de sistemas baseados em microserviços e microfrontends, utilizando Docker e tecnologias como JavaScript, Node.js, ReactJS, HTML, CSS, TypeScript, PHP e Zend Framework.',
+    pe1Activity1: 'Desenvolvimento de sistemas baseados em microserviços e microfrontends, utilizando Docker e tecnologias como JavaScript, NodeJS, ReactJS, HTML, CSS, TypeScript, PHP e Zend Framework.',
     pe1Activity2: 'Criação de componentes de alta fidelidade para o Design System da empresa, assegurando consistência visual e reutilização de código.',
     pe1Activity3: 'Evolução e manutenção de aplicativos móveis em React Native (iOS e Android), utilizados para acompanhamento e controle de veículos em tempo real.',
     pe1Activity4: 'Publicação de aplicativos nas lojas App Store e Google Play, seguindo boas práticas e padrões exigidos pelas plataformas.',
