@@ -48,7 +48,7 @@ export default {
     professionalExperience2Title: 'Analista Desenvolvedora Júnior – Getrak - Abril/2022 a Dez/2023',
     pe2Activity1: 'Desenvolvimento e evolução de sistemas utilizando JavaScript, HTML, CSS, ReactJS, TypeScript, PHP e Zend Framework, implementando funcionalidades e melhorias contínuas.',
     pe2Activity2: 'Manutenção e aprimoramento de aplicativos móveis em React Native (iOS e Android), assegurando estabilidade e atualizações frequentes.',
-    pe2Activity3: 'Publicação de aplicativos nas lojas Apple Store e Google Play, seguindo boas práticas e padrões exigidos pelas plataformas.',
+    pe2Activity3: 'Publicação de aplicativos nas lojas App Store e Google Play, seguindo boas práticas e padrões exigidos pelas plataformas.',
     pe2Activity4: 'Criação e atualização de documentações de apoio, facilitando o entendimento e a continuidade dos projetos pela equipe.',
     professionalExperience3Title: 'Desenvolvedora de software júnior – Intelie - Jan/2020 a Nov/2020',
     pe3Activity1: 'Desenvolvimento de novas funcionalidades com React e TypeScript, garantindo interfaces dinâmicas e eficientes.',
