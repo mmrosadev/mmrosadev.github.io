@@ -127,7 +127,11 @@ export const TitleSection = styled.span`
     padding-bottom: 20px;
 `
 
-export const ContentSection = styled.span`
+export const SubTitleSection = styled.div`
+    margin-bottom: 20px;
+`
+
+export const ContentSection = styled.div`
     font-size: 18px;
     text-align: justify;
     @media screen and (max-width: 700px){
@@ -142,5 +146,6 @@ export const UL = styled.ul`
 
 export const LI = styled.li`
     margin-left: 10px;
+    margin-bottom: 10px;
 
 `
