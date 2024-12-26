@@ -30,10 +30,10 @@ export function Resume() {
     const docDefinition = {
         content: [
             { text: 'Mayara Marques da Rosa', style: 'header' },
-            { text: '+55 21 97560-6376', style: 'subheader' },
-            { text: 'mmrosatab@hotmail.com', style: 'subheader' },
-            { text: 'github.com/mmrosatab', style: 'subheader' },
-            { text: 'linkedin.com/in/mmrosatab', style: 'lastSubheader' },
+            { text: '+55 21 97560-6376', style: 'subheader', link: 'https://wa.me/5521975606376' },
+            { text: 'mmrosatab@hotmail.com', style: 'subheader', link: 'mailto: mmrosatab@gmail.com' },
+            { text: 'github.com/mmrosatab', style: 'subheader', link: 'https://github.com/mmrosatab' },
+            { text: 'linkedin.com/in/mmrosatab', style: 'lastSubheader', link: 'https://linkedin.com/in/mmrosatab' },
             { text: t('professionalSummary'), style: 'section' },
             { text: t('professionalSummaryContent'), style: 'contentSection' },
             { text: t('professionalExperience'), style: 'section' },
