@@ -42,11 +42,12 @@ export function useProjects() {
         },
         {
             id: 3,
-            imageSource: postsUpvotesImg,
-            title: 'Post and upvotes challenge',
-            subtitle: t('appPostsUpvotes'),
-            urlCode: 'https://github.com/mmrosatab/challenge-posts-and-upvotes',
-            urlApplication: 'https://challenge-posts-and-upvotes.vercel.app/',
+            imageSource: bookImg,
+            title: 'Book Rental Control api',
+            subtitle: t('bookRentalControlApi'),
+            urlCode: 'https://github.com/mmrosatab/book-rental-control-backend',
+            urlApplication: 'https://github.com/mmrosatab/book-rental-control-backend',
+
         },
         {
             id: 4,
@@ -58,11 +59,11 @@ export function useProjects() {
         },
         {
             id: 5,
-            imageSource: bookImg,
-            title: 'Book Rental Control api',
-            subtitle: t('bookRentalControlApi'),
-            urlCode: 'https://github.com/mmrosatab/book-rental-control-backend',
-            urlApplication: 'https://github.com/mmrosatab/book-rental-control-backend',
+            imageSource: phonebookImg,
+            title: 'Phonebook api',
+            subtitle: t('apiPhonebookBackend'),
+            urlCode: 'https://github.com/mmrosatab/phonebook-backend',
+            urlApplication: 'https://github.com/mmrosatab/phonebook-backend',
         },
         {
             id: 6,
@@ -82,11 +83,11 @@ export function useProjects() {
         },
         {
             id: 8,
-            imageSource: phonebookImg,
-            title: 'Phonebook api',
-            subtitle: t('apiPhonebookBackend'),
-            urlCode: 'https://github.com/mmrosatab/phonebook-backend',
-            urlApplication: 'https://github.com/mmrosatab/phonebook-backend',
+            imageSource: postsUpvotesImg,
+            title: 'Post and upvotes challenge',
+            subtitle: t('appPostsUpvotes'),
+            urlCode: 'https://github.com/mmrosatab/challenge-posts-and-upvotes',
+            urlApplication: 'https://challenge-posts-and-upvotes.vercel.app/',
         },
     ]
 }
