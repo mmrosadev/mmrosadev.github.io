@@ -86,7 +86,7 @@ export function useProjects() {
             title: 'Phonebook api',
             subtitle: t('apiPhonebookBackend'),
             urlCode: 'https://github.com/mmrosatab/phonebook-backend',
-            urlApplication: 'https://challenge-chart-plot.vercel.app/',
+            urlApplication: 'https://github.com/mmrosatab/phonebook-backend',
         },
     ]
 }
