@@ -33,7 +33,7 @@ export default {
     appViaCep: 'Aplicação ReactJS para pesquisar endereço por CEP.',
     notFound: 'Ops! Página não encontrada!',
     professionalSummary: 'RESUMO PROFISSIONAL',
-    professionalSummaryContent: 'Experiência de cinco anos em desenvolvimento web. Conhecimentos sólidos nas tecnologias Javascript, Typescript, ReactJS, NodeJS, HTML e CSS. Experiência com arquiteturas de microserviços, microfrontends e também em desenvolvimento mobile com React Native. Outras competências: NextJS, Tailwind CSS, AWS (API Gateway, Lambda, S3), Firebase, Git, Jest, Linux, Java, Python, C, PHP e vivência em Scrum/Kanban. Inglês intermediário.',
+    professionalSummaryContent: 'Experiência de cinco anos em desenvolvimento web. Conhecimentos sólidos nas tecnologias JavaScript, TypeScript, ReactJS, NodeJS, HTML e CSS. Experiência com arquiteturas de microserviços, microfrontends e também em desenvolvimento mobile com React Native. Outras competências: NextJS, Tailwind CSS, AWS (API Gateway, Lambda, S3), Firebase, Git, Jest, Linux, Java, Python, C, PHP e vivência em Scrum/Kanban. Inglês intermediário.',
     education: 'FORMAÇÃO ACADÊMICA',
     educationContent: 'Bacharela em Ciência da Computação - UFRRJ (2019)',
     professionalExperience: 'EXPERIÊNCIA PROFISSIONAL',
