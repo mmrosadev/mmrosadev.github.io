@@ -4,16 +4,22 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
+    border: 1px solid #7159C1;
     border-radius: 7px;
     padding: 20px;
-    box-shadow: 0px 4px 8px #7159C1;
+
 
     width: 280px;
     min-height: 300px;
+
+    &:hover{
+        box-shadow: 0px 4px 8px #7159C1;
+    }
 `
 
 export const IconWrapper = styled.div`
+    margin-top: 8px;
     width: 48px;
     height: 48px;
     z-index: 1;
