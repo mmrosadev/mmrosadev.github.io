@@ -82,19 +82,4 @@ export const Services = styled.div`
         grid-template-columns: repeat(2, 1fr);
     }
 
-
-    @keyframes pull {
-        0%,100%{
-            transform: translateY(-40px);
-        }
-
-        10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
-            transform: translateY(1px); 
-        }
-    }
-
-    & > div:nth-child(-n+4){
-        animation: pull 5s infinite;
-    }
-
 `
