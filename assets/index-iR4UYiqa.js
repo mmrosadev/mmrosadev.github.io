@@ -653,33 +653,24 @@ To suppress this warning, you need to explicitly provide the \`palette.${e}Chann
         grid-template-columns: repeat(2, 1fr);
     }
 
-
-    @keyframes pull {
-        0%,100%{
-            transform: translateY(-40px);
-        }
-
-        10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
-            transform: translateY(1px); 
-        }
-    }
-
-    & > div:nth-child(-n+4){
-        animation: pull 5s infinite;
-    }
-
 `,WU=Me.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
+    border: 1px solid #7159C1;
     border-radius: 7px;
     padding: 20px;
-    box-shadow: 0px 4px 8px #7159C1;
+
 
     width: 280px;
     min-height: 300px;
+
+    &:hover{
+        box-shadow: 0px 4px 8px #7159C1;
+    }
 `,VU=Me.div`
+    margin-top: 8px;
     width: 48px;
     height: 48px;
     z-index: 1;
