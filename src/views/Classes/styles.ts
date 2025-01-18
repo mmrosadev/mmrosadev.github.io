@@ -39,6 +39,10 @@ export const TitleContainer = styled.div`
     @media screen and (max-width: 375px){
         padding: 10px;
     }
+
+    @media screen and (max-width: 425px){
+        flex-direction: column;
+    }
 `
 
 export const Title = styled.span`
