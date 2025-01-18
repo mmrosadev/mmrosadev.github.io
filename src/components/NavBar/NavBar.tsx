@@ -97,12 +97,12 @@ export function NavBar(): JSX.Element {
                 open={openMenu}
             >
                 <UnorderedList>
-                    <ListItem><NavBarLink to='/'>{t('home')}</NavBarLink></ListItem>
-                    <ListItem><NavBarLink to='/about-me'>{t('aboutMe')}</NavBarLink></ListItem>
-                    <ListItem><NavBarLink to='/portfolio'>{t('portfolio')}</NavBarLink></ListItem>
-                    <ListItem><NavBarLink to='/resume'>{t('resume')}</NavBarLink></ListItem>
-                    <ListItem><NavBarLink to='/classes'>{t('classes')}</NavBarLink></ListItem>
-                    <ListItem><NavBarLink to='/contact'>{t('contact')}</NavBarLink></ListItem>
+                    <ListItem><NavBarLink to='/' onClick={() => setOpenMenu(false)}>{t('home')}</NavBarLink></ListItem>
+                    <ListItem><NavBarLink to='/about-me' onClick={() => setOpenMenu(false)}>{t('aboutMe')}</NavBarLink></ListItem>
+                    <ListItem><NavBarLink to='/portfolio' onClick={() => setOpenMenu(false)}>{t('portfolio')}</NavBarLink></ListItem>
+                    <ListItem><NavBarLink to='/resume' onClick={() => setOpenMenu(false)}>{t('resume')}</NavBarLink></ListItem>
+                    <ListItem><NavBarLink to='/classes' onClick={() => setOpenMenu(false)}>{t('classes')}</NavBarLink></ListItem>
+                    <ListItem><NavBarLink to='/contact' onClick={() => setOpenMenu(false)}>{t('contact')}</NavBarLink></ListItem>
                     <ListFlagsItem open={openMenu}>
                         <CustomButton
                             size='middle'
