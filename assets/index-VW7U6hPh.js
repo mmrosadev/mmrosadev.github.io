@@ -1254,6 +1254,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     @media screen and (max-width: 375px){
         padding: 10px;
     }
+
+    @media screen and (max-width: 425px){
+        flex-direction: column;
+    }
 `,z7=Me.span`
     color: #fff;
     font-size: 28px;
