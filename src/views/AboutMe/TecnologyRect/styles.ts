@@ -40,7 +40,8 @@ export const Icon = styled.img`
 `
 
 export const Label = styled.span`
-    font-size: 12px;
+    font-size: 10px;
+    text-align: center;
     color: #fff;
     margin: 2px 0px; 
     font-family: 'Acme';
