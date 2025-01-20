@@ -35,6 +35,7 @@ export function NavBar(): JSX.Element {
     const handleChangeLanguage = (language: LanguageOptions) => {
         setLanguage(language)
         setLanguageOnStorage(language)
+        setOpenMenu(false)
     }
 
     const setLanguage = (language: LanguageOptions) => {
