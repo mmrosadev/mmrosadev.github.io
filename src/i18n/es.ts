@@ -23,7 +23,7 @@ export default {
     viewCode: 'Ver código',
     viewApplication: 'Ver aplicación',
     titleCardMarriage: "Raquel's Marriage",
-    subtitleCardMarriage: 'Sitio web diseñado para promocionar una boda.',
+    subtitleCardMarriage: 'Aplicación Bootstrap diseñada para promocionar una boda.',
     myProjectsTitle: 'MIS PROYECTOS',
     myProjectsSubtitle: 'Algunos proyectos que desarrollé',
     appnozbookDescription: 'Aplicación ReactJS del catálogo de libros.',
