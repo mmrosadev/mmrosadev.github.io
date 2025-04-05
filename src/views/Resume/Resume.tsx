@@ -38,6 +38,15 @@ export function Resume() {
             { text: t('professionalSummaryContent'), style: 'contentSection' },
             { text: t('professionalExperience'), style: 'section' },
             {
+                text: t('professionalExperience5Title'),
+                style: 'ulTitle',
+            },
+            {
+                ul: [
+                    { text: t('pe5Activity1'), style: 'ul' },
+                ]
+            },
+            {
                 text: t('professionalExperience1Title'),
                 style: 'ulTitle',
             },
@@ -181,6 +190,12 @@ export function Resume() {
                 </Section>
                 <Section>
                     <TitleSection>{t('professionalExperience')}</TitleSection>
+                    <ContentSection>
+                        <SubTitleSection>{t('professionalExperience5Title')}</SubTitleSection>
+                        <UL>
+                            <LI>{t('pe5Activity1')}</LI>
+                        </UL>
+                    </ContentSection>
                     <ContentSection>
                         <SubTitleSection>{t('professionalExperience1Title')}</SubTitleSection>
                         <UL>
