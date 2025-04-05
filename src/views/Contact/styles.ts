@@ -197,6 +197,6 @@ export const FeedbackMessage = styled.div<FeedbackMessageStyleProps>`
     `}; 
         
     text-align: center;
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 100;
 `

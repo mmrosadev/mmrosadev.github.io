@@ -31,9 +31,9 @@ export function Resume() {
         content: [
             { text: 'Mayara Marques da Rosa', style: 'header' },
             { text: '+55 21 97560-6376', style: 'subheader', link: 'https://wa.me/5521975606376' },
-            { text: 'mmrosatab@hotmail.com', style: 'subheader', link: 'mailto: mmrosatab@gmail.com' },
-            { text: 'github.com/mmrosatab', style: 'subheader', link: 'https://github.com/mmrosatab' },
-            { text: 'linkedin.com/in/mmrosatab', style: 'lastSubheader', link: 'https://linkedin.com/in/mmrosatab' },
+            { text: 'mmrosadev@gmail.com', style: 'subheader', link: 'mailto: mmrosadev@gmail.com' },
+            { text: 'github.com/mmrosadev', style: 'subheader', link: 'https://github.com/mmrosadev' },
+            { text: 'linkedin.com/in/mmrosadev', style: 'lastSubheader', link: 'https://linkedin.com/in/mmrosadev' },
             { text: t('professionalSummary'), style: 'section' },
             { text: t('professionalSummaryContent'), style: 'contentSection' },
             { text: t('professionalExperience'), style: 'section' },
@@ -165,13 +165,13 @@ export function Resume() {
                         <a href='https://wa.me/5521975606376' target='_blank'>+55 21 97560-6376</a>
                     </SubtitleHeader>
                     <SubtitleHeader>
-                        <a href='mailto: mmrosatab@gmail.com' target='_blank'>mmrosatab@hotmail.com</a>
+                        <a href='mailto: mmrosadev@gmail.com' target='_blank'>mmrosadev@gmail.com</a>
                     </SubtitleHeader>
                     <SubtitleHeader>
-                        <a href='https://github.com/mmrosatab' target='_blank'>github.com/mmrosatab</a>
+                        <a href='https://github.com/mmrosadev' target='_blank'>github.com/mmrosadev</a>
                     </SubtitleHeader>
                     <SubtitleHeader>
-                        <a href='https://linkedin.com/in/mmrosatab' target='_blank'>linkedin.com/in/mmrosatab</a>
+                        <a href='https://linkedin.com/in/mmrosadev' target='_blank'>linkedin.com/in/mmrosadev</a>
                     </SubtitleHeader>
                 </ResumeHeader>
 

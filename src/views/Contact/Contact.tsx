@@ -133,17 +133,17 @@ export function Contact() {
                     </CustomAnchor>
 
                     <CustomAnchor
-                        href='mailto: mmrosatab@gmail.com'
+                        href='mailto: mmrosadev@gmail.com'
                         target='_blank'
-                        label='mmrosatab@gmail.com'
+                        label='mmrosadev@gmail.com'
                     >
                         <Icon src={letterImg} />
                     </CustomAnchor>
 
                     <CustomAnchor
-                        href='https://www.linkedin.com/in/mmrosatab/'
+                        href='https://www.linkedin.com/in/mmrosadev/'
                         target='_blank'
-                        label='linkedin.com/in/mmrosatab'
+                        label='linkedin.com/in/mmrosadev'
                     >
                         <Icon src={linkedinImg} />
                     </CustomAnchor>

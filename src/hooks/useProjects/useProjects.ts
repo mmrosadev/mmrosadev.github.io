@@ -21,7 +21,7 @@ export function useProjects() {
             imageSource: raquelMarriegeImg,
             title: t('titleCardMarriage'),
             subtitle: t('subtitleCardMarriage'),
-            urlCode: 'https://github.com/mmrosatab/Raquels-Marriage',
+            urlCode: 'https://github.com/mmrosadev/Raquels-Marriage',
             urlApplication: 'https://raquels-marriage.vercel.app/',
         },
         {
@@ -29,7 +29,7 @@ export function useProjects() {
             imageSource: nozbooksImg,
             title: 'NozBooks',
             subtitle: t('appnozbookDescription'),
-            urlCode: 'https://github.com/mmrosatab/nozbooks-app',
+            urlCode: 'https://github.com/mmrosadev/nozbooks-app',
             urlApplication: 'https://nozbooks-app.vercel.app/',
         },
         {
@@ -37,7 +37,7 @@ export function useProjects() {
             imageSource: chartplotImg,
             title: 'Chartplot challenge',
             subtitle: t('appChartPlotDescription'),
-            urlCode: 'https://github.com/mmrosatab/challenge-chart-plot',
+            urlCode: 'https://github.com/mmrosadev/challenge-chart-plot',
             urlApplication: 'https://challenge-chart-plot.vercel.app/',
         },
         {
@@ -45,8 +45,8 @@ export function useProjects() {
             imageSource: bookImg,
             title: 'Book Rental Control api',
             subtitle: t('bookRentalControlApi'),
-            urlCode: 'https://github.com/mmrosatab/book-rental-control-backend',
-            urlApplication: 'https://github.com/mmrosatab/book-rental-control-backend',
+            urlCode: 'https://github.com/mmrosadev/book-rental-control-backend',
+            urlApplication: 'https://github.com/mmrosadev/book-rental-control-backend',
 
         },
         {
@@ -54,23 +54,23 @@ export function useProjects() {
             imageSource: mywebisteImg,
             title: 'Portfolio',
             subtitle: t('myWebsite'),
-            urlCode: 'https://github.com/mmrosatab/mmrosatab.github.io',
-            urlApplication: 'https://mmrosatab.github.io/',
+            urlCode: 'https://github.com/mmrosadev/mmrosadev.github.io',
+            urlApplication: 'https://mmrosadev.github.io/',
         },
         {
             id: 5,
             imageSource: phonebookImg,
             title: 'Phonebook api',
             subtitle: t('apiPhonebookBackend'),
-            urlCode: 'https://github.com/mmrosatab/phonebook-backend',
-            urlApplication: 'https://github.com/mmrosatab/phonebook-backend',
+            urlCode: 'https://github.com/mmrosadev/phonebook-backend',
+            urlApplication: 'https://github.com/mmrosadev/phonebook-backend',
         },
         {
             id: 6,
             imageSource: viacepImg,
             title: 'Address search by zipcode',
             subtitle: t('appViaCep'),
-            urlCode: 'https://github.com/mmrosatab/to-explore-viacep-api',
+            urlCode: 'https://github.com/mmrosadev/to-explore-viacep-api',
             urlApplication: 'https://to-explore-viacep-api.vercel.app/',
         },
         {
@@ -78,7 +78,7 @@ export function useProjects() {
             imageSource: relembrarOntologyImg,
             title: 'Ontologia Relembrar',
             subtitle: t('ontologiaRelembrar'),
-            urlCode: 'https://github.com/mmrosatab/WebsiteOntologiaRelembrar',
+            urlCode: 'https://github.com/mmrosadev/WebsiteOntologiaRelembrar',
             urlApplication: 'https://ontologiarelembrar.github.io/',
         },
         {
@@ -86,7 +86,7 @@ export function useProjects() {
             imageSource: postsUpvotesImg,
             title: 'Post and upvotes challenge',
             subtitle: t('appPostsUpvotes'),
-            urlCode: 'https://github.com/mmrosatab/challenge-posts-and-upvotes',
+            urlCode: 'https://github.com/mmrosadev/challenge-posts-and-upvotes',
             urlApplication: 'https://challenge-posts-and-upvotes.vercel.app/',
         },
     ]
