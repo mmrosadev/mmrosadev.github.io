@@ -44,6 +44,9 @@ export function Resume() {
             {
                 ul: [
                     { text: t('pe5Activity1'), style: 'ul' },
+                    { text: t('pe5Activity2'), style: 'ul' },
+                    { text: t('pe5Activity3'), style: 'ul' },
+                    { text: t('pe5Activity4'), style: 'ul' },
                 ]
             },
             {
@@ -90,11 +93,7 @@ export function Resume() {
             },
             {
                 ul: [
-                    { text: t('pe4Activity1'), style: 'ul' },
-                    { text: t('pe4Activity2'), style: 'ul' },
-                    { text: t('pe4Activity3'), style: 'ul' },
-                    { text: t('pe4Activity4'), style: 'ul' },
-                    { text: t('pe4Activity5'), style: 'lastUl' },
+                    { text: t('pe4Activity6'), style: 'lastUl' },
                 ]
             },
             { text: t('complementaryActivities'), style: 'section' },
@@ -194,6 +193,9 @@ export function Resume() {
                         <SubTitleSection>{t('professionalExperience5Title')}</SubTitleSection>
                         <UL>
                             <LI>{t('pe5Activity1')}</LI>
+                            <LI>{t('pe5Activity2')}</LI>
+                            <LI>{t('pe5Activity3')}</LI>
+                            <LI>{t('pe5Activity4')}</LI>
                         </UL>
                     </ContentSection>
                     <ContentSection>
@@ -230,11 +232,7 @@ export function Resume() {
                     <ContentSection>
                         <SubTitleSection>{t('professionalExperience4Title')}</SubTitleSection>
                         <UL>
-                            <LI>{t('pe4Activity1')}</LI>
-                            <LI>{t('pe4Activity2')}</LI>
-                            <LI>{t('pe4Activity3')}</LI>
-                            <LI>{t('pe4Activity4')}</LI>
-                            <LI>{t('pe4Activity5')}</LI>
+                            <LI>{t('pe4Activity6')}</LI>
                         </UL>
                     </ContentSection>
                 </Section>
